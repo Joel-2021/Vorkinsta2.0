@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter:wght@700&family=Jost&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  min-height: 771px;
+}
+
+.left {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.left>h3{
+font-family: 'DM Serif Text';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 102.52%;
+color: #0D3451;
+}
+.right {
+  width: 50%;
+  background-color: #0d3451;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* min-height: 771px; */
+}
+.right>img{
+    margin: 51px 0;
+}
+.right > div {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffffff;
+  margin-bottom: 51px;
+}
+.right > div > a {
+  font-family: "DM Serif Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  text-transform: capitalize;
+  color: #778a98;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  gap: 34px;
+}
+form > div {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+form > div > input {
+  width: 100%;
+}
+input {
+  height: 49px;
+  background: rgba(255, 255, 255, 0.42);
+  border-radius: 10px;
+  border: none;
+  color: #BDBDBD;
+  font-size: 20px;
+  padding: 0 1rem ;
+}
+input::placeholder{
+font-family: 'Jost';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 29px;
+color: #BDBDBD;
+}
+input[type=checkbox]{
+    width: 24px;
+    height: 24px;
+}
+label {
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  color: #bdbdbd;
+}
+.buttons {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 57px;
+}
+.buttons > button {
+  width: 183px;
+  height: 49px;
+  background: #a5d7e8;
+  border-radius: 10px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  color: #000000;
+  border: none;
+}
+
+.buttons > p {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  color: #bdbdbd;
+}
+.buttons > p > a {
+  color: rgba(48, 98, 173, 1);
+}
+.right > div > a.active{
+color: #FFFFFF;
+border-bottom: 3px solid #A5D7E8;
+}
+
+.icons{
+  display: flex;
+    padding: 51px 0;
+    gap: 30px;
+}
+
+@media screen and (max-width: 430px) {
+  .container{
+    min-height: 100vh;
+  }
+  .left{
+    display: none;
+  }
+  .right{
+    width: 100%;
+  }
+}
