@@ -47,33 +47,32 @@ header {
   background-color: inherit;
   border-bottom: 2px solid #d9d9d9;
 }
-.tabs {
-  display: flex;
-  gap: 1rem;
-  font-family: 'Inter';
-}
-
-.tabs > li{
-  text-decoration: none;
-  list-style: none;
-}
-
 .categories {
   display: flex;
   justify-content: space-between;
   padding: 1rem 0;
 }
-
+.tabs {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  gap: 1rem;
+  font-family: 'Inter';
+}
 .tabs {
   display: flex;
   align-items: center;
   gap: 1rem;
+} 
+.tabs > li{
+  text-decoration: none;
+  list-style: none;
 }
-.tabs > li>a {
+ .tabs > li>a {
   font-size: 14px;
   text-decoration: none;
   color: #FFFFFF;
-}
+} 
 
 .tabs > button {
   padding: 4px 15px;
@@ -252,12 +251,13 @@ header {
   grid-area: 4 / 2 / 5 / 3;
 }
 .section2>div{
-  display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  max-width: 1062px;
 }
 .section2 >div> h2 {
   align-self: flex-start;
-  padding: 47px 155px;
+  padding: 47px 0px;
   font-family: "DM Serif Text";
   font-style: normal;
   font-weight: 400;
@@ -716,7 +716,7 @@ footer {
   }
   .step {
     width: 350px;
-    height: 61px;
+    height: fit-content;
     background: #e2edff;
     border: 0.5px solid #0d3451;
     box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.25);
