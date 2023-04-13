@@ -435,6 +435,7 @@ color: #000000;
   padding-left: 10px;
 }
 .newsletter > div > button {
+  border: none;
   width: 232px;
   height: 62px;
   background: #0d3451;
