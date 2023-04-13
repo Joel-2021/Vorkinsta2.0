@@ -8,8 +8,8 @@
 .container {
   display: flex;
   margin: 0 auto;
-  min-height: 771px;
-  max-width: 1500px;
+  /* min-height: 771px; */
+  max-width: 1478px;
 }
 
 .left {
@@ -19,24 +19,23 @@
   align-items: center;
   flex-direction: column;
 }
-.left>h3{
-font-family: 'DM Serif Text';
-font-style: normal;
-font-weight: 400;
-font-size: 64px;
-line-height: 102.52%;
-color: #0D3451;
+.left > h3 {
+  font-family: "DM Serif Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 102.52%;
+  color: #0d3451;
 }
 .right {
   width: 50%;
   background-color: #0d3451;
   display: flex;
-  /* gap: 54px; */
   align-items: center;
   flex-direction: column;
 }
-.right>img{
-    margin: 51px 0;
+.right > img {
+  margin: 51px 0;
 }
 .right > div {
   font-family: "Jost";
@@ -77,22 +76,24 @@ input {
   background: rgba(255, 255, 255, 0.42);
   border-radius: 10px;
   border: none;
-  color: #BDBDBD;
+  color: #bdbdbd;
   font-size: 20px;
-  padding: 0 1rem ;
+  padding: 0 1rem;
 }
-input::placeholder{
-font-family: 'Jost';
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 29px;
-color: #BDBDBD;
+input::placeholder {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  color: #bdbdbd;
 }
-input[type=checkbox]{
-    width: 24px;
-    height: 24px;
+input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  /* outline: 1px solid black */
 }
+
 label {
   display: flex;
   align-self: flex-start;
@@ -136,24 +137,46 @@ label {
 .buttons > p > a {
   color: rgba(48, 98, 173, 1);
 }
-.right > div > a.active{
-color: #FFFFFF;
-border-bottom: 3px solid #A5D7E8;
+.right > div > a.active {
+  color: #ffffff;
+  border-bottom: 3px solid #a5d7e8;
 }
 
-.icons{
+.icons {
   display: flex;
-    padding: 51px 0;
-    gap: 30px;
+  padding: 51px 0;
+  gap: 30px;
+}
+hr {
+  border: none;
+  border-top: 1px solid #73899a;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+hr:after {
+  background: #0d3451;
+  color: #73899a;
+  content: "or";
+  padding: 2px 5px;
+  position: relative;
+  top: -11px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+
+  color: #ffffff;
 }
 @media screen and (max-width: 430px) {
-  .container{
+  .container {
     min-height: 100vh;
   }
-  .left{
+  .left {
     display: none;
   }
-  .right{
+  .right {
     width: 100%;
   }
 }

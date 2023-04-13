@@ -25,33 +25,6 @@ header {
   padding: 0 7rem;
   align-items: center;
 }
-.search {
-  width: 374px;
-  padding-top: 2rem;
-}
-.searchBar > input[type="text"] {
-  width: 374px;
-  background-color: #0d3451;
-  border: none;
-  border-bottom: 2px solid #d9d9d9;
-  outline: none;
-  color: #d9d9d9;
-  font-size: 15px;
-}
-.searchBar {
-  display: flex;
-}
-.searchBar > button {
-  border: none;
-  border-bottom: 1px solid;
-  background-color: inherit;
-  border-bottom: 2px solid #d9d9d9;
-}
-.categories {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 0;
-}
 .tabs {
   position: relative;
   z-index: 10;
@@ -129,9 +102,35 @@ header {
   font-size: 64px;
   color: #0b2447;
 }
-.left > div > h1 > span {
+.highlight {
   text-decoration: underline;
   color: black;
+}
+.changeword::before {
+  position: relative;
+  z-index: 5;
+  content: 'Apps';
+  animation: animate 10s infinite ease-in;
+  padding-left: 10px;
+}
+@keyframes animate {
+  0% {
+    content: 'Jobs';
+  }
+  25%{
+    content: 'Training';
+
+  }
+  50% {
+    content: 'Freelancers';
+  }
+
+  75% {
+    content: 'Consultants';
+  }
+  100% {
+    content: 'Apps';
+  }
 }
 .left > div > p {
   font-family: "Jost";
