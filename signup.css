@@ -7,7 +7,9 @@
 }
 .container {
   display: flex;
+  margin: 0 auto;
   min-height: 771px;
+  max-width: 1500px;
 }
 
 .left {
@@ -139,6 +141,11 @@ color: #FFFFFF;
 border-bottom: 3px solid #A5D7E8;
 }
 
+.icons{
+  display: flex;
+    padding: 51px 0;
+    gap: 30px;
+}
 @media screen and (max-width: 430px) {
   .container{
     min-height: 100vh;
