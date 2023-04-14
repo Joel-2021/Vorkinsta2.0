@@ -15,7 +15,8 @@
 .left {
   display: flex;
   width: 50%;
-  justify-content: center;
+  margin-top: 42px;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
 }
@@ -71,7 +72,7 @@ form > div {
 form > div > input {
   width: 100%;
 }
-input {
+input[type=text],input[type=email],input[type=password] {
   height: 49px;
   background: rgba(255, 255, 255, 0.42);
   border-radius: 10px;
@@ -79,9 +80,9 @@ input {
   color: #fff;
   font-size: 20px;
   padding: 0 1rem;
-  outline:none;
+  outline: none;
 }
-input:focus{
+input:focus {
   outline: 1px solid white;
 }
 input::placeholder {
@@ -92,10 +93,50 @@ input::placeholder {
   line-height: 29px;
   color: #bdbdbd;
 }
-input[type="checkbox"] {
-  width: 24px;
-  height: 24px;
+
+#thing {
+  border-radius: 0;
+  -webkit-appearance: none; /* removes the default appearance */
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #fff; /* sets the white border */
+  background-color: transparent; /* sets the transparent background */
+  width: 24px; /* sets the width of the checkbox */
+  height: 24px; /* sets the height of the checkbox */
+
 }
+
+#thing:checked::before {
+  position: relative;
+  bottom: 6px;
+  content: '\2714';
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+  /* background-color: #b9c6d1; adds a white background when checked */
+}
+
+/* input[type="checkbox"]{
+  display: none;
+}
+
+input[type="checkbox"]+label{
+  width: 26px;
+  height: 26px;
+  border: 1px solid #ffffff;
+  background-color: #0d3451;
+  display: inline-block;
+  padding: 0 0 0 0px;
+}
+
+input[type="checkbox"]::before {
+  content:'\2714'; 
+  width: 26px;
+   height: 26px; 
+   display: inline-block; 
+   padding: 0 0 0 0px; 
+   accent-color: #0d3451;
+} */
 
 label {
   display: flex;

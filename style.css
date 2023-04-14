@@ -93,7 +93,7 @@ header {
   align-items: center;
 }
 .left > div {
-  margin: 5rem 0rem 0rem 7rem;
+  margin: 5rem 0rem 0rem 5rem;
 }
 .left > div > h1 {
   font-family: "DM Serif Text";
@@ -110,28 +110,37 @@ header {
   position: relative;
   z-index: 5;
   content: 'Apps';
-  animation: animate 10s infinite ease-in;
+  animation: animate 10s infinite ease-in-out;
   padding-left: 10px;
 }
+ 
+
 @keyframes animate {
   0% {
     content: 'Jobs';
+    color:#34A853;
   }
   25%{
     content: 'Training';
-
+    color:  #8182F2;
   }
   50% {
-    content: 'Freelancers';
+    content:'Freelancers';
+    color: #ED50F1 ;
   }
-
+  
   75% {
     content: 'Consultants';
+    color: #FF5A4D ;
   }
-  100% {
+  100%,0% {
     content: 'Apps';
+    color:#FB8A05;
   }
 }
+
+
+
 .left > div > p {
   font-family: "Jost";
   font-style: normal;
@@ -420,8 +429,17 @@ color: #000000;
   font-weight: 400;
   font-size: 36px;
   text-transform: capitalize;
+  margin: 37px auto 0px auto;
+  color: #000000;
+}
+.newsletter>p{
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
 
-  margin: 37px auto 26px auto;
+  margin: 26px auto 37px auto;
   color: #000000;
 }
 .newsletter > div > input {
@@ -489,7 +507,7 @@ footer {
   padding-bottom: 2rem;
   color: #ffffff;
 }
-.f-right > ul {
+.f-right >div> ul {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -499,6 +517,36 @@ footer {
   font-family: "Inter";
   font-style: normal;
   color: #ffffff;
+}
+.f-right>div{
+  display: flex;
+  justify-content: space-between;
+}
+.f-right>div>ul>span{
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  gap: 1rem;
+}
+.f-right>div>ul>span>p{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+color: #FFFFFF;
+}
+.f-right>div>ul>p{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.f-right>div>ul>select{
+  margin: 10px;
 }
 .f-right > ul > li {
   padding-bottom: 0.5rem;
@@ -843,6 +891,16 @@ footer {
     text-transform: capitalize;
     color: #000000;
   }
+  .newsletter>p{
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 26px auto 37px auto;
+    color: #000000;
+  }
   .project > button,
   .recent > button {
     align-self: flex-end;
@@ -893,15 +951,41 @@ footer {
     font-size: 14px;
     color: #ffffff;
   }
-  .f-right > ul {
+  .f-right>div > ul {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
-    line-height: 107.52%;
-    letter-spacing: -0.045em;
     text-transform: capitalize;
     color: #ffffff;
+  }
+  .f-right>div>ul>span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .f-right>div>ul>span>p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FFFFFF;
+  }
+  .f-right>div>ul>p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .f-right>div>ul>select{
+    width: 70px;
+    font-size: 10px;
+  }
+  .f-right>div{
+    display: block;
   }
   hr {
     margin-top: 2rem;
