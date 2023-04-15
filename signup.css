@@ -72,7 +72,9 @@ form > div {
 form > div > input {
   width: 100%;
 }
-input[type=text],input[type=email],input[type=password] {
+input[type="text"],
+input[type="email"],
+input[type="password"] {
   height: 49px;
   background: rgba(255, 255, 255, 0.42);
   border-radius: 10px;
@@ -103,40 +105,17 @@ input::placeholder {
   background-color: transparent; /* sets the transparent background */
   width: 24px; /* sets the width of the checkbox */
   height: 24px; /* sets the height of the checkbox */
-
 }
 
 #thing:checked::before {
   position: relative;
   bottom: 6px;
-  content: '\2714';
+  content: "\2714";
   display: inline-block;
   color: white;
   font-size: 24px;
   /* background-color: #b9c6d1; adds a white background when checked */
 }
-
-/* input[type="checkbox"]{
-  display: none;
-}
-
-input[type="checkbox"]+label{
-  width: 26px;
-  height: 26px;
-  border: 1px solid #ffffff;
-  background-color: #0d3451;
-  display: inline-block;
-  padding: 0 0 0 0px;
-}
-
-input[type="checkbox"]::before {
-  content:'\2714'; 
-  width: 26px;
-   height: 26px; 
-   display: inline-block; 
-   padding: 0 0 0 0px; 
-   accent-color: #0d3451;
-} */
 
 label {
   display: flex;
@@ -214,6 +193,9 @@ hr:after {
 
   color: #ffffff;
 }
+.hero-section {
+  display: none;
+}
 @media screen and (max-width: 430px) {
   .container {
     min-height: 100vh;
@@ -223,5 +205,59 @@ hr:after {
   }
   .right {
     width: 100%;
+  }
+  .right>img{
+    margin: 25px 0;
+  }
+  .right>div{
+    margin-bottom: 25px;
+  }
+  .right>div>a{
+font-size: 20px;
+  }
+  .hero-section {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  #hero-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  form{
+    gap:30px
+  }
+  input[type=text],input[type=email],input[type=password]{
+    height: 40px;
+  }
+  .buttons {
+    padding-right: 0;
+    margin-bottom: 40px ;
+  }
+  .buttons > button {
+    width: 99px;
+    height: 37px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+
+    color: #000000;
+  }
+  .buttons > p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #bdbdbd;
+  }
+  .icons{
+    padding: 45px 0;
   }
 }
