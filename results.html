@@ -99,6 +99,7 @@
                   >
                 </div>
               </div>
+            
               <div class="model-content-middle">
                 <div>
                   <p class="filter-heading">Looking for Job</p>
@@ -215,6 +216,8 @@
                         id="range"
                         name="range"
                         style="width: 209px"
+                        min="1"
+                        max="20"
                       />
                       <div class="btns">
                         <input class="exp" type="number" placeholder="Years" />
@@ -481,23 +484,28 @@
       var btn = document.getElementById("myBtn");
       var span = document.getElementsByClassName("close")[0];
       var cancel = document.getElementsByClassName("btn-cancel")[0];
-      var resultDim = document.getElementsByClassName("job-results")[0];
+      var result = document.querySelector(".job-results");
+      console.log(result)
       btn.onclick = function () {
         modal.style.display = "block";
-        // resultDim.style.backgroundColor = 'rgba(0,0,0,0.4)';
+        result.classList.add('blur')
       };
       span.onclick = function () {
         modal.style.display = "none";
-        // resultDim.style.backgroundColor = '';
+        // document.body.classList.remove('blur')
+        result.classList.remove('blur');
       };
       cancel.onclick = function () {
         modal.style.display = "none";
+       result.classList.remove('blur');
+        // document.body.classList.remove('blur')
         // resultDim.style.backgroundColor = '';
       };
-
+      
       window.onclick = function (event) {
         if (event.target == modal) {
           modal.style.display = "none";
+          result.classList.remove('blur');
           // resultDim.style.backgroundColor = '';
         }
       };
