@@ -1,3 +1,4 @@
+
 .search {
   display: flex;
   /* justify-content: center; */
@@ -408,6 +409,7 @@ input[type="radio"] {
 .filter-options {
   padding: 20px;
   display: flex;
+  flex: 1 ;
   gap: 20px;
 }
 
@@ -429,6 +431,8 @@ input[type="radio"] {
 
 /* Style the span element to look like a checkbox */
 .filter-options span {
+  display: block;
+  width: fit-content;
   margin-right: 5px;
   cursor: pointer;
   padding: 5px 10px;

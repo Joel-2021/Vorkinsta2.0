@@ -1,0 +1,143 @@
+.container {
+  width: 100%;
+  padding: 20px;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 85%;
+  gap: 100px;
+  margin: 0 108px;
+}
+
+.left-container {
+  width: 50%;
+  text-align: center;
+}
+
+.right-container {
+  width: 50%;
+}
+
+.content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.content > h3 {
+  font-family: "DM Serif Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 102.52%;
+
+  /* or 66px */
+
+  color: #0b2447;
+}
+
+.content > p {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 122.02%;
+  /* or 17px */
+
+  text-transform: capitalize;
+
+  color: #000000;
+}
+
+.content > button {
+    width: 289px;
+height: 61px;
+  background: #0d3451;
+  border-radius: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  text-transform: capitalize;
+
+  color: #ffffff;
+
+}
+
+.upcoming-meetings {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: left;
+}
+
+.heading > h3 {
+  font-family: "DM Serif Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  text-transform: capitalize;
+  margin: 0 108px;
+  padding: 30px 0;
+  color: #000000;
+}
+
+.upcoming-meetings-section {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  background: #d9d9d9;
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.duration > p {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.duration {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.profile-pic {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.section1>p{
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+color: #000000;
+}
+.profile-pic > p {
+  width: 80px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #000000;
+}

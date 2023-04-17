@@ -221,7 +221,6 @@
                       />
                       <div class="btns">
                         <input class="exp" type="number" placeholder="Years" />
-                        <input class="exp" type="number" placeholder="Months" />
                       </div>
                     </div>
                   </div>
@@ -492,21 +491,17 @@
       };
       span.onclick = function () {
         modal.style.display = "none";
-        // document.body.classList.remove('blur')
         result.classList.remove('blur');
       };
       cancel.onclick = function () {
         modal.style.display = "none";
        result.classList.remove('blur');
-        // document.body.classList.remove('blur')
-        // resultDim.style.backgroundColor = '';
       };
       
       window.onclick = function (event) {
         if (event.target == modal) {
           modal.style.display = "none";
           result.classList.remove('blur');
-          // resultDim.style.backgroundColor = '';
         }
       };
     </script>
