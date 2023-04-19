@@ -20,8 +20,8 @@
         <div class="tabs">
           <li><a href="index.html">Home</a></li>
           <li class="active"><a href="">Search</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">FAQs</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/FAQ.html">FAQs</a></li>
           <li><a href="/signin.html">Login</a></li>
           <button>Sign Up</button>
         </div>
@@ -37,7 +37,7 @@
           <li>Design</li>
           <li>IT and Software</li>
           <li>Personal Development</li>
-          <li>more</li>
+          <li>more <img src="/assets/Vector 1.png" alt=""></li>
         </div>
       </div>
     </header>
@@ -50,6 +50,7 @@
           <input type="text" id="location" placeholder="Location" />
         </span>
         <button>Search</button>
+        <!-- <img src="/assets/Group (6).png"/> -->
       </form>
       <div class="radios">
         <label for="type-job">
@@ -73,37 +74,19 @@
       <div class="top-search">
         <h1>Top Search</h1>
         <div class="list">
-          <div class="list-item">Business</div>
-          <div class="list-item">Development</div>
-          <div class="list-item">Consultancy</div>
-          <div class="list-item">Apps</div>
-          <div class="list-item">Personal Development</div>
-          <div class="list-item">Design</div>
-          <div class="list-item">Business</div>
-          <div class="list-item">Development</div>
-          <div class="list-item">Consultancy</div>
-          <div class="list-item">Apps</div>
-          <div class="list-item">Personal Development</div>
-          <div class="list-item">Design</div>
-          <div class="list-item">Business</div>
-          <div class="list-item">Development</div>
-          <div class="list-item">Consultancy</div>
-          <div class="list-item">Apps</div>
-          <div class="list-item">Personal Development</div>
-          <div class="list-item">Design</div>
-          <div class="list-item">Business</div>
-          <div class="list-item">Development</div>
-          <div class="list-item">Consultancy</div>
-          <div class="list-item">Apps</div>
-          <div class="list-item">Personal Development</div>
-          <div class="list-item">Design</div>
-          <div class="list-item">Business</div>
-          <div class="list-item">Development</div>
-          <div class="list-item">Consultancy</div>
-          <div class="list-item">Apps</div>
-          <div class="list-item">Personal Development</div>
-          <div class="list-item">Design</div>
-        </div>
+          <div class="list-item">Business j</div> 
+          <div class="list-item">Development j</div> 
+          <div class="list-item">Consultancy j</div> 
+          <div class="list-item">Apps j</div> 
+          <div class="list-item">Personal Development j</div> 
+          <div class="list-item">Design j</div> 
+          <div class="list-item">Business j</div> 
+          <div class="list-item">Development j</div> 
+          <div class="list-item">Consultancy j</div> 
+          <div class="list-item">Apps j</div> 
+          <div class="list-item">Personal Development j</div> 
+          <div class="list-item">Design j</div> 
+          </div>
       </div>
     </section>
     <section class="category">
@@ -141,6 +124,15 @@
           information to be shared, such as Name, Phone, Address, ID, Photo, or
           any other information.
         </p>
+        <span>
+          <p>Follow us</p>
+          <span>
+            <img src="/assets/Facebook Circled.png" alt="" />
+            <img src="/assets/LinkedIn Circled.png" alt="" />
+            <img src="/assets/Instagram.png" alt="" />
+          </span>
+        </span>
+        <p>&copy 2021 All Rights Reserved</p>
       </div>
       <div class="f-right">
         <h2>Links</h2>
@@ -149,17 +141,6 @@
             <li>terms and conditions</li>
             <li>Privacy Policy</li>
             <li>Help</li>
-            <span>
-              <p>Follow us</p>
-              <span>
-                <img src="/assets/Facebook Circled.png" alt="" />
-                <img src="/assets/LinkedIn Circled.png" alt="" />
-                <img src="/assets/Instagram.png" alt="" />
-              </span>
-            </span>
-            <p>&copy 2021 All Rights Reserved</p>
-          </ul>
-          <ul>
             <li>Vorkinsta License</li>
             <li>Partners</li>
             <label for="">Select language</label>
@@ -173,5 +154,84 @@
         </div>
       </div>
     </footer>
+    <script>
+      let radios = document.querySelectorAll("input[type=radio]");
+      console.log(radios)
+      let topSearch=document.querySelector('.list')
+      
+      const jobHtml= "<div class=\"list\"> \
+          <div class=\"list-item\">Business j</div> \
+          <div class=\"list-item\">Development j</div> \
+          <div class=\"list-item\">Consultancy j</div> \
+          <div class=\"list-item\">Apps j</div> \
+          <div class=\"list-item\">Personal Development j</div> \
+          <div class=\"list-item\">Design j</div> \
+          <div class=\"list-item\">Business j</div> \
+          <div class=\"list-item\">Development j</div> \
+          <div class=\"list-item\">Consultancy j</div> \
+          <div class=\"list-item\">Apps j</div> \
+          <div class=\"list-item\">Personal Development j</div> \
+          <div class=\"list-item\">Design j</div> \
+          </div>"
+const consultantHtml= "<div class=\"list\"> \
+          <div class=\"list-item\">Business c</div> \
+          <div class=\"list-item\">Development c</div> \
+          <div class=\"list-item\">Consultancy c</div> \
+          <div class=\"list-item\">Apps c</div> \
+          <div class=\"list-item\">Personal Development c</div> \
+          <div class=\"list-item\">Design c</div> \
+          <div class=\"list-item\">Business c</div> \
+          <div class=\"list-item\">Development c</div> \
+          <div class=\"list-item\">Consultancy c</div> \
+          <div class=\"list-item\">Apps c</div> \
+          <div class=\"list-item\">Personal Development c</div> \
+          <div class=\"list-item\">Design c</div> \
+          </div>"
+const appsHtml= "<div class=\"list\"> \
+          <div class=\"list-item\">Business a</div> \
+          <div class=\"list-item\">Development a</div> \
+          <div class=\"list-item\">Consultancy a</div> \
+          <div class=\"list-item\">Apps a</div> \
+          <div class=\"list-item\">Personal Development a</div> \
+          <div class=\"list-item\">Design a</div> \
+          <div class=\"list-item\">Business a</div> \
+          <div class=\"list-item\">Development a</div> \
+          <div class=\"list-item\">Consultancy a</div> \
+          <div class=\"list-item\">Apps a</div> \
+          <div class=\"list-item\">Personal Development a</div> \
+          <div class=\"list-item\">Design a</div> \
+          </div>"
+const trainingHtml= "<div class=\"list\"> \
+          <div class=\"list-item\">Business t</div> \
+          <div class=\"list-item\">Development t</div> \
+          <div class=\"list-item\">Consultancy t</div> \
+          <div class=\"list-item\">Apps t</div> \
+          <div class=\"list-item\">Personal Development t</div> \
+          <div class=\"list-item\">Design t</div> \
+          <div class=\"list-item\">Business t</div> \
+          <div class=\"list-item\">Development t</div> \
+          <div class=\"list-item\">Consultancy t</div> \
+          <div class=\"list-item\">Apps t</div> \
+          <div class=\"list-item\">Personal Development t</div> \
+          </div>"
+
+          radios.forEach((radio) => {
+            radio.addEventListener("click", () => {
+              if(radio.id==='type-job') {
+                topSearch.classList.remove('list')
+                topSearch.innerHTML=jobHtml;
+              }
+              if(radio.id==='type-consultants') {
+                topSearch.innerHTML=consultantHtml;
+              }
+              if(radio.id==='type-training') {
+                topSearch.innerHTML=trainingHtml;
+              }
+              if(radio.id==='type-apps') {
+                topSearch.innerHTML=appsHtml;
+              }
+            });
+          });
+    </script>
   </body>
 </html>
