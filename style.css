@@ -469,16 +469,16 @@ color: #000000;
 }
 
 footer {
-  height: 278px;
+  /* height: 278px; */
   background: #0d3451;
 }
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   color: white;
   padding: 2rem 108px;
-  gap: 15rem;
+  /* gap: 15rem; */
 }
 
 .f-left {
@@ -508,12 +508,17 @@ footer {
   color: #ffffff;
 }
 .f-right >div> ul {
+    font-family: 'Inter';
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 17px;  
+  color: #FFFFFF;
+}
+.f-right>div>ul>li{
+  margin-bottom: 6px;
 }
 .f-right {
-  width: 50%;
   font-family: "Inter";
   font-style: normal;
   color: #ffffff;
@@ -522,13 +527,13 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-.f-right>div>ul>span{
+.f-left>span{
   display: flex;
   align-items: center;
   padding: 10px 0;
   gap: 1rem;
 }
-.f-right>div>ul>span>p{
+.f-left>p:last-child{
 font-family: 'Inter';
 font-style: normal;
 font-weight: 600;
@@ -536,7 +541,7 @@ font-size: 20px;
 line-height: 24px;
 color: #FFFFFF;
 }
-.f-right>div>ul>p{
+.f-left>span>p{
 font-family: 'Inter';
 font-style: normal;
 font-weight: 700;
@@ -918,11 +923,12 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 16px;
   }
   footer {
-    gap: 10rem;
+    gap: 3rem;
+    justify-content: space-between;
+    padding:5px 20px;
   }
   .f-left > p {
     width: 185px;
-    height: 132px;
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
@@ -933,14 +939,26 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #FFFFFF;
   }
   .f-left > h2 {
-    width: 130px;
-    height: 26px;
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
+    /* margin-bottom: 0; */
+    padding-bottom: 10px;
     text-transform: capitalize;
     color: #ffffff;
+  }
+  .f-left>span>p{
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+  .f-left>p:last-child{
+    font-size: 14px;
+    margin-bottom: 10px;
   }
   .f-right > h2 {
     width: 70.19px;
