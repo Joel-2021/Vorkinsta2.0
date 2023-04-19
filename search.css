@@ -950,6 +950,8 @@ input::-webkit-inner-spin-button {
     color: #000000;
   }
 
+
   .blur {
-    filter: opacity(39%)
+    filter: opacity(39%);
   }
+}
