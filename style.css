@@ -19,7 +19,7 @@ header {
 }
 .top {
   background-color: #0d3451;
-  height: 118px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   padding: 0 7rem;
@@ -451,10 +451,16 @@ color: #000000;
   border: none;
   font-size: 24px;
   padding-left: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: capitalize;
+
 }
 .newsletter > div > button {
   border: none;
-  width: 232px;
+  width: 173px;
   height: 62px;
   background: #0d3451;
   border-radius: 10px;
@@ -464,7 +470,7 @@ color: #000000;
   font-size: 25px;
   text-transform: capitalize;
   color: #ffffff;
-  margin-left: -235px;
+  margin-left: -175px;
   /* margin-right: 2rem; */
 }
 
