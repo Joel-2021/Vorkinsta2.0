@@ -8,21 +8,32 @@
 .avatar {
   display: none;
 }
-body{
+main{
   max-width: 1500px;
   margin: 0 auto;
 }
+
 header {
+  margin: 0 auto;
   color: white;
   font-family: "Inter", sans-serif;
   font-size: 14px;
+  width: 100%;
 }
-.top {
+
+.top{
   background-color: #0d3451;
   height: 100px;
   display: flex;
+  justify-content:center;
+  padding: 0 105px;
+  align-items: center;
+}
+.top>div{
+  max-width: 1500px;
+  width: 100%;
+  display: flex;
   justify-content: space-between;
-  padding: 0 7rem;
   align-items: center;
 }
 .tabs {
@@ -65,35 +76,40 @@ header {
   color: black;
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 .bottom > div {
   display: flex;
   gap: 1.7rem;
   padding: 0 108px;
+  width: 100%;
+  max-width: 1500px;
 }
 .bottom > div > li {
   list-style: none;
 }
 .hero-section {
   display: flex;
+  margin:0 105px
 }
 .right {
   position: relative;
-  width: 50%;
+  width: 40%;
 }
 .right > img {
   position: absolute;
-  top: -150px;
-  left: 10%;
+  bottom: 0;
+  left: 5%;
 }
 .left {
-  width: 50%;
+  width: 55%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .left > div {
-  margin: 5rem 0rem 0rem 5rem;
+  margin: 5rem 0rem 0rem 0rem;
 }
 .left > div > h1 {
   font-family: "DM Serif Text";
@@ -176,6 +192,7 @@ header {
   display: flex;
   gap: 93px;
   padding-bottom: 2.3rem;
+  color: #0D3451;
 }
 .numbers > div > span {
   font-family: "Jost";
@@ -192,20 +209,26 @@ header {
 
 .companies {
   position: relative;
+  padding: 0 60px 0 105px;
   z-index: 10;
-  background-color: #0b2447;
+  background-color: #E2EDFF;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
   text-transform: capitalize;
-  color: white;
+  color:rgba(13, 52, 81, 1);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 104px;
 }
-
+.companies>span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
 .step {
   width: 521px;
   height: 138px;
@@ -271,7 +294,7 @@ header {
   font-weight: 400;
   font-size: 36px;
   text-transform: capitalize;
-  color: #000000;
+  color: #0D3451;
 }
 
 .vector1 {
@@ -314,7 +337,7 @@ hr {
   display: none;
 }
 .project {
-  margin: 10rem 0;
+  margin: 10rem 0 50px 0;
   height: 333px;
   background-color: #e2edff;
   display: flex;
@@ -358,7 +381,7 @@ hr {
   font-weight: 400;
   font-size: 36px;
   text-transform: capitalize;
-  color: #000000;
+  color: #0D3451;
   margin: 36px auto 2rem auto;
 }
 
@@ -395,22 +418,23 @@ border: 1px solid black;
 }
 .video>h1{
   padding: 1rem;
-  text-align: center;
+  text-align: left;
+  margin-left: 105px;
 font-family: 'DM Serif Text';
 font-style: normal;
 font-weight: 400;
 font-size: 36px;
 text-transform: capitalize;
-
-color: #000000;
+color: #0D3451;
 
 }
 .newsletter {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  align-items: baseline;
+  gap: 1rem;
   background-color: #e2edff;
+  padding-top: 66px;
 }
 .newsletter > div {
   display: flex;
@@ -418,19 +442,19 @@ color: #000000;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  width: 720px;
-  height: 69px;
-  margin-bottom: 50px;
+  width: 390px;
+  height: 42px;
+  margin-bottom: 112px;
 }
 
 .newsletter > h1 {
-  font-family: "DM Serif Text";
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
+  font-weight: 700;
+  font-size: 24px;
   text-transform: capitalize;
-  margin: 37px auto 0px auto;
-  color: #000000;
+  color: #0D3451;
+  /* margin: 37px auto 0px auto; */
 }
 .newsletter>p{
   font-family: "Inter";
@@ -446,47 +470,53 @@ color: #000000;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  width: 720px;
-  height: 69px;
+  width: 390px;
+  height: 42px;
   border: none;
-  font-size: 24px;
+  font-size: 12px;
   padding-left: 10px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   text-transform: capitalize;
-
+}
+::placeholder{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+text-transform: capitalize;
+color: rgba(91, 106, 128, 0.28);
 }
 .newsletter > div > button {
   border: none;
-  width: 173px;
-  height: 62px;
+  width: 107px;
+  height: 37px;
   background: #0d3451;
   border-radius: 10px;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 16px;
+  line-height: 122.02%;
   text-transform: capitalize;
-  color: #ffffff;
-  margin-left: -175px;
-  /* margin-right: 2rem; */
+  color: #FFFFFF;
+  margin-left: -110px;
 }
 
 footer {
-  /* height: 278px; */
   background: #0d3451;
-}
-
-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   color: white;
   padding: 2rem 108px;
-  /* gap: 15rem; */
 }
-
+.f-container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1500px;
+}
 .f-left {
   font-family: "Jost";
   font-style: normal;
@@ -580,22 +610,20 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 38px;
+  align-items: center; 
+  flex-direction: column;
 }
-.recent-job > div > h3 {
+.recent-job> h3 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
   text-transform: capitalize;
-  color: #000000;
+  color: rgba(13, 52, 81, 1);
+  margin-top: 16px;
+  margin-bottom: 10px;
 }
-.recent-job > img {
-  height: 61px;
-  width: 31px;
-}
-.recent-job > div > p {
+.recent-job> p {
   width: 350px;
   height: 61px;
   font-family: "Jost";
@@ -618,7 +646,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-weight: 400;
   font-size: 36px;
   text-transform: capitalize;
-  color: #000000;
+  color:rgba(13, 52, 81, 1);
   margin-bottom: 56px;
 }
 
@@ -930,8 +958,12 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   footer {
     gap: 3rem;
-    justify-content: space-between;
+    justify-content: center;
     padding:5px 20px;
+  }
+  .f-container{
+    display: flex;
+ gap: 4rem;
   }
   .f-left > p {
     width: 185px;
