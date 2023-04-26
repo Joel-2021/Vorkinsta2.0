@@ -1,0 +1,449 @@
+section {
+    width: 100%;
+}
+
+.decription-conatiner {
+    padding: 50px 150px;
+}
+
+.job-conatiner {
+    background: #E2EDFF;
+    padding: 10px 20px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.job-header>span {
+    font-family: 'DM Serif Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 95%;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.job-boby {
+    margin-top: 10px;
+    display: flex;
+}
+
+.job-left {
+    width: 20%;
+    padding: 0 20px;
+}
+
+.job-left>img {
+    width: 136px;
+    height: 136px;
+    border-radius: 50%;
+}
+
+.job-left>p {
+    margin-top: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 122.02%;
+    color: #000000;
+}
+
+.job-left>.job-company-detail {
+    margin-top: 30px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+
+}
+
+.job-left>.job-company-review {
+    margin-top: 30px;
+}
+
+.job-company-review>.review-by {
+    display: flex;
+    gap: 20px;
+}
+
+.review-by>p {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.review-by>label {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.review-by>.star {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.job-left>.job-posted {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-posted>p {
+    font-family: "Jost";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+
+}
+
+.job-posted>label {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+
+
+}
+
+.job-right {
+    padding: 10px 0px 0 10px;
+    width: 80%;
+}
+
+.job-right>.job-right-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.job-right-header>p {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 17px;
+    text-transform: capitalize;
+
+    color: #000000;
+}
+
+.job-right-header>.application {
+    display: flex;
+    align-self: center;
+    gap: 50px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #A6A6A6;
+}
+
+.job-right-body {
+    margin-top: 30px;
+}
+
+.job-right-body>p {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.job-right-body>.more-info {
+    margin-top: 30px;
+    display: flex;
+}
+
+.more-info>.info-section {
+    width: 60%;
+}
+
+.info-section>p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 95%;
+    color: #000000;
+}
+
+.info-section>.skills-section {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 30px;
+}
+
+.skills-section>p {
+    background: rgba(189, 189, 189, 0.58);
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.location {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.location>p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.location>label {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.more-info>.info-section-2 {
+    width: 40%;
+}
+
+.info-section-2 {
+    padding: 0 30px;
+}
+
+table {
+    border-spacing: 0 20px;
+    width: 100%;
+}
+
+tr {
+    border-spacing: 5em;
+}
+
+td {
+    text-align: start;
+}
+
+td>.field-header {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+td>span {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.new-tab {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    align-items: center;
+}
+
+.new-tab>p {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0045AC;
+
+}
+
+.job-right-button {
+    display: flex;
+    gap: 50px;
+}
+
+.job-right-button>.apply-button {
+    padding: 15px 30px;
+    width: 197px;
+    max-height: 51px;
+    background: #0D3451;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    line-height: 15px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+}
+
+.job-right-button>.save-button {
+    padding: 15px 30px;
+    width: 120px;
+    max-height: 51px;
+    background: #FFFFFF;
+    border: 1px solid #0D3451;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    line-height: 15px;
+    text-transform: capitalize;
+    color: #0D3451;
+    outline: none;
+}
+
+.similarJob-container {
+    margin-top: 30px;
+    /* padding: 10px 20px; */
+}
+
+.similarJob-section {
+    display: grid;
+    gap: 20px;
+}
+
+.similarJob-jbox {
+    padding: 20px;
+    background: #D9D9D9;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.box-left {
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    width: 10%;
+}
+
+.box-left>img {
+    width: 74px;
+    height: 74px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.box-left>p {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.box-center {
+    display: grid;
+    align-items: center;
+    gap: 20px;
+}
+
+.box-center>p {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.box-center>span {
+    font-family: 'Jost';
+    font-style: normal;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.box-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-grid>span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 15px;
+    color: #A6A6A6;
+    display: flex;
+    align-items: center;
+
+}
+
+.box-center-grid {
+    display: flex;
+    margin-left: 10px;
+    gap: 60px;
+    align-items: center;
+}
+
+.box-center-grid>span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    line-height: 15px;
+    color: #000000;
+
+}
+
+.box-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-right>.cross {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    /* line-height: 46px; */
+    color: #000000;
+    transform: rotate(-45deg);
+}
