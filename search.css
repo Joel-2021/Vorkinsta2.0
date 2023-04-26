@@ -202,9 +202,6 @@ input[type="radio"] {
   right: 100px;
   height: 500px;
   width: 800px;
-  /* right: 0; */
-  /* right: 800px; */
-  /* transform: translateX(-50%); */
   z-index: 1;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   background-color: #e2edff;
@@ -217,6 +214,8 @@ input[type="radio"] {
   font-size: 36px;
   text-transform: capitalize;
 }
+
+
 
 .job-results {
   display: flex;
