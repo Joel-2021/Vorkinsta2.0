@@ -3,11 +3,11 @@ section {
 }
 
 .decription-conatiner {
-    padding: 50px 150px;
+    padding: 50px 100px;
 }
 
 .job-conatiner {
-    background: #E2EDFF;
+    /* background: #E2EDFF; */
     padding: 10px 20px;
 }
 
@@ -206,14 +206,14 @@ section {
     color: #000000;
 }
 
-.location {
+.location-job {
     margin-top: 30px;
     display: flex;
     align-items: center;
     gap: 100px;
 }
 
-.location>p {
+.location-job>p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -222,7 +222,7 @@ section {
     color: #000000;
 }
 
-.location>label {
+.location-job>label {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
