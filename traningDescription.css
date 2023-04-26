@@ -8,7 +8,8 @@ section {
 
 .job-conatiner {
     /* background: #E2EDFF; */
-    padding: 10px 20px;
+    padding: 10px 20px 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.23);
 }
 
 .job-header {
@@ -33,14 +34,10 @@ section {
 
 .job-left {
     width: 20%;
-    padding: 0 20px;
+    padding: 0 20px 0 50px;
+    border-right: 1px solid rgba(0, 0, 0, 0.23);
 }
 
-.job-left>img {
-    width: 136px;
-    height: 136px;
-    border-radius: 50%;
-}
 
 .job-left>p {
     margin-top: 40px;
@@ -123,7 +120,7 @@ section {
 }
 
 .job-right {
-    padding: 10px 0px 0 10px;
+    padding: 10px 0 0 30px;
     width: 80%;
 }
 
@@ -176,6 +173,7 @@ section {
 
 .more-info>.info-section {
     width: 60%;
+    padding-right: 30px;
 }
 
 .info-section>p {
@@ -289,7 +287,7 @@ td>span {
 
 .job-right-button {
     display: flex;
-    gap: 50px;
+    gap: 80px;
 }
 
 .job-right-button>.apply-button {
