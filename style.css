@@ -1311,6 +1311,12 @@ footer {
 
 
 /* // new css */
+.highlightspan {
+  padding: 3px 3px;
+  background: #e2edff;
+  text-align: center;
+}
+
 
 .howwork-container {
   padding: 20px 100px;
