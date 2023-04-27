@@ -1,0 +1,135 @@
+.publish-container {
+    padding: 0 100px;
+    display: flex;
+}
+
+.publish-left {
+    width: 20%;
+    background: #D9D9D9;
+}
+
+.publish-right {
+    padding: 90px 40px;
+    width: 80%;
+}
+
+.publish-right-container {
+    padding: 0 70px;
+    border: 1px solid black;
+}
+
+.heading-p {
+    text-align: center;
+    font-family: 'DM Serif Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 102.52%;
+    color: #000000;
+    margin-top: 57px;
+
+}
+
+form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.field-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.field-section>label {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 102.52%;
+    color: #000000;
+}
+
+.field-section>input {
+    background: #FFFFFF;
+    height: 45px;
+    outline: none;
+    padding-left: 30px;
+    border: 1px solid #000000;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 102.52%;
+}
+
+.field-section>input::placeholder {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 102.52%;
+}
+
+.field-double {
+    display: flex;
+    gap: 50px;
+}
+
+.field-double>input {
+    width: 264px;
+    height: 45px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+.field-double>select {
+    width: 185px;
+    height: 45px;
+    outline: none;
+    border: 1px solid #000000;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 102.52%;
+    color: #000000;
+    padding-left: 30px;
+}
+
+.field-double>select::-ms-expand {
+    display: none;
+}
+
+.field-section>textarea {
+    resize: none;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 102.52%;
+    outline: none;
+    padding-left: 30px;
+}
+
+.btn-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0 75px;
+}
+
+.btn-section>button {
+    width: 195px;
+    height: 59px;
+    background: #0D3451;
+    border-radius: 10px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 102.52%;
+    border: none;
+    outline: none;
+}
