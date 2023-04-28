@@ -52,79 +52,61 @@
                   <label>Project Budjet(in USD)</label>
                   <div class="field-double">
                     <input type="text" placeholder="$" />
-                    <!-- <select>
-                      <option>Hourly</option>
-                    </select> -->
-                    <div class="custom-select" style="width: 264px">
-                      <select>
-                        <option value="0">Select car:</option>
-                        <option value="1">Audi</option>
-                        <option value="2">BMW</option>
-                        <option value="3">Citroen</option>
-                        <option value="4">Ford</option>
-                        <option value="5">Honda</option>
-                        <option value="6">Jaguar</option>
-                        <option value="7">Land Rover</option>
-                        <option value="8">Mercedes</option>
-                        <option value="9">Mini</option>
-                        <option value="10">Nissan</option>
-                        <option value="11">Toyota</option>
-                        <option value="12">Volvo</option>
-                      </select>
+                    <div class="select-container">
+                      <div class="select-field">
+                        <input type="text" id="select-para" readonly />
+                        <img
+                          src="/assets/Downmenu.png"
+                          alt=""
+                          id="select-open"
+                        />
+                      </div>
+                      <div id="select-menu">
+                        <li class="select-li">Daily</li>
+                        <li class="select-li">Hourly</li>
+                        <li class="select-li">Monthly</li>
+                        <li class="select-li">Yearly</li>
+                      </div>
                     </div>
-                    <img src="/assets/Downmenu.png" alt="" class="select-img" />
                   </div>
                 </div>
                 <div class="field-section">
                   <label>Job Type</label>
                   <div class="field-double">
-                    <!-- <select style="width: 264px">
-                      <option>Freelance</option>
-                    </select> -->
-                    <div class="custom-select" style="width: 264px">
-                      <select>
-                        <option value="0">Select car:</option>
-                        <option value="1">Audi</option>
-                        <option value="2">BMW</option>
-                        <option value="3">Citroen</option>
-                        <option value="4">Ford</option>
-                        <option value="5">Honda</option>
-                        <option value="6">Jaguar</option>
-                        <option value="7">Land Rover</option>
-                        <option value="8">Mercedes</option>
-                        <option value="9">Mini</option>
-                        <option value="10">Nissan</option>
-                        <option value="11">Toyota</option>
-                        <option value="12">Volvo</option>
-                      </select>
+                    <div class="select-container">
+                      <div class="select-field" style="width: 264px">
+                        <input type="text" id="select-para-1" readonly />
+                        <img
+                          src="/assets/Downmenu.png"
+                          alt=""
+                          id="select-open-1"
+                        />
+                      </div>
+                      <div id="select-menu-1">
+                        <li class="select-li-1">Freelancer</li>
+                        <li class="select-li-1">Consultants</li>
+                        <li class="select-li-1">Recruiter</li>
+                      </div>
                     </div>
-                    <img src="/assets/Downmenu.png" alt="" class="select-img" />
                   </div>
                 </div>
                 <div class="field-section">
                   <label>Number of Consultants</label>
                   <div class="field-double">
-                    <!-- <select>
-                      <option>1</option>
-                    </select> -->
-                    <div class="custom-select" style="width: 180px">
-                      <select>
-                        <option value="0">Select car:</option>
-                        <option value="1">Audi</option>
-                        <option value="2">BMW</option>
-                        <option value="3">Citroen</option>
-                        <option value="4">Ford</option>
-                        <option value="5">Honda</option>
-                        <option value="6">Jaguar</option>
-                        <option value="7">Land Rover</option>
-                        <option value="8">Mercedes</option>
-                        <option value="9">Mini</option>
-                        <option value="10">Nissan</option>
-                        <option value="11">Toyota</option>
-                        <option value="12">Volvo</option>
-                      </select>
+                    <div class="select-container">
+                      <div class="select-field" style="width: 180px">
+                        <input type="text" id="select-para-2" readonly />
+                        <img
+                          src="/assets/Downmenu.png"
+                          alt=""
+                          id="select-open-2"
+                        />
+                      </div>
+                      <div id="select-menu-2">
+                        <li class="select-li-2">1</li>
+                        <li class="select-li-2">2</li>
+                      </div>
                     </div>
-                    <img src="/assets/Downmenu.png" alt="" class="select-img" />
                   </div>
                 </div>
                 <div class="field-section">
@@ -261,6 +243,56 @@
         }
       }
       document.addEventListener('click', closeAllSelect);
+    </script>
+    <script>
+      const show = document.getElementById('select-open');
+      const btn = document.getElementById('select-menu');
+      const li = document.querySelectorAll('.select-li');
+      const displayElement = document.getElementById('select-para');
+      show.addEventListener('click', function () {
+        if ((btn.style.display = 'none')) {
+          btn.style.display = 'block';
+        }
+      });
+      li.forEach(function (slect) {
+        slect.addEventListener('click', function () {
+          const textContent = this.textContent;
+          displayElement.value = textContent;
+          btn.style.display = 'none';
+        });
+      });
+      const show1 = document.getElementById('select-open-1');
+      const btn1 = document.getElementById('select-menu-1');
+      const li1 = document.querySelectorAll('.select-li-1');
+      const displayElement1 = document.getElementById('select-para-1');
+      show1.addEventListener('click', function () {
+        if ((btn1.style.display = 'none')) {
+          btn1.style.display = 'block';
+        }
+      });
+      li1.forEach(function (slect) {
+        slect.addEventListener('click', function () {
+          const textContent = this.textContent;
+          displayElement1.value = textContent;
+          btn1.style.display = 'none';
+        });
+      });
+      const show2 = document.getElementById('select-open-2');
+      const btn2 = document.getElementById('select-menu-2');
+      const li2 = document.querySelectorAll('.select-li-2');
+      const displayElement2 = document.getElementById('select-para-2');
+      show2.addEventListener('click', function () {
+        if ((btn2.style.display = 'none')) {
+          btn2.style.display = 'block';
+        }
+      });
+      li2.forEach(function (slect) {
+        slect.addEventListener('click', function () {
+          const textContent = this.textContent;
+          displayElement2.value = textContent;
+          btn2.style.display = 'none';
+        });
+      });
     </script>
   </body>
 </html>
