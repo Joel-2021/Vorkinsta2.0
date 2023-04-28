@@ -84,9 +84,24 @@ form {
     outline: none;
     border-radius: 10px;
     border: none;
+    padding-left: 30px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 102.52%;
 }
 
-.field-double>select {
+
+.field-double>input::placeholder {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 102.52%;
+}
+
+/* .field-double>select {
     width: 185px;
     height: 45px;
     background: rgba(165, 173, 186, 0.42);
@@ -98,13 +113,18 @@ form {
     font-weight: 300;
     font-size: 20px;
     line-height: 102.52%;
-    color: #000000;
+    color: rgba(165, 173, 186, -0.2) !important;
     padding-left: 30px;
+    background-image: url("assets/Downmenu.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: 90% !important;
 }
 
-.field-double>select::-ms-expand {
-    display: none;
-}
+select {
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+} */
 
 .field-section>textarea {
     resize: none;
@@ -117,7 +137,7 @@ form {
     outline: none;
     border-radius: 10px;
     border: none;
-    padding-left: 30px;
+    padding: 30px 30px;
 }
 
 .btn-section {
@@ -138,4 +158,79 @@ form {
     line-height: 102.52%;
     border: none;
     outline: none;
+}
+
+.select-img {
+    position: relative;
+    top: 15px;
+    right: 90px;
+    /* object-fit: cover; */
+    width: 25px;
+    height: 15px;
+}
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+}
+
+.custom-select select {
+    display: none;
+}
+
+.select-selected {
+    text-align: start;
+    height: 45px;
+    background-color: rgba(165, 173, 186, 0.42);
+}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    z-index: 999;
+    border-color: #fff transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+.select-items div,
+.select-selected {
+    color: black;
+    padding: 13px 16px;
+    text-align: start;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 102.52%;
+    color: #A5ADBA;
+    border-radius: 10px;
+
+}
+
+.select-items {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
 }

@@ -26,7 +26,7 @@
   display: none;
 }
 
-form > h1 {
+form>h1 {
   padding-bottom: 30px;
   font-family: "DM Serif Text";
   font-style: normal;
@@ -38,7 +38,7 @@ form > h1 {
   color: #000000;
 }
 
-.profile-pic-div > img {
+.profile-pic-div>img {
   width: 330px;
   height: 289px;
   border-radius: 50%;
@@ -67,6 +67,7 @@ form > h1 {
   padding-top: 20px;
   gap: 30px;
 }
+
 .box-content {
   width: 100%;
   display: flex;
@@ -75,7 +76,7 @@ form > h1 {
   gap: 30px;
 }
 
-.box-content > input,
+.box-content>input,
 #phone,
 textarea {
   padding: 20px;
@@ -92,7 +93,7 @@ textarea {
   color: rgb(0, 0, 0);
 }
 
-form > button {
+form>button {
   width: 395px;
   height: 71px;
   font-family: "Jost";
@@ -120,7 +121,7 @@ form > button {
   font-size: 20px !important;
   line-height: 24px !important;
   color: #a5adba !important;
-  background-image: url("assets/arrowdown.png") !important;
+  background-image: url("assets/Downmenu.png") !important;
   background-repeat: no-repeat !important;
   background-position: 97% !important;
   /* color: rgb(0, 0, 0) !important; */
@@ -134,7 +135,7 @@ input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.box-content > label {
+.box-content>label {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -186,9 +187,11 @@ select {
   padding-top: 5px;
   resize: none;
 }
+
 textarea {
   resize: vertical;
 }
+
 input[type="file"] {
   padding-left: 0px;
   padding: 13px;
