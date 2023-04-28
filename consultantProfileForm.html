@@ -64,7 +64,10 @@
         <form>
           <h1>Profile</h1>
           <div class="profile-pic-div">
-            <img src="assets/carlos-magno-sTORW_4vrwg-unsplash-removebg-preview 1.png" id="photo" />
+            <img
+              src="assets/carlos-magno-sTORW_4vrwg-unsplash-removebg-preview 1.png"
+              id="photo"
+            />
             <input type="file" id="file" />
             <label class="label1" id="uploadBtn" for="file"
               >Upload Photo
@@ -108,7 +111,6 @@
                 class="chosen-select chosen-results"
                 multiple
               >
-        
                 <option>English</option>
                 <option>Hindi</option>
                 <option>Kannada</option>
@@ -254,29 +256,29 @@
       </div>
     </footer>
     <script>
-      const imgDiv = document.querySelector(".profile-pic-div");
-      const img = document.querySelector("#photo");
-      const file = document.querySelector("#file");
-      const uploadBtn = document.querySelector("#uploadBtn");
-      file.addEventListener("change", function () {
+      const imgDiv = document.querySelector('.profile-pic-div');
+      const img = document.querySelector('#photo');
+      const file = document.querySelector('#file');
+      const uploadBtn = document.querySelector('#uploadBtn');
+      file.addEventListener('change', function () {
         const choosedfile = this.files[0];
         if (choosedfile) {
           const reader = new FileReader();
-          reader.addEventListener("load", function () {
-            img.setAttribute("src", reader.result);
+          reader.addEventListener('load', function () {
+            img.setAttribute('src', reader.result);
           });
           reader.readAsDataURL(choosedfile);
         }
       });
-      const phoneInputField = document.querySelector("#phone");
+      const phoneInputField = document.querySelector('#phone');
       const phoneInput = window.intlTelInput(phoneInputField, {
         utilsScript:
-          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+          'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js',
       });
-      $(".chosen-select").chosen({
-        no_results_text: "Oops, nothing found!",
+      $('.chosen-select').chosen({
+        no_results_text: 'Oops, nothing found!',
       });
-      console.log(country_and_state.country)
+      console.log(country_and_state.country);
     </script>
   </body>
 </html>
