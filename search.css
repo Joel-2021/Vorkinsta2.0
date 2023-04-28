@@ -177,44 +177,7 @@ input::placeholder {
   flex-direction: column;
 }
 
-.category>h1 {
-  margin-bottom: 55px;
-  align-self: flex-start;
-
-  font-family: "DM Serif Text";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  text-transform: capitalize;
-  color: #000000;
-}
-
-.category-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 216px;
-  height: 216px;
-  background: #e2edff;
-  border-radius: 10px;
-}
-
-.category-items>p {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 200;
-  font-size: 32px;
-  padding: 22px 0;
-  text-transform: capitalize;
-  color: #000000;
-}
-
 /* Result Page*/
-.result {
-  margin: 0 108px;
-}
-
 .result>div {
   display: flex;
   justify-content: space-between;
@@ -227,7 +190,7 @@ input::placeholder {
 }
 
 .filter {
-  position: absolute;
+  /* position: absolute; */
   right: 100px;
   height: 500px;
   width: 800px;
@@ -331,7 +294,6 @@ input::placeholder {
   color: #000000;
   width: 100%;
   align-items: center;
-  gap: 10rem;
 }
 
 .info>div {
