@@ -37,6 +37,7 @@ line-height: 122.02%;
 text-transform: capitalize;
 color: #000000;
 padding-left: 33px;
+font-size: 18px;
 }
 .sidebar>div:last-child{
   margin-bottom: 230px;
