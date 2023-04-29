@@ -209,7 +209,7 @@ header {
   color: white;
 }
 
-.numbers {
+/* .numbers {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
@@ -232,6 +232,50 @@ header {
 .numbers>div {
   display: flex;
   flex-direction: column;
+} */
+
+.bottom-hero-s {
+  position: relative;
+  top: 70px;
+}
+
+.info-wer {
+  position: relative;
+  padding: 0 60px 0 105px;
+  z-index: 10;
+  background-color: #E2EDFF;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  text-transform: capitalize;
+  color: rgba(13, 52, 81, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 104px;
+}
+
+.info-menu-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
+}
+
+.info-menu-box>span {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #000000;
 }
 
 .companies {
@@ -1313,8 +1357,9 @@ footer {
 
 /* // new css */
 .highlightspan {
-  padding: 3px 3px;
-  background: #e2edff;
+  padding: 5px 10px;
+  background: #E2EDFF;
+  border-radius: 5px;
   text-align: center;
 }
 
