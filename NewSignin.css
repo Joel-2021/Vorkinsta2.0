@@ -1,0 +1,207 @@
+.signup-section {
+    margin: 25px 105px;
+}
+
+.sign-container {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 50px 65px;
+    gap: 150px;
+}
+
+.sign-left {
+    width: 50%;
+    text-align: center;
+}
+
+.sign-left>p {
+    font-family: 'DM Serif Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 102.52%;
+    color: #0D3451;
+    margin-bottom: 35px;
+}
+
+.sign-left>img {
+    width: 441px;
+    height: 462px;
+}
+
+.sign-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.sign-options>p {
+    font-family: 'DM Serif Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 122.02%;
+    text-transform: capitalize;
+}
+
+.sign-options>span {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #0D3451;
+}
+
+.sgn-goggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    margin-top: 35px;
+    background: #F5F5F5;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.sgn-goggle>p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.divider>hr {
+    border: 1px solid #73899A;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+form>input {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    height: 49px;
+    padding-left: 30px;
+}
+
+input::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+form>span {
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: underline;
+    color: #000000;
+}
+
+form>p {
+    text-align: center;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: #BDBDBD;
+}
+
+form>p>a {
+    color: rgba(48, 98, 173, 0.8);
+}
+
+.captach {
+    width: 230px;
+    height: 59px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.captach>p {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.captach>input {
+    width: 20px;
+    height: 20px;
+}
+
+form>.sign-btn {
+    width: 183px;
+    height: 49px;
+    background: #0D3451;
+    border-radius: 10px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.forget-info {
+    margin-top: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+
+}
+
+.forget-btn {
+    width: 340px;
+    height: 49px;
+    background: #0D3451;
+    border-radius: 10px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.forget-form {
+    margin-top: 15px;
+    gap: 30px;
+}
