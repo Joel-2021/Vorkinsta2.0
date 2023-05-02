@@ -5,10 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .container {
   display: flex;
-  margin: 0 auto;
-  /* min-height: 771px; */
+  margin: 30px 105px;
   max-width: 1478px;
 }
 
@@ -20,25 +20,31 @@
   align-items: center;
   flex-direction: column;
 }
-.left > h3 {
+
+.left>h3 {
   font-family: "DM Serif Text";
   font-style: normal;
   font-weight: 400;
   font-size: 64px;
   line-height: 102.52%;
   color: #0d3451;
+  margin-bottom: 30px;
 }
+
 .right {
+  padding: 40px 0;
   width: 50%;
   background-color: #0d3451;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.right > img {
+
+.right>img {
   margin: 51px 0;
 }
-.right > div {
+
+.right>div {
   font-family: "Jost";
   font-style: normal;
   font-weight: 400;
@@ -47,16 +53,18 @@
   color: #ffffff;
   margin-bottom: 51px;
 }
-.right > div > a {
+
+.right>div>a {
   font-family: "DM Serif Text";
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   text-transform: capitalize;
-  color: #778a98;
+  color: #a5D7E8;
   text-decoration: none;
   margin: 0 1rem;
 }
+
 form {
   display: flex;
   justify-content: center;
@@ -64,29 +72,33 @@ form {
   width: 90%;
   gap: 34px;
 }
-form > div {
+
+form>div {
   width: 100%;
   display: flex;
   gap: 1rem;
 }
-form > div > input {
+
+form>div>input {
   width: 100%;
 }
+
 input[type="text"],
 input[type="email"],
 input[type="password"] {
   height: 49px;
-  background: rgba(255, 255, 255, 0.42);
   border-radius: 10px;
   border: none;
-  color: #fff;
+  /* color: #fff; */
   font-size: 20px;
   padding: 0 1rem;
   outline: none;
 }
+
 input:focus {
   outline: 1px solid white;
 }
+
 input::placeholder {
   font-family: "Jost";
   font-style: normal;
@@ -98,13 +110,18 @@ input::placeholder {
 
 #thing {
   border-radius: 0;
-  -webkit-appearance: none; /* removes the default appearance */
+  -webkit-appearance: none;
+  /* removes the default appearance */
   -moz-appearance: none;
   appearance: none;
-  border: 1px solid #fff; /* sets the white border */
-  background-color: transparent; /* sets the transparent background */
-  width: 24px; /* sets the width of the checkbox */
-  height: 24px; /* sets the height of the checkbox */
+  border: 1px solid #fff;
+  /* sets the white border */
+  background-color: transparent;
+  /* sets the transparent background */
+  width: 24px;
+  /* sets the width of the checkbox */
+  height: 24px;
+  /* sets the height of the checkbox */
 }
 
 #thing:checked::before {
@@ -130,13 +147,15 @@ label {
   line-height: 29px;
   color: #bdbdbd;
 }
+
 .buttons {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 57px;
   padding-right: 60px;
 }
-.buttons > button {
+
+.buttons>button {
   width: 183px;
   height: 49px;
   background: #a5d7e8;
@@ -150,18 +169,20 @@ label {
   border: none;
 }
 
-.buttons > p {
+.buttons>p {
   font-family: "Jost";
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 29px;
   color: #bdbdbd;
 }
-.buttons > p > a {
+
+.buttons>p>a {
   color: rgba(48, 98, 173, 1);
 }
-.right > div > a.active {
+
+.right>div>a.active {
   color: #ffffff;
   border-bottom: 3px solid #a5d7e8;
 }
@@ -171,6 +192,7 @@ label {
   padding: 51px 0;
   gap: 30px;
 }
+
 hr {
   border: none;
   border-top: 1px solid #73899a;
@@ -178,6 +200,7 @@ hr {
   text-align: center;
   height: 5px;
 }
+
 hr:after {
   background: #0d3451;
   color: #73899a;
@@ -190,37 +213,45 @@ hr:after {
   font-weight: 400;
   font-size: 20px;
   line-height: 29px;
-
   color: #ffffff;
 }
+
 .hero-section {
   display: none;
 }
+
 @media screen and (max-width: 430px) {
   .container {
     min-height: 100vh;
   }
+
   .left {
     display: none;
   }
+
   .right {
     width: 100%;
   }
-  .right>img{
+
+  .right>img {
     margin: 25px 0;
   }
-  .right>div{
+
+  .right>div {
     margin-bottom: 25px;
   }
-  .right>div>a{
-font-size: 20px;
+
+  .right>div>a {
+    font-size: 20px;
   }
+
   .hero-section {
     display: block;
     position: relative;
     padding: 0;
     margin: 0;
   }
+
   #hero-img {
     position: absolute;
     top: 50%;
@@ -228,17 +259,23 @@ font-size: 20px;
     transform: translate(-50%, -50%);
     z-index: 10;
   }
-  form{
-    gap:30px
+
+  form {
+    gap: 30px
   }
-  input[type=text],input[type=email],input[type=password]{
+
+  input[type=text],
+  input[type=email],
+  input[type=password] {
     height: 40px;
   }
+
   .buttons {
     padding-right: 0;
-    margin-bottom: 40px ;
+    margin-bottom: 40px;
   }
-  .buttons > button {
+
+  .buttons>button {
     width: 99px;
     height: 37px;
     font-family: "Jost";
@@ -249,7 +286,8 @@ font-size: 20px;
 
     color: #000000;
   }
-  .buttons > p {
+
+  .buttons>p {
     font-family: "Jost";
     font-style: normal;
     font-weight: 600;
@@ -257,7 +295,8 @@ font-size: 20px;
     line-height: 20px;
     color: #bdbdbd;
   }
-  .icons{
+
+  .icons {
     padding: 45px 0;
   }
 }
