@@ -104,18 +104,14 @@ header {
 
 .hero-section {
   display: flex;
-  margin: 0 105px
+  margin: 0 105px;
+  position: relative;
 }
 
 .right {
-  position: relative;
-  width: 40%;
-}
-
-.right>img {
   position: absolute;
-  top: 10px;
-  left: 5%;
+  left:60%;
+  top:40px
 }
 
 .left {
@@ -125,7 +121,7 @@ header {
   align-items: center;
 }
 
-.left>div {
+.left>div:first-child {
   margin: 5rem 0rem 0rem 0rem;
 }
 
@@ -134,6 +130,7 @@ header {
   font-style: normal;
   font-weight: 400;
   font-size: 64px;
+  width:590px;
   color: #0b2447;
 }
 
@@ -188,6 +185,7 @@ header {
   font-size: 14px;
   line-height: 20px;
   padding: 26px 0;
+  width: 585px;
 }
 
 .buttons {
@@ -209,14 +207,14 @@ header {
   color: white;
 }
 
-/* .numbers {
+.numbers {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 44px;
   display: flex;
-  gap: 93px;
+  gap: 2.5rem;
   padding-bottom: 2.3rem;
   color: #0D3451;
 }
@@ -232,7 +230,7 @@ header {
 .numbers>div {
   display: flex;
   flex-direction: column;
-} */
+}
 
 .bottom-hero-s {
   position: relative;
@@ -241,7 +239,7 @@ header {
 
 .info-wer {
   position: relative;
-  padding: 0 60px 0 105px;
+  padding: 0 105px 0 105px;
   z-index: 10;
   background-color: #E2EDFF;
   font-family: "Inter";
@@ -280,7 +278,7 @@ header {
 
 .companies {
   position: relative;
-  padding: 0 60px 0 105px;
+  padding: 0 105px 0 105px;
   z-index: 10;
   background-color: #E2EDFF;
   font-family: "Inter";
@@ -492,7 +490,7 @@ hr {
   font-size: 36px;
   text-transform: capitalize;
   color: #0D3451;
-  margin: 36px auto 2rem auto;
+  margin: 51px auto 51px auto;
 }
 
 .recent>button,
@@ -527,7 +525,7 @@ iframe {
 
 .yt {
   padding: 1rem;
-  margin: 1rem;
+  margin: 1rem 1rem 50px 1rem;
   text-align: center;
 }
 
@@ -551,6 +549,8 @@ iframe {
   gap: 1rem;
   background-color: #e2edff;
   padding-top: 66px;
+  margin-bottom:50px;
+  height: 151px;
 }
 
 .newsletter>div {
@@ -733,10 +733,11 @@ footer {
 
 .job-result {
   display: flex;
-  background: #d9d9d9;
+  background: #fff;
   border-radius: 10px;
   padding: 12px 40px;
   margin-bottom: 50px;
+  border: 1px solid black;
 }
 
 .location {
