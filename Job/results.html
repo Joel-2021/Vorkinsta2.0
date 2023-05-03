@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="search.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./search.css" />
     <title>Vorkinsta</title>
   </head>
   <body>
@@ -34,18 +34,21 @@
     </header>
     <main>
       <section class="search">
-        <div class="sidebar">
-          <h3>Job Status</h3>
-          <div class="options">
-            <span></span><a href="">In Progress</a>
+        <div class="job-nav">
+          <div class="status">
+            <h3>Job Status</h3>
+            <ul>
+              <li><a href="./Jobinprogress.html">In Progress</a></li>
+              <li><a href="./NotHired.html">Not Hired</a></li>
+              <li><a href="">Saved</a></li>
+              <li><a href="./UnderReview.html">Under Review</a></li>
+            </ul>
           </div>
-          <div class="options"><span></span><a href="">Not Hired</a></div>
-          <div class="options"><span></span><a href="">Archieved</a></div>
-          <div class="options"><span></span><a href="">Under Review</a></div>
-          <h3>Activites</h3>
-          <div><a href="">Publish a new job</a></div>
+          <div class="activity">
+            <h3>Activities</h3>
+         <li><a href="">Publish a job</a></li>
+          </div>
         </div>
-        <div class="search-right">
           <form action="">
             <input type="text" name="" id="job" placeholder="Search here..." />
             <div class="vr"></div>
@@ -375,7 +378,7 @@
                   <img src="assets/ribbon 1.png" alt="" />
                 </div>
               </div>
-            </div>
+            <!-- </div> -->
           </section>
         </div>
       </section>
