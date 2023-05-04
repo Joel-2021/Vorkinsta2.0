@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="./search.css" />
+    <link rel="stylesheet" href="./PublishJob.css" />
     <title>Vorkinsta</title>
   </head>
   <body>
@@ -13,10 +14,10 @@
       <div class="top">
           <div>
               <div class="avatar">
-                  <img src="/assets/Ellipse 23.png" alt="" />
+                  <img src="../assets/Ellipse 23.png" alt="" />
               </div>
               <div class="logo">
-                  <img src="./assets/image 9.png" alt="" srcset="" />
+                  <img src="../assets/image 9.png" alt="" srcset="" />
               </div>
               <div class="tabs">
                   <li class="active"><a>My Jobs</a></li>
@@ -24,11 +25,11 @@
                   <li><a>Search Consultant</a></li>
                   <li><a>Apps</a></li>
                   <li><a>Trainings</a></li>
-                  <li><img src="assets/notification.png" alt="" /></li>
-                  <li><img src="assets/Ellipse 23.png" alt="" /></li>
+                  <li><img src="../assets/notification.png" alt="" /></li>
+                  <li><img src="../assets/Ellipse 23.png" alt="" /></li>
               </div>
               <div class="hamburger">
-                  <img src="/assets/Group 63.png" alt="" srcset="" />
+                  <img src="../assets/Group 63.png" alt="" srcset="" />
               </div>
           </div>
       </div>
@@ -47,7 +48,7 @@
           </div>
           <div class="activity">
             <h3>Activities</h3>
-         <li><a href="">Publish a job</a></li>
+         <li><a href="" id="publish-job">Publish a job</a></li>
           </div>
         </div>
           <form action="">
@@ -78,6 +79,88 @@
             </div>
           </div>
         </section>
+        <div class="publish-right-container" style="display: none">
+          <p class="heading-p">Publish a Job</p>
+          <form class="publish-form">
+            <div class="field-section">
+              <label>Tittle</label>
+              <input type="text" placeholder="Job Tittle" />
+            </div>
+            <div class="field-section">
+              <label>Skills</label>
+              <input type="text" placeholder="Job Tittle" />
+            </div>
+            <div class="field-section">
+              <label>Project Budjet(in USD)</label>
+              <div class="field-double">
+                <input type="text" placeholder="$" />
+                <div class="select-container">
+                  <div class="select-field">
+                    <input type="text" id="select-para" readonly />
+                    <img src="/assets/Downmenu.png" alt="" id="select-open" />
+                  </div>
+                  <div id="select-menu">
+                    <li class="select-li">Daily</li>
+                    <li class="select-li">Hourly</li>
+                    <li class="select-li">Monthly</li>
+                    <li class="select-li">Yearly</li>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field-section">
+              <label>Job Type</label>
+              <div class="field-double">
+                <div class="select-container">
+                  <div class="select-field" style="width: 264px">
+                    <input type="text" id="select-para-1" readonly />
+                    <img src="/assets/Downmenu.png" alt="" id="select-open-1" />
+                    <img
+                      src="/assets/Downmenu.png"
+                      alt=""
+                      id="select-close-1"
+                      style="display: none; rotate: 180deg"
+                    />
+                  </div>
+                  <div id="select-menu-1">
+                    <li class="select-li-1">Freelancer</li>
+                    <li class="select-li-1">Consultants</li>
+                    <li class="select-li-1">Recruiter</li>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field-section">
+              <label>Number of Consultants</label>
+              <div class="field-double">
+                <div class="select-container">
+                  <div class="select-field" style="width: 180px">
+                    <input type="text" id="select-para-2" readonly />
+                    <img src="/assets/Downmenu.png" alt="" id="select-open-2" />
+                  </div>
+                  <div id="select-menu-2">
+                    <li class="select-li-2">1</li>
+                    <li class="select-li-2">2</li>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field-section">
+              <label>Description</label>
+              <textarea name="" id="" cols="40" rows="11"></textarea>
+            </div>
+            <div class="btn-section">
+              <button
+                style="background-color: #0d3451; color: white; border: none"
+              >
+                Publish
+              </button>
+              <button style="color: black; background-color: #fff" id="cancel">
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
     </main>
     <footer>
       <div class="f-container">
@@ -126,5 +209,6 @@
         </div>
       </div>
     </footer>
+    <script src="./scripts.js"></script>
   </body>
 </html>

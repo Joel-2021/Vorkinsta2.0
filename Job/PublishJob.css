@@ -1,220 +1,245 @@
 .publish-container {
-    padding: 0 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
 .publish-right {
-    padding: 90px 40px;
-    width: 80%;
+  padding: 90px 40px;
+  width: 80%;
 }
 
 .publish-right-container {
-    padding: 0 70px;
-    border: 1px solid black;
+  padding: 0 70px;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  position: absolute;
+  z-index: 14;
+  background-color: #fff;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-box-shadow: 3px 4px 30px 5px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: 3px 4px 30px 5px rgba(0, 0, 0, 0.62);
+  box-shadow: 3px 4px 30px 5px rgba(0, 0, 0, 0.62);
 }
 
 .heading-p {
-    text-align: center;
-    font-family: 'DM Serif Text';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 102.52%;
-    color: #0D3451;
-    margin-top: 57px;
-
+  text-align: center;
+  font-family: "DM Serif Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 102.52%;
+  color: #0d3451;
+  margin-top: 57px;
 }
 
-form {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.publish-form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .field-section {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.field-section>label {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 102.52%;
-    color: #0D3451;
+.field-section > label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 102.52%;
+  color: #0d3451;
 }
 
-.field-section>input {
-    background: rgba(165, 173, 186, 0.42);
-    outline: none;
-    border-radius: 10px;
-    border: none;
-    height: 45px;
-    padding-left: 30px;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 102.52%;
+.field-section > input {
+  background: rgba(165, 173, 186, 0.42);
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  height: 45px;
+  padding-left: 30px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 102.52%;
+}
+.field-section>textarea{
+    resize: vertical;
+    max-height: 200px;
 }
 
-.field-section>input::placeholder {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 102.52%;
+.field-section > input::placeholder {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 102.52%;
 }
-
+.blur{
+    filter: blur(10px);
+}
 .field-double {
-    display: flex;
-    gap: 50px;
+  display: flex;
+  gap: 50px;
 }
 
-.field-double>input {
-    width: 264px;
-    height: 45px;
-    background: rgba(165, 173, 186, 0.42);
-    outline: none;
-    border-radius: 10px;
-    border: none;
-    padding-left: 30px;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 102.52%;
+.field-double > input {
+  width: 264px;
+  height: 45px;
+  background: rgba(165, 173, 186, 0.42);
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  padding-left: 30px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 102.52%;
 }
 
-
-.field-double>input::placeholder {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 102.52%;
+.field-double > input::placeholder {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 102.52%;
 }
 
 .select-container {
-    position: relative;
+  position: relative;
 }
 
 .select-field {
-    padding: 5px 20px;
-    height: 45px;
-    border-radius: 10px;
-    background: rgba(165, 173, 186, 0.42);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 5px 20px;
+  height: 45px;
+  border-radius: 10px;
+  background: rgba(165, 173, 186, 0.42);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.select-field>input {
-    height: 100%;
-    width: 90%;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    padding-left: 10px;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 102.52%;
+.select-field > input {
+  height: 100%;
+  width: 90%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding-left: 10px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 102.52%;
 }
 
 #select-menu {
-    display: none;
-    width: 264px;
-    position: absolute;
-    margin-top: 5px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: #fff;
-    z-index: 999;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: none;
+  width: 264px;
+  position: absolute;
+  margin-top: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #fff;
+  z-index: 999;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#select-menu>li {
-    padding: 7.5px 10px 7.5px;
-    list-style: none;
-    margin: 0 0 5px;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 102.52%;
-    color: black;
-
+#select-menu > li {
+  padding: 7.5px 10px 7.5px;
+  list-style: none;
+  margin: 0 0 5px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 102.52%;
+  color: black;
 }
 
-#select-menu>li:hover {
-    color: #0D3451;
-    background-color: rgba(165, 173, 186, 0.42);
+#select-menu > li:hover {
+  color: #0d3451;
+  background-color: rgba(165, 173, 186, 0.42);
 }
 
 #select-menu-1 {
-    display: none;
-    width: 264px;
-    position: absolute;
-    margin-top: 5px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    z-index: 999;
+  display: none;
+  width: 264px;
+  position: absolute;
+  margin-top: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 999;
 }
 
 #select-menu-2 {
-    display: none;
-    width: 264px;
-    position: absolute;
-    margin-top: 5px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    z-index: 999;
+  display: none;
+  width: 264px;
+  position: absolute;
+  margin-top: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 999;
 }
 
-#select-menu-1>li {
-    padding: 7.5px 10px 7.5px;
-    list-style: none;
-    margin: 0 0 5px;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 102.52%;
-    color: black;
-
+#select-menu-1 > li {
+  padding: 7.5px 10px 7.5px;
+  list-style: none;
+  margin: 0 0 5px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 102.52%;
+  color: black;
 }
 
-#select-menu-1>li:hover {
-    color: #0D3451;
-    background-color: rgba(165, 173, 186, 0.42);
+#select-menu-1 > li:hover {
+  color: #0d3451;
+  background-color: rgba(165, 173, 186, 0.42);
 }
 
-#select-menu-2>li {
-    padding: 7.5px 10px 7.5px;
-    list-style: none;
-    margin: 0 0 5px;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 102.52%;
-    color: black;
-
+#select-menu-2 > li {
+  padding: 7.5px 10px 7.5px;
+  list-style: none;
+  margin: 0 0 5px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 102.52%;
+  color: black;
 }
 
-#select-menu-2>li:hover {
-    color: #0D3451;
-    background-color: rgba(165, 173, 186, 0.42);
+#select-menu-2 > li:hover {
+  color: #0d3451;
+  background-color: rgba(165, 173, 186, 0.42);
+}
+
+.btn-section {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 75px;
+}
+.btn-section > button {
+  width: 195px;
+  height: 59px;
+  border-radius: 10px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
 }
