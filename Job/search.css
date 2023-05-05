@@ -100,8 +100,8 @@ padding-bottom: 60px;
 
 i {
   position: absolute;
-  margin: 15px 10px;
-  min-width: 40px;
+  margin: 15px 10px !important;
+  min-width: 40px !important; 
 }
 
 #location {

@@ -132,6 +132,7 @@
   height: 45px !important;
   border-radius: 10px !important;
   border: 1px solid black !important;
+  align-items: center !important;
 }
 
 .btn-section {

@@ -666,6 +666,10 @@ footer {
 .f-right>div>ul>li {
   margin-bottom: 6px !important;
 }
+.f-right>div>ul>li>a{
+  text-decoration: none;
+  color:#FFFFFF
+}
 
 .f-right {
   font-family: "Inter";

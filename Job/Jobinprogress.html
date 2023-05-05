@@ -162,68 +162,41 @@
               <input type="text" placeholder="Job Tittle" />
             </div>
             <div class="field-section">
-              <select data-role="select" multiple id="skill">
-                
-                    <option value="dedicated_corei3_hp">Core i3 (hp)</option>
-                    <option value="dedicated_pentium_hp">Pentium (hp)</option>
-                    <option value="dedicated_smart_corei3_hp">Smart Core i3 (hp)</option>
-              
-              
-                    <option value="mini">Mini</option>
-                    <option value="site">Site</option>
-                    <option value="portal">Portal</option>
-              
-
-                    <option value="evps0">eVPS-TEST (30 дней)</option>
-                    <option value="evps1" selected="selected">eVPS-1</option>
-                    <option value="evps2">eVPS-2</option>
-              
-            </select>
+              <label>Skills</label>
+              <select data-role="select" multiple id="skill" placeholder=" skill">
+                <option value="Skill">Skill</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="HML">HTML</option>
+                <option value="CSS">CSS</option>
+              </select>
             </div>
             <div class="field-section">
               <label>Project Budget(in USD)</label>
               <div class="field-double">
                 <input type="text" placeholder="$" />
-                <div class="select-container">
-  
-                  </div>
-                  <select data-role="select" id="rate">
-                    
-                        <option value="daily">Daily</option>
-                        <option value="hourly">Hourly</option>
-                        <option value="monthly">Monthly</option>
-                        <option value="yearly">Yearly</option>
-                                
+                <select data-role="select" id="rate">
+                  <option value="daily">Daily</option>
+                  <option value="hourly">Hourly</option>
+                  <option value="monthly">Monthly</option>
+                  <option value="yearly">Yearly</option>
                 </select>
-                
               </div>
             </div>
             <div class="field-section">
               <label>Job Type</label>
               <div class="field-double">
-                <div class="select-container">
-                  <select data-role="select" id="type">
-                    
-                        <option value="fulltime">Fulltime</option>
-                        <option value="freelancer">Freelancer</option>
-                        <option value="recruiter">Recruiter</option>
-                  
-                
-                
+                <select data-role="select" id="type">
+                  <option value="fulltime">Fulltime</option>
+                  <option value="freelancer">Freelancer</option>
+                  <option value="recruiter">Recruiter</option>
                 </select>
-                </div>
               </div>
             </div>
             <div class="field-section">
               <label>Number of Consultants</label>
               <div class="field-double">
-                <div class="select-container">
-                  <div class="select-field" style="width: 180px">
-                    <input type="number" id="select-para-2"/>
-                    <img src="" alt="" id="select-open-2" />
-                  </div>
-  
-                </div>
+                <input type="number" id="select-para-2" />
               </div>
             </div>
             <div class="field-section">
@@ -236,7 +209,14 @@
               >
                 Publish
               </button>
-              <button style="color: black; background-color: #fff" id="cancel">
+              <button
+                style="
+                  color: #ff6060;
+                  border: 1px solid #ff6060;
+                  background-color: #fff;
+                "
+                id="cancel"
+              >
                 Cancel
               </button>
             </div>
