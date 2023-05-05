@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="./search.css" />
     <link rel="stylesheet" href="./PublishJob.css" />
+    <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css">
     <title>Vorkinsta</title>
   </head>
   <body>
@@ -26,7 +28,7 @@
                   <li><a>Apps</a></li>
                   <li><a>Trainings</a></li>
                   <li><img src="../assets/notification.png" alt="" /></li>
-                  <li><img src="../assets/Ellipse 23.png" alt="" /></li>
+                  <li><img src="../assets/profilecircle.png" alt="" /></li>
               </div>
               <div class="hamburger">
                   <img src="../assets/Group 63.png" alt="" srcset="" />
@@ -149,50 +151,59 @@
           <p class="heading-p">Publish a Job</p>
           <form class="publish-form">
             <div class="field-section">
-              <label>Tittle</label>
+              <label>Title</label>
               <input type="text" placeholder="Job Tittle" />
             </div>
             <div class="field-section">
-              <label>Skills</label>
-              <input type="text" placeholder="Job Tittle" />
+              <select data-role="select" multiple id="skill">
+                
+                    <option value="dedicated_corei3_hp">Core i3 (hp)</option>
+                    <option value="dedicated_pentium_hp">Pentium (hp)</option>
+                    <option value="dedicated_smart_corei3_hp">Smart Core i3 (hp)</option>
+              
+              
+                    <option value="mini">Mini</option>
+                    <option value="site">Site</option>
+                    <option value="portal">Portal</option>
+              
+
+                    <option value="evps0">eVPS-TEST (30 дней)</option>
+                    <option value="evps1" selected="selected">eVPS-1</option>
+                    <option value="evps2">eVPS-2</option>
+              
+            </select>
             </div>
             <div class="field-section">
-              <label>Project Budjet(in USD)</label>
+              <label>Project Budget(in USD)</label>
               <div class="field-double">
                 <input type="text" placeholder="$" />
                 <div class="select-container">
-                  <div class="select-field">
-                    <input type="text" id="select-para" readonly />
-                    <img src="/assets/Downmenu.png" alt="" id="select-open" />
+  
                   </div>
-                  <div id="select-menu">
-                    <li class="select-li">Daily</li>
-                    <li class="select-li">Hourly</li>
-                    <li class="select-li">Monthly</li>
-                    <li class="select-li">Yearly</li>
-                  </div>
-                </div>
+                  <select data-role="select" id="rate">
+                    
+                        <option value="daily">Daily</option>
+                        <option value="hourly">Hourly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="yearly">Yearly</option>
+                                
+                </select>
+                
               </div>
             </div>
             <div class="field-section">
               <label>Job Type</label>
               <div class="field-double">
                 <div class="select-container">
-                  <div class="select-field" style="width: 264px">
-                    <input type="text" id="select-para-1" readonly />
-                    <img src="/assets/Downmenu.png" alt="" id="select-open-1" />
-                    <img
-                      src="/assets/Downmenu.png"
-                      alt=""
-                      id="select-close-1"
-                      style="display: none; rotate: 180deg"
-                    />
-                  </div>
-                  <div id="select-menu-1">
-                    <li class="select-li-1">Freelancer</li>
-                    <li class="select-li-1">Consultants</li>
-                    <li class="select-li-1">Recruiter</li>
-                  </div>
+                  <select data-role="select" id="type">
+                    
+                        <option value="fulltime">Fulltime</option>
+                        <option value="freelancer">Freelancer</option>
+                        <option value="recruiter">Recruiter</option>
+                  
+                
+                
+                </select>
                 </div>
               </div>
             </div>
@@ -201,13 +212,10 @@
               <div class="field-double">
                 <div class="select-container">
                   <div class="select-field" style="width: 180px">
-                    <input type="text" id="select-para-2" readonly />
-                    <img src="/assets/Downmenu.png" alt="" id="select-open-2" />
+                    <input type="number" id="select-para-2"/>
+                    <img src="" alt="" id="select-open-2" />
                   </div>
-                  <div id="select-menu-2">
-                    <li class="select-li-2">1</li>
-                    <li class="select-li-2">2</li>
-                  </div>
+  
                 </div>
               </div>
             </div>

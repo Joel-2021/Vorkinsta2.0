@@ -8,7 +8,7 @@
 
 .hamburger,
 .avatar {
-  display: none;
+  display: none !important;
 }
 
 main {
@@ -18,90 +18,69 @@ main {
 
 header {
   /* margin: 0 auto; */
-  color: white;
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  width: 100%;
+  color: white !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  width: 100% !important;
 }
 
 .top {
-  background-color: #0d3451;
-  height: 46px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #0d3451 !important;
+  height: 46px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .top>div {
-  max-width: 1500px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 105px;
+  max-width: 1500px !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 0 105px !important;
 }
 
 .tabs {
-  position: relative;
-  z-index: 10;
-  display: flex;
-  gap: 1rem;
-  font-family: 'Inter';
+  position: relative !important;
+  z-index: 10 !important;
+  display: flex !important;
+  gap: 1rem !important;
+  font-family: 'Inter' !important;
+  background-color: transparent !important;
+  border: none !important;
 }
 
 .tabs {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  display: flex !important;
+  align-items: center !important;
+  gap: 1rem !important;
 }
 
 .tabs>li {
-  text-decoration: none;
-  list-style: none;
+  text-decoration: none  !important;
+  list-style: none !important;
 }
 
 .tabs>li>a {
-  font-size: 14px;
-  text-decoration: none;
-  color: #FFFFFF;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  color: #FFFFFF !important;
 }
 
 .tabs>button {
-  padding: 4px 15px;
-  background: #ffffff;
-  border: 1px solid #ffffff;
-  border-radius: 5px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
+  padding: 4px 15px !important;
+  background: #ffffff !important;
+  border: 1px solid #ffffff !important;
+  border-radius: 5px !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  line-height: 17px !important;
 }
 
 .active {
-  border-bottom: 3px solid #a5d7e8;
+  border-bottom: 3px solid #a5d7e8 !important;
 }
-
-.bottom {
-  background-color: #e2edff;
-  height: 25px;
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.bottom>div {
-  display: flex;
-  gap: 1.7rem;
-  padding: 0 108px;
-  width: 100%;
-  max-width: 1500px;
-}
-
-.bottom>div>li {
-  list-style: none;
-}
-
 .hero-section {
   display: flex;
   margin: 0 105px;
@@ -627,45 +606,51 @@ iframe {
 }
 
 footer {
-  background: #0d3451;
-  display: flex;
-  justify-content: center;
-  color: white;
-  padding: 2rem 0px;
+  background: #0d3451 !important;
+  display: flex !important;
+  justify-content: center !important;
+  color: white !important;
+  padding: 2rem 0px !important;
 }
 
 .f-container {
-  padding: 0rem 105px;
-  display: flex;
-  justify-content: space-between;
-  max-width: 1500px;
+  padding: 0rem 105px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  max-width: 1500px !important;
 }
 
 .f-left {
-  font-family: "Jost";
+  font-family: "Jost" !important;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 14px !important;
   text-transform: capitalize;
   color: #ffffff;
-  width: 50%;
+  width: 50% !important;
+  margin-bottom: 0 !important;
 }
 
 .f-left>h2 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 25px !important;
   text-transform: capitalize;
   color: #ffffff;
-  padding-bottom: 2rem;
+  margin-bottom: 0 !important;
+  padding-bottom: 2rem !important;
 }
-
+.f-left>p{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
 .f-right>h2 {
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  padding-bottom: 2rem;
+  margin-bottom: 0 !important;
+  padding-bottom: 2rem !important;
   color: #ffffff;
 }
 
@@ -679,7 +664,7 @@ footer {
 }
 
 .f-right>div>ul>li {
-  margin-bottom: 6px;
+  margin-bottom: 6px !important;
 }
 
 .f-right {
@@ -696,8 +681,8 @@ footer {
 .f-left>span {
   display: flex;
   align-items: center;
-  padding: 10px 0;
-  gap: 1rem;
+  padding: 10px 0 !important;
+  gap: 1rem !important;
 }
 
 .f-left>p:last-child {
@@ -720,23 +705,23 @@ footer {
 }
 
 .f-right>div>ul>select {
-  margin: 10px;
+  margin: 10px !important;
 }
 
 .f-right>ul>li {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.5rem !important;
 }
 
 .recent>div {
-  padding: 0 105px;
+  padding: 0 105px !important;
 }
 
 .job-result {
   display: flex;
   background: #fff;
   border-radius: 10px;
-  padding: 12px 40px;
-  margin-bottom: 50px;
+  padding: 12px 40px !important;
+  margin-bottom: 50px !important;
   border: 1px solid black;
 }
 
@@ -754,7 +739,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 10px;
+  padding-bottom: 10px !important;
 }
 
 .res-img {
