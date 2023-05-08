@@ -1,93 +1,250 @@
-.search{
+.search {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 3.1rem 6.5rem;
 }
-.job-nav{
+.job-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-}
-#publish-job{
-  position: relative;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding-right: 43px;
 }
 
-.job-nav h3{
-  font-family: 'Inter';
+.job-nav h3 {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 1.125rem;
-  line-height: 122.02%;  
+  line-height: 122.02%;
   text-transform: capitalize;
-  color: #0D3451;
+  color: #0d3451;
   padding-bottom: 1.313rem;
-
 }
-.job-nav ul{
+.job-nav ul {
   display: flex;
-  gap: 1.875rem;
+  height: 100%;
+  margin: 0;
 }
-.job-nav li{
+.job-nav li:first-child {
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+  background: #e2edff;
+}
+.job-nav > li:last-child {
+  width: fit-content;
+  height: 34px;
+  background: #ffffff;
+  border: 1px solid rgba(13, 52, 81, 0.5);
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 7px 14px;
+}
+.job-nav > li:last-child > a {
+  font-size: 14px !important;
+}
+.job-nav li {
   cursor: pointer;
   list-style: none;
-}
-.job-nav li>a{
-  text-decoration: none;
-  font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 0.75rem;
-text-transform: capitalize;
-color: #0D3451;
-}
-
-.status>ul>li{
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 6.313rem;
-  height: 1.563rem;
-  border: 1px solid #0D3451;
-  border-radius: 5px;
+  padding: 33px;
+  width: fit-content;
 }
-.status .act, .act>a{
-background: #3062AD;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 0.75rem;
-text-transform: capitalize;
-color: #FFFFFF !important;
+a:hover {
+  text-decoration: none !important;
+  color: #0d3451 !important;
 }
-.activity>li>a{
-font-size: 12px;
-color: #000 !important;
-text-decoration-color: #0D3451;
-text-decoration: underline;
-text-underline-offset: 0.5rem;
+.job-nav li > a {
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 122.02%;
+  color: #0d3451;
 }
 
-.search>.recent{
-  background-color: #E2EDFF;
+.act > a {
+  border-bottom: 3px solid #0d3451;
 }
-.search>.recent h1{
+
+.search > .recent {
+  background-color: #e2edff;
+}
+.search > .recent h1 {
   padding-top: 51px;
 }
-.search>p{
-font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-text-align: center;
-text-transform: capitalize;
-color: #000000;
-padding-bottom: 60px;
+.search > p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+  padding-bottom: 60px;
 }
-.search> form {
+.search > section {
+  margin-top: 5px;
+  width: 100%;
+}
+.job p {
+  margin: 0;
+}
+.job h3 {
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #0d3451;
+}
+.job {
+  width: 100%;
+  padding: 45px 36px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+.job:hover{
+  background-color: #e2edff;
+}
+.job-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.icons {
+  align-self: flex-end;
+}
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+border-radius: 10px;
+padding: 10px 13px;
+gap: 10px;
+}
+.status>p{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #0D3451;
+}
+.job-title>div{
+  display: flex;
+  align-items: center;
+  gap:25px;
+}
+.job-title p{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #0D3451;
+}
+.job-skills,
+.budget {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.job-skills{
+  padding: 7px 22px;
+  background-color: #fff;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  color: #0D3451;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+border-radius: 10px;
+}
+.skills{
+  padding-right: 21px;
+  height: 100%;
+  border-right: 1px solid black;
+}
+.job-skills>p:nth-child(2){
+font-size: 14px;
+}
+.job-skills>p:nth-child(1){
+font-size: 16px;
+}
+.job > .desc {
+  display: flex;
+  gap: 42px;
+}
+.desc button {
+  width: 120px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #0d3451;
+}
+.desc > p {
+  width: 90%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 122.02%;
+  color: #0d3451;
+}
+.budget{
+  background-color: #fff;
+  align-items: center;
+  padding: 7px 30px;
+
+border: 1px solid rgba(0, 0, 0, 0.2);
+border-radius: 10px;
+}
+.budget>p{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #0D3451;
+}
+.job>div:nth-child(2){
+  display: flex;
+  gap:19px;
+  padding: 40px 0 24px 0;
+}
+.icons{
+  display: flex;
+  gap:10px;
+  align-self: flex-end;
+}
+.prev,.next{
+  border: none;
+  width: 50px;
+height: 50px;
+left: 905px;
+top: 1500px;
+
+background: #FFFFFF;
+border-radius: 10px;
+}
+.search > form {
   position: relative;
-   margin: 3.25rem 0 3.25rem 0; 
+  margin: 3.25rem 0 3.25rem 0;
   width: fit-content;
   align-items: center;
   justify-content: center;
@@ -97,11 +254,10 @@ padding-bottom: 60px;
   border-radius: 10px;
   border: 1px solid #000;
 }
-
 i {
   position: absolute;
   margin: 15px 10px !important;
-  min-width: 40px !important; 
+  min-width: 40px !important;
 }
 
 #location {
@@ -128,7 +284,7 @@ input[type="text"] {
   background-color: #fff;
 }
 
-.search> form>button {
+.search > form > button {
   border: none;
   width: 10.5rem;
   height: 2.563rem;
@@ -150,24 +306,23 @@ input::placeholder {
   color: rgba(0, 0, 0, 0.27);
 }
 
-
 .top-search {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 0 10.5rem 51px 10.5rem;
-  background-color:rgba(226, 237, 255, 0.7);;
+  background-color: rgba(226, 237, 255, 0.7);
 }
 
-.top-search>h1 {
+.top-search > h1 {
   padding-bottom: 28px;
   font-family: "DM Serif Text";
   font-style: normal;
   font-weight: 400;
   font-size: 2.25rem;
   text-transform: capitalize;
-  color: #0D3451;
+  color: #0d3451;
 }
 
 .list {
@@ -187,11 +342,11 @@ input::placeholder {
   padding: 5px 15px;
   gap: 10px;
   background-color: #fff;
-  border: 1px solid #0D3451;
+  border: 1px solid #0d3451;
   border-radius: 5px;
 }
 
-.category>div {
+.category > div {
   display: flex;
   justify-content: space-between;
 }
@@ -202,7 +357,7 @@ input::placeholder {
   flex-direction: column;
 }
 /* Result Page*/
-.result>div:first-child {
+.result > div:first-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -223,7 +378,7 @@ input::placeholder {
   background-color: #e2edff;
 }
 
-.result>div>h1 {
+.result > div > h1 {
   font-family: "DM Serif Text";
   font-style: normal;
   font-weight: 400;
@@ -339,7 +494,7 @@ input::placeholder {
 }
 
 /* Style the span element to look like a checked checkbox */
-.filter-options input[type="checkbox"]:checked+span {
+.filter-options input[type="checkbox"]:checked + span {
   background-color: #0d3451;
   color: white;
 }
@@ -355,13 +510,13 @@ input::placeholder {
   gap: 5px;
 }
 
-.checkbox-list>label>input[type=checkbox] {
+.checkbox-list > label > input[type="checkbox"] {
   accent-color: #0d3451;
   margin-right: 1rem;
 }
 
 .checkbox-label {
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -396,7 +551,7 @@ input[type="range"]::-webkit-slider-thumb {
   margin-top: -7px;
 }
 
-.right-upper>.btns {
+.right-upper > .btns {
   display: flex;
   gap: 3rem;
   justify-content: center;
@@ -470,7 +625,7 @@ input::-webkit-inner-spin-button {
   filter: opacity(39%);
 }
 
-.search>form>img {
+.search > form > img {
   display: none;
 }
 
@@ -502,12 +657,12 @@ input::-webkit-inner-spin-button {
     margin-bottom: 0;
   }
 
-  .search>form>img {
+  .search > form > img {
     display: block;
     padding: 10px;
   }
 
-  .search>form {
+  .search > form {
     flex-direction: column;
     background: #fff;
     border-radius: 10px;
@@ -515,13 +670,13 @@ input::-webkit-inner-spin-button {
     box-shadow: none;
   }
 
-  .search>form>input,
+  .search > form > input,
   #location {
     height: 40px;
     width: 300px;
   }
 
-  .search>form>button {
+  .search > form > button {
     width: 100px;
     height: 30px;
     margin-top: 10px;
@@ -537,8 +692,8 @@ input::-webkit-inner-spin-button {
     margin: 44px 20px;
   }
 
-  .top-search>h1 {
-    font-family: 'DM Serif Text';
+  .top-search > h1 {
+    font-family: "DM Serif Text";
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -550,7 +705,7 @@ input::-webkit-inner-spin-button {
     margin: 45px 20px;
   }
 
-  .category>div {
+  .category > div {
     flex-direction: column;
     justify-content: center;
   }
@@ -559,7 +714,7 @@ input::-webkit-inner-spin-button {
     width: 350px;
     height: 66px;
     padding: 12px 31px;
-    background: #E2EDFF;
+    background: #e2edff;
     border-radius: 10px;
     flex-direction: row;
     justify-content: space-between;
@@ -567,13 +722,13 @@ input::-webkit-inner-spin-button {
     margin-bottom: 20px;
   }
 
-  .category-items>img {
+  .category-items > img {
     width: 41px;
     height: 41px;
   }
 
-  .category-items>p {
-    font-family: 'Jost';
+  .category-items > p {
+    font-family: "Jost";
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -585,7 +740,7 @@ input::-webkit-inner-spin-button {
     margin: 0 20px;
   }
 
-  .info>.location,
+  .info > .location,
   #salary,
   #experience {
     display: none;
@@ -677,12 +832,12 @@ input::-webkit-inner-spin-button {
     gap: 0px;
   }
 
-  .left-option>.checkbox-list {
+  .left-option > .checkbox-list {
     width: 130px;
     margin-left: 10px;
   }
 
-  .right-options>div>.right-upper {
+  .right-options > div > .right-upper {
     padding: 0;
   }
 
@@ -721,7 +876,7 @@ input::-webkit-inner-spin-button {
   }
 
   /* Style the span element to look like a checked checkbox */
-  .filter-options input[type="checkbox"]:checked+span {
+  .filter-options input[type="checkbox"]:checked + span {
     background-color: #0d3451;
     color: white;
   }
@@ -737,7 +892,7 @@ input::-webkit-inner-spin-button {
     gap: 5px;
   }
 
-  .checkbox-list>label>input[type="checkbox"] {
+  .checkbox-list > label > input[type="checkbox"] {
     accent-color: #0d3451;
     margin-right: 1rem;
   }
@@ -778,7 +933,7 @@ input::-webkit-inner-spin-button {
     margin-top: -7px;
   }
 
-  .right-upper>.btns {
+  .right-upper > .btns {
     display: flex;
     gap: 3rem;
     justify-content: center;
@@ -841,7 +996,6 @@ input::-webkit-inner-spin-button {
 
     color: #000000;
   }
-
 
   .blur {
     filter: opacity(39%);

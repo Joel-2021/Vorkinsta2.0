@@ -7,7 +7,7 @@
     justify-content: space-between;
     border: 1px solid rgba(0, 0, 0, 0.5);
     padding: 50px 65px;
-    gap: 150px;
+    /* gap: 150px; */
 }
 
 .sign-left {

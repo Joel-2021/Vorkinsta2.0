@@ -12,7 +12,7 @@
   max-width: 1478px;
 }
 
-.left {
+.signup-left {
   display: flex;
   width: 50%;
   margin-top: 42px;
@@ -21,7 +21,7 @@
   flex-direction: column;
 }
 
-.left>h3 {
+.signup-left>h3 {
   font-family: "DM Serif Text";
   font-style: normal;
   font-weight: 400;
@@ -31,7 +31,7 @@
   margin-bottom: 30px;
 }
 
-.right {
+.signup-right {
   padding: 40px 0;
   width: 50%;
   background-color: #0d3451;
@@ -40,11 +40,11 @@
   flex-direction: column;
 }
 
-.right>img {
+.signup-right>img {
   margin: 51px 0;
 }
 
-.right>div {
+.signup-right>div {
   font-family: "Jost";
   font-style: normal;
   font-weight: 400;
@@ -54,7 +54,7 @@
   margin-bottom: 51px;
 }
 
-.right>div>a {
+.signup-right>div>a {
   font-family: "DM Serif Text";
   font-style: normal;
   font-weight: 400;
@@ -64,7 +64,7 @@
   text-decoration: none;
   margin: 0 1rem;
 }
-
+.signup-right .active{}
 form {
   display: flex;
   justify-content: center;
