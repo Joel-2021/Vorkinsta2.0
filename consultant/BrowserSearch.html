@@ -4,23 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="./search.css" />
-    <link rel="stylesheet" href="./PublishJob.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
-    <link
-      href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
-    <title>Vorkinsta</title>
+    <link rel="stylesheet" href="./RecentSearch.css" />
+    <title>Document</title>
   </head>
-
   <body>
     <header>
       <div class="top">
@@ -32,9 +18,11 @@
             <img src="../assets/image 9.png" alt="" srcset="" />
           </div>
           <div class="tabs">
-            <li class="active"><a>My Jobs</a></li>
-            <li><a href="/myconsultantpage.html">My Consultants</a></li>
-            <li><a>Search Consultant</a></li>
+            <li><a>My Jobs</a></li>
+            <li class="active">
+              <a href="/myconsultantpage.html">My Consultants</a>
+            </li>
+            <li class="active"><a>Search Consultant</a></li>
             <li><a>Apps</a></li>
             <li><a>Trainings</a></li>
             <li><img src="../assets/notification.png" alt="" /></li>
@@ -59,24 +47,139 @@
         </form>
         <div class="job-nav">
           <ul>
-            <li><a>Job Status</a></li>
-            <li class="act"><a href="./Jobinprogress.html">In Progress</a></li>
-            <li><a href="./NotHired.html">Not Hired</a></li>
-            <li><a href="">Archived</a></li>
-            <li><a href="./UnderReview.html">UnderReview</a></li>
+            <li style="background-color: white; border: none">
+              <a href="./RecentSeach.html">Recent Search</a>
+            </li>
+            <li
+              style="
+                border-right: 1px solid rgba(0, 0, 0, 0.4);
+                border-left: 1px solid rgba(0, 0, 0, 0.4);
+                background-color: #e2edff;
+              "
+            >
+              <a href="./Jobinprogress.html">Browse</a>
+            </li>
           </ul>
-          <li><a href="" id="publish-job">Publish new job</a></li>
+          <li id="filter"><img src="../assets/Group (5).png" alt="" /></li>
+        </div>
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="model-container">
+              <div class="grids">
+                <div class="grids-upper">
+                  <p>Work Mode</p>
+                  <img src="../assets/Vector 13.png" alt="" />
+                </div>
+                <div class="grids-lower">
+                  <button>Work From Office</button>
+                  <button>Work From Home</button>
+                  <button>Hybrid</button>
+                </div>
+              </div>
+              <div class="grids">
+                <div class="grids-upper">
+                  <p>Salary</p>
+                  <img src="../assets/Vector 13.png" alt="" />
+                </div>
+                <div class="grids-lower">
+                  <button>$0-$100</button>
+                  <button>$100-$1000</button>
+                  <button>$1000-$10000</button>
+                  <button>>$10000</button>
+                </div>
+              </div>
+              <div class="grids">
+                <div class="grids-upper">
+                  <p>Experience Level</p>
+                  <img src="../assets/Vector 13.png" alt="" />
+                </div>
+                <div class="grids-lower">
+                  <button>Beginner</button>
+                  <button>Intermediate</button>
+                  <button>Expert</button>
+                </div>
+              </div>
+              <div class="grids">
+                <div class="grids-upper">
+                  <p>Consultant rate</p>
+                  <img src="../assets/Vector 13.png" alt="" />
+                </div>
+                <div class="grids-lower">
+                  <button>$0-$5</button>
+                  <button>$5-$10</button>
+                  <button>$10-$100</button>
+                  <button>>$100</button>
+                </div>
+              </div>
+              <div class="grids">
+                <div class="grids-upper">
+                  <p>Work Mode</p>
+                  <img src="../assets/Vector 13.png" alt="" />
+                </div>
+                <div class="grids-lower">
+                  <div class="seacrh-grid">
+                    <img src="../assets/hiwsearch.png" alt="" />
+                    <input type="search" placeholder="Search Here.." />
+                  </div>
+                  <div class="scroll-grid">
+                    <span>Afghanistan</span>
+                    <span>Afghanistan</span>
+                    <span>Afghanistan</span>
+                    <span>Afghanistan</span>
+                    <span>Afghanistan</span>
+                    <span>Afghanistan</span>
+                    <span>Afghanistan</span>
+                    <span>Afghanistan</span>
+                  </div>
+                </div>
+              </div>
+              <div class="grids">
+                <div class="grids-upper">
+                  <p>Work Mode</p>
+                  <img src="../assets/Vector 13.png" alt="" />
+                </div>
+                <div class="grids-lower">
+                  <div class="seacrh-grid">
+                    <img src="../assets/hiwsearch.png" alt="" />
+                    <input type="search" placeholder="Search Here.." />
+                  </div>
+                  <div class="scroll-grid">
+                    <span>Afghanistan</span>
+                    <span>Afghanistan</span>
+                    <span>Afghanistan</span>
+                    <span>Afghanistan</span>
+                    <span>Afghanistan</span>
+                    <span>Afghanistan</span>
+                    <span>Afghanistan</span>
+                    <span>Afghanistan</span>
+                    <span>Afghanistan</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="modal-button">
+              <button style="color: white">Show Result</button>
+              <button
+                id="close"
+                style="
+                  color: #ff0000;
+                  background-color: white;
+                  border: 1px solid #ff0000;
+                "
+              >
+                Clear
+              </button>
+            </div>
+          </div>
         </div>
         <section>
           <div class="job">
             <div class="job-title">
               <div>
+                <img src="../assets/Consultant Picture.png" alt="" />
                 <h3>Job Title</h3>
-                <div class="status">
-                  <img src="/assets/progress.png" alt="" />
-                  <p>In Progress</p>
-                </div>
-                <p class="posted-on">2 days ago</p>
               </div>
               <div class="icons">
                 <img src="/assets/save.png" alt="" class="save" />
@@ -89,9 +192,6 @@
                   <p>Skills</p>
                 </div>
                 <p>Bootstrap,HTML,CSS,JS,React</p>
-              </div>
-              <div class="budget">
-                <p>Project Budget- $1500-$2000</p>
               </div>
             </div>
             <div class="desc">
@@ -104,16 +204,11 @@
               <button>Show More</button>
             </div>
           </div>
-
           <div class="job">
             <div class="job-title">
               <div>
+                <img src="../assets/Consultant Picture.png" alt="" />
                 <h3>Job Title</h3>
-                <div class="status">
-                  <img src="/assets/progress.png" alt="" />
-                  <p>In Progress</p>
-                </div>
-                <p class="posted-on">2 days ago</p>
               </div>
               <div class="icons">
                 <img src="/assets/save.png" alt="" class="save" />
@@ -126,9 +221,6 @@
                   <p>Skills</p>
                 </div>
                 <p>Bootstrap,HTML,CSS,JS,React</p>
-              </div>
-              <div class="budget">
-                <p>Project Budget- $1500-$2000</p>
               </div>
             </div>
             <div class="desc">
@@ -141,16 +233,11 @@
               <button>Show More</button>
             </div>
           </div>
-
           <div class="job">
             <div class="job-title">
               <div>
+                <img src="../assets/Consultant Picture.png" alt="" />
                 <h3>Job Title</h3>
-                <div class="status">
-                  <img src="/assets/progress.png" alt="" />
-                  <p>In Progress</p>
-                </div>
-                <p class="posted-on">2 days ago</p>
               </div>
               <div class="icons">
                 <img src="/assets/save.png" alt="" class="save" />
@@ -163,9 +250,6 @@
                   <p>Skills</p>
                 </div>
                 <p>Bootstrap,HTML,CSS,JS,React</p>
-              </div>
-              <div class="budget">
-                <p>Project Budget- $1500-$2000</p>
               </div>
             </div>
             <div class="desc">
@@ -301,11 +385,36 @@
         </div>
       </div>
     </footer>
-    <script src="./scripts.js"></script>
+    <!-- <script src="./scripts.js"></script> -->
     <script>
       $('.chosen-select').chosen({
         no_results_text: 'Oops, nothing found!',
       });
+    </script>
+    <script>
+      const filter = document.getElementById('filter');
+      var modal = document.getElementById('myModal');
+      var close = document.getElementById('close');
+      filter.onclick = function () {
+        modal.style.display = 'block';
+      };
+      close.onclick = function () {
+        modal.style.display = 'none';
+      };
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = 'none';
+        }
+      };
+    </script>
+    <script>
+      const dropdown = document.getElementsByClassName('dropdown');
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener('click', function () {
+          var panel = this.nextElementSibling;
+          panel.style.display = 'flex';
+        });
+      }
     </script>
   </body>
 </html>
