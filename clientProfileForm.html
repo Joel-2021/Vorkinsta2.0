@@ -57,77 +57,95 @@
       </div>
     </header>
     <section class="profile">
-        <h1>Profile</h1>
-        <form action="">
-          <div class="grid">
+      <h1>Profile</h1>
+      <form action="">
+        <div class="grid">
+          <div class="grid-item">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="First Name" />
+          </div>
+          <div class="grid-item">
+            <label for="fname">Last Name</label>
+            <input type="text" id="lname" placeholder="Last Name" />
+          </div>
+          <div class="grid-item">
+            <label for="fname">Country</label>
+            <input type="text" id="fname" placeholder="Country" />
+          </div>
+          <div class="grid-item">
+            <label for="fname">State</label>
+            <input type="text" id="fname" placeholder="State" />
+          </div>
+          <div class="grid-item">
+            <label for="fname">Phone</label>
+            <input type="text" id="phone" placeholder="Phone" />
+          </div>
+          <div class="grid-item">
+            <label for="fname">Languages</label>
+            <input type="text" id="languages" placeholder="Languages" />
+          </div>
+          <div class="grid-item">
+            <label>skills</label>
 
-            <div class="grid-item">
-              <label for="fname">First Name</label>
-                <input type="text" id="fname" placeholder="First Name">
-              </div>
-            <div class="grid-item">
-                <label for="fname">Last Name</label>
-                <input type="text" id="lname" placeholder="Last Name">
-            </div>
-            <div class="grid-item">
-                <label for="fname">Country</label>
-                <input type="text" id="fname" placeholder="Country">
-            </div>
-            <div class="grid-item">
-                <label for="fname">State</label>
-                <input type="text" id="fname" placeholder="State">
-            </div>
-            <div class="grid-item">
-                <label for="fname">Phone</label>
-                <input type="text" id="phone" placeholder="Phone">
-            </div>
-            <div class="grid-item">
-              <label for="fname">Languages</label>
-                <input type="text" id="languages" placeholder="Languages">
-            </div>
-            <div class="grid-item">
-                <label>skills</label>
-                
-              <select
-                data-placeholder="Skills"
-                class="chosen-select chosen-results"
-                multiple
-              >
-                <option value=""></option>
-                <option>java</option>
-                <option>python</option>
-                <option>css</option>
-                <option>html</option>
-                <option>c++</option>
-                <option>c</option>
-                <option>.net</option>
-                <option>PBI</option>
-              </select>
+            <select
+              data-placeholder="Skills"
+              class="chosen-select chosen-results"
+              multiple
+            >
+              <option value=""></option>
+              <option>java</option>
+              <option>python</option>
+              <option>css</option>
+              <option>html</option>
+              <option>c++</option>
+              <option>c</option>
+              <option>.net</option>
+              <option>PBI</option>
+            </select>
           </div>
-            <div class="grid-item">
-                <label for="experience">Experience</label>
-                <input type="text" id="experience" placeholder="Experience">
-            </div>
-            <div class="grid-item">
-              <label for="client-website">Client Website</label>
-                <input type="text" id="client-website" placeholder="Client Address">
-              </div>
-            <div class="grid-item">
-                <label for="client-industry">Client Industry</label>
-                <input type="text" id="client-industry" placeholder="Client Industry">
-              </div>
-            <div class="grid-item">
-                <label for="fname">Client Description</label>
-                <textarea name="" id="client-description" cols="10" rows="10" placeholder="Client Description"></textarea>
-            </div>
-            <div class="grid-item">
-                <label for="client-address">Client Address</label>
-                <textarea name="" id="client-address" cols="10" rows="10" placeholder="Client Address"></textarea>
-            </div>
+          <div class="grid-item">
+            <label for="experience">Experience</label>
+            <input type="text" id="experience" placeholder="Experience" />
           </div>
-          <button>Save</button>
-        </form>
-        
+          <div class="grid-item">
+            <label for="client-website">Client Website</label>
+            <input
+              type="text"
+              id="client-website"
+              placeholder="Client Address"
+            />
+          </div>
+          <div class="grid-item">
+            <label for="client-industry">Client Industry</label>
+            <input
+              type="text"
+              id="client-industry"
+              placeholder="Client Industry"
+            />
+          </div>
+          <div class="grid-item">
+            <label for="fname">Client Description</label>
+            <textarea
+              name=""
+              id="client-description"
+              cols="10"
+              rows="10"
+              placeholder="Client Description"
+            ></textarea>
+          </div>
+          <div class="grid-item">
+            <label for="client-address">Client Address</label>
+            <textarea
+              name=""
+              id="client-address"
+              cols="10"
+              rows="10"
+              placeholder="Client Address"
+            ></textarea>
+          </div>
+        </div>
+        <button>Save</button>
+      </form>
     </section>
     <footer>
       <div class="f-container">
@@ -177,13 +195,13 @@
       </div>
     </footer>
     <script>
-        const phoneInputField = document.querySelector("#phone");
+      const phoneInputField = document.querySelector('#phone');
       const phoneInput = window.intlTelInput(phoneInputField, {
         utilsScript:
-          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+          'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js',
       });
-      $(".chosen-select").chosen({
-        no_results_text: "Oops, nothing found!",
+      $('.chosen-select').chosen({
+        no_results_text: 'Oops, nothing found!',
       });
     </script>
   </body>
