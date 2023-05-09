@@ -5,15 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="./search.css" />
+    <link rel="stylesheet" href="../Job/search.css" />
     <link rel="stylesheet" href="./PublishJob.css" />
-    <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css"
-    />
     <title>Vorkinsta</title>
   </head>
+
   <body>
     <header>
       <div class="top">
@@ -25,8 +21,8 @@
             <img src="../assets/image 9.png" alt="" srcset="" />
           </div>
           <div class="tabs">
-            <li class="active"><a href="search.html">My Jobs</a></li>
-            <li><a href="/myconsultantpage.html">My Consultants</a></li>
+            <li><a href="../job/search.html">My Jobs</a></li>
+            <li class="active"><a href="myConsultant.html">My Consultants</a></li>
             <li><a>Search Consultant</a></li>
             <li><a>Apps</a></li>
             <li><a>Trainings</a></li>
@@ -52,15 +48,13 @@
         </form>
         <div class="job-nav">
           <ul>
-            <li><a>Job Status</a></li>
-            <li><a href="./Jobinprogress.html">In Progress</a></li>
-            <li class="act"><a href="./NotHired.html">Not Hired</a></li>
-            <li><a href="./Archived.html">Archived</a></li>
-            <li><a href="./UnderReview.html">UnderReview</a></li>
+            <li><a>Consultant Status</a></li>
+            <li><a href="./ConsultantInProgress.html">In Progress</a></li>
+            <li><a href="./Saved.html">Saved</a></li>
+            <li><a href="./InvitationSent.html">Invitation Sent</a></li>
           </ul>
-          <li><a href="" id="publish-job">Publish new job</a></li>
+          <li><a href="searchConsultant.html" id="publish-job">Search Consultant</a></li>
         </div>
-        <p>0 Hired</p>
         <div class="top-search">
           <h1>Top Search</h1>
           <div class="list">
@@ -79,74 +73,6 @@
           </div>
         </div>
       </section>
-      <div class="publish-right-container" style="display: none">
-        <p class="heading-p">Publish a Job</p>
-        <form class="publish-form">
-          <div class="field-section">
-            <label>Title</label>
-            <input type="text" placeholder="Job Tittle" />
-          </div>
-          <div class="field-section">
-            <label>Skills</label>
-            <select data-role="select" multiple id="skill" placeholder=" skill">
-              <option value="Skill">Skill</option>
-              <option value="Python">Python</option>
-              <option value="Java">Java</option>
-              <option value="HML">HTML</option>
-              <option value="CSS">CSS</option>
-            </select>
-          </div>
-          <div class="field-section">
-            <label>Project Budget(in USD)</label>
-            <div class="field-double">
-              <input type="text" placeholder="$" />
-              <select data-role="select" id="rate">
-                <option value="daily">Daily</option>
-                <option value="hourly">Hourly</option>
-                <option value="monthly">Monthly</option>
-                <option value="yearly">Yearly</option>
-              </select>
-            </div>
-          </div>
-          <div class="field-section">
-            <label>Job Type</label>
-            <div class="field-double">
-              <select data-role="select" id="type">
-                <option value="fulltime">Fulltime</option>
-                <option value="freelancer">Freelancer</option>
-                <option value="recruiter">Recruiter</option>
-              </select>
-            </div>
-          </div>
-          <div class="field-section">
-            <label>Number of Consultants</label>
-            <div class="field-double">
-              <input type="number" id="select-para-2" />
-            </div>
-          </div>
-          <div class="field-section">
-            <label>Description</label>
-            <textarea name="" id="" cols="40" rows="11"></textarea>
-          </div>
-          <div class="btn-section">
-            <button
-              style="background-color: #0d3451; color: white; border: none"
-            >
-              Publish
-            </button>
-            <button
-              style="
-                color: #ff6060;
-                border: 1px solid #ff6060;
-                background-color: #fff;
-              "
-              id="cancel"
-            >
-              Cancel
-            </button>
-          </div>
-        </form>
-      </div>
     </main>
     <footer>
       <div class="f-container">

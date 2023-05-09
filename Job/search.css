@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3.1rem 6.5rem;
+  padding: 0rem 6.5rem;
 }
 .job-nav {
   display: flex;
@@ -232,15 +232,35 @@ color: #0D3451;
   gap:10px;
   align-self: flex-end;
 }
-.prev,.next{
+.pagination{
+  display: flex;
+  padding: 50px 0 !important;
+  align-self: flex-end;
+}
+.prev,.next,.page-num{
   border: none;
   width: 50px;
 height: 50px;
-left: 905px;
-top: 1500px;
-
+color: black;
+filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.1));
 background: #FFFFFF;
 border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.page-num-active{
+  background: #0D3451
+}
+.page-num-active>p{
+  color: white;
+}
+.number{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+color: #0D3451;
 }
 .search > form {
   position: relative;
@@ -311,7 +331,7 @@ input::placeholder {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 10.5rem 51px 10.5rem;
+  padding: 2rem 10.5rem 51px 10.5rem;
   background-color: rgba(226, 237, 255, 0.7);
 }
 
