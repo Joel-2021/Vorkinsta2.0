@@ -34,7 +34,7 @@
 .signup-right {
   padding: 40px 0;
   width: 50%;
-  background-color: #0d3451;
+  /* background-color: #0d3451; */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -64,7 +64,31 @@
   text-decoration: none;
   margin: 0 1rem;
 }
-.signup-right .active{}
+
+.sgnup-goggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  width: 90%;
+  margin-top: 35px;
+  background: #F5F5F5;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.sgnup-goggle>span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgb(0, 0, 0);
+}
+
+/* .signup-right .active {} */
+
 form {
   display: flex;
   justify-content: center;
@@ -88,7 +112,7 @@ input[type="email"],
 input[type="password"] {
   height: 49px;
   border-radius: 10px;
-  border: none;
+  border: 1px solid black;
   /* color: #fff; */
   font-size: 20px;
   padding: 0 1rem;
@@ -148,14 +172,14 @@ label {
   color: #bdbdbd;
 }
 
-.buttons {
+.buttons-sun {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 57px;
   padding-right: 60px;
 }
 
-.buttons>button {
+.buttons-sun>button {
   width: 183px;
   height: 49px;
   background: #a5d7e8;
@@ -169,7 +193,7 @@ label {
   border: none;
 }
 
-.buttons>p {
+.buttons-sun>p {
   font-family: "Jost";
   font-style: normal;
   font-weight: 600;
@@ -178,7 +202,7 @@ label {
   color: #bdbdbd;
 }
 
-.buttons>p>a {
+.buttons-sun>p>a {
   color: rgba(48, 98, 173, 1);
 }
 
