@@ -1,9 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter:wght@700&family=Jost&display=swap");
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.heading-1{
+font-family: 'DM Serif Text';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 122.02%;
+text-transform: capitalize;
+color: #0D3451;
+}
+.heading-2{
+font-family: 'DM Serif Text';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 122.02%;
+text-transform: capitalize;
+color: #0D3451;
+}
+.sub-heading-1{
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 122.02%;
+  text-transform: capitalize;  
+  color: #0D3451;
+}
+
+.sub-heading-2{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 122.02%;  
+  text-transform: capitalize;
+    color: #0D3451;
+}
+.para-1{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 122.02%;
+/* identical to box height, or 17px */
+
+text-transform: capitalize;
+
+color: #0D3451;
+
+}
+ .para-2{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 122.02%;
+text-transform: capitalize;
 }
 
 .hamburger,
@@ -32,7 +91,7 @@ header {
   align-items: center !important;
 }
 
-.top>div {
+.top>div,.bottom>div {
   max-width: 1500px !important;
   width: 100% !important;
   display: flex !important;
@@ -81,6 +140,57 @@ header {
 .active {
   border-bottom: 3px solid #a5d7e8 !important;
 }
+/* .bottom>div{
+  display: flex;
+  justify-content: space-between;
+} */
+.bottom{
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  background: #E2EDFF;
+}
+.bottom>div{
+  position: relative;
+}
+.bottom>div>ul{
+  display: flex;
+  gap:25px;
+}
+.bottom>div>li{
+  color: #0b2447;
+}
+.bottom>div>ul>li>a{
+  color: #000000;
+  text-decoration: none;
+}
+.bottom>div li{
+  list-style: none;
+  text-decoration: none;  
+}
+#more{
+  color: #0b2447;
+  /* padding-left: 100px; */
+  cursor: pointer;
+}
+
+.more-dropdown{
+  position: absolute;
+  background-color: #E2EDFF;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.more-dropdown>a{
+  text-decoration: none;
+  color: #0b2447;
+  padding: 10px;
+}
+.more-dropdown>a:hover{
+  background-color: #787c80;
+}
+
 .hero-section {
   display: flex;
   margin: 0 105px;
@@ -105,10 +215,6 @@ header {
 }
 
 .left>div>h1 {
-  font-family: "DM Serif Text";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 64px;
   width:590px;
   color: #0b2447;
 }
@@ -198,14 +304,6 @@ header {
   color: #0D3451;
 }
 
-.numbers>div>span {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-}
-
 .numbers>div {
   display: flex;
   flex-direction: column;
@@ -260,11 +358,6 @@ header {
   padding: 0 105px 0 105px;
   z-index: 10;
   background-color: #E2EDFF;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  text-transform: capitalize;
   color: rgba(13, 52, 81, 1);
   display: flex;
   justify-content: space-between;
@@ -277,51 +370,6 @@ header {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-}
-
-.step {
-  width: 521px;
-  height: 138px;
-  background: #ffffff;
-  border: 1px solid #0d3451;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  padding: 1rem;
-  /* display: flex; */
-  /* gap: 1rem; */
-}
-
-.step>div {
-  display: flex;
-  align-items: center;
-  gap: 13px;
-  padding-bottom: 23px;
-  padding-left: 32px;
-  /* justify-content: center; */
-}
-
-.step>div>h3 {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 122.02%;
-  text-transform: capitalize;
-  color: #0D3451;
-}
-
-.step>p {
-  padding-left: 32px;
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.step>img {
-  width: 30px;
-  height: 30px;
 }
 
 .section2>div {
@@ -474,10 +522,7 @@ hr {
 
 .recent>button,
 .project>button {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
+  align-self: flex-end;
   text-transform: capitalize;
   color: #0D3451;
   border: none;
@@ -512,11 +557,6 @@ iframe {
   padding: 50px 0;
   text-align: left;
   margin-left: 105px;
-  font-family: 'DM Serif Text';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  text-transform: capitalize;
   color: #0D3451;
 
 }
@@ -717,9 +757,9 @@ footer {
   padding-bottom: 0.5rem !important;
 }
 
-.recent>div {
+/* .recent>div {
   padding: 0 105px !important;
-}
+} */
 
 .job-result {
   display: flex;
@@ -849,14 +889,10 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0 105px;
 }
 
 .recent>div>h1 {
-  font-family: "DM Serif Text";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  text-transform: capitalize;
   color: rgba(13, 52, 81, 1);
   margin-bottom: 56px;
 }
@@ -1364,16 +1400,6 @@ footer {
   margin-bottom: 50px;
 }
 
-.howwork-header>p {
-  font-family: 'DM Serif Text';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 122.02%;
-  text-transform: capitalize;
-  color: #0D3451;
-}
-
 .howwork-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1450,20 +1476,5 @@ footer {
 
 .box>p {
   margin-top: 25px;
-  font-family: 'Jost';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #000000;
-}
-
-.item-upper>span {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 122.02%;
-  text-transform: capitalize;
-  color: #000000;
+  color: #0D3451;
 }

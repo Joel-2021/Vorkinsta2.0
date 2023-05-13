@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./RecentSearch.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro.min.css">
+    <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
   </head>
   <body>
     <header>
@@ -18,11 +24,13 @@
             <img src="../assets/image 9.png" alt="" srcset="" />
           </div>
           <div class="tabs">
-            <li><a>My Jobs</a></li>
-            <li class="active">
+            <li><a href="../job/search.html">My Jobs</a></li>
+            <li>
               <a href="/myconsultantpage.html">My Consultants</a>
             </li>
-            <li class="active"><a>Search Consultant</a></li>
+            <li class="active">
+              <a href="BrowserSearch.html">Search Consultant</a>
+            </li>
             <li><a>Apps</a></li>
             <li><a>Trainings</a></li>
             <li><img src="../assets/notification.png" alt="" /></li>
@@ -68,9 +76,21 @@
                   <img src="../assets/Vector 13.png" alt="" />
                 </div>
                 <div class="grids-lower">
-                  <button>Work From Office</button>
-                  <button>Work From Home</button>
-                  <button>Hybrid</button>
+                  <label for="work-from-home"
+                    ><input type="checkbox" id="work-from-home" /><span
+                      >Work From Home</span
+                    ></label
+                  >
+                  <label for="work-from-office"
+                    ><input type="checkbox" id="work-from-office" /><span
+                      >Work From Office</span
+                    ></label
+                  >
+                  <label for="hybrid"
+                    ><input type="checkbox" id="hybrid" /><span
+                      >Hybrid</span
+                    ></label
+                  >
                 </div>
               </div>
               <div class="grids">
@@ -79,10 +99,26 @@
                   <img src="../assets/Vector 13.png" alt="" />
                 </div>
                 <div class="grids-lower">
-                  <button>$0-$100</button>
-                  <button>$100-$1000</button>
-                  <button>$1000-$10000</button>
-                  <button>>$10000</button>
+                  <label for="lessThan100"
+                  ><input type="checkbox" id="lessThan100" /><span
+                    >$0-$100</span
+                  ></label
+                >
+                <label for="lessThan1000"
+                  ><input type="checkbox" id="lessThan1000" /><span
+                    >$100-$1000</span
+                  ></label
+                >
+                <label for="lessThan10000"
+                  ><input type="checkbox" id="lessThan10000" /><span
+                    >$1000-$10000</span
+                  ></label
+                >
+                <label for="moreThan10000"
+                  ><input type="checkbox" id="moreThan10000" /><span
+                    >>$10000</span
+                  ></label
+                >
                 </div>
               </div>
               <div class="grids">
@@ -91,9 +127,21 @@
                   <img src="../assets/Vector 13.png" alt="" />
                 </div>
                 <div class="grids-lower">
-                  <button>Beginner</button>
-                  <button>Intermediate</button>
-                  <button>Expert</button>
+                  <label for="beginner"
+                  ><input type="checkbox" id="beginner" /><span
+                    >Beginner</span
+                  ></label
+                >
+                <label for="intermediate"
+                ><input type="checkbox" id="intermediate" /><span
+                  >Intermediate</span
+                ></label
+              >
+              <label for="expert"
+              ><input type="checkbox" id="expert" /><span
+                >Expert</span
+              ></label
+            >
                 </div>
               </div>
               <div class="grids">
@@ -102,15 +150,71 @@
                   <img src="../assets/Vector 13.png" alt="" />
                 </div>
                 <div class="grids-lower">
-                  <button>$0-$5</button>
-                  <button>$5-$10</button>
-                  <button>$10-$100</button>
-                  <button>>$100</button>
+                  <label for="lessThan5"
+                  ><input type="checkbox" id="lessThan5" /><span
+                    >$0-$5</span
+                  ></label
+                >
+                <label for="lessThan10"
+                ><input type="checkbox" id="lessThan10" /><span
+                  >$5-$10</span
+                ></label
+              >
+              <label for="moreThan10"
+              ><input type="checkbox" id="moreThan10" /><span
+                >$10-$100</span
+              ></label
+            >
+            <label for="moreThan100"
+            ><input type="checkbox" id="moreThan100" /><span
+              >$100</span
+            ></label
+          >
+      
                 </div>
               </div>
               <div class="grids">
                 <div class="grids-upper dropdown">
-                  <p>Work Mode</p>
+                  <p>Location</p>
+                  <img src="../assets/Vector 13.png" alt="" />
+                </div>
+                <div class="grids-lower">
+                  <!-- <select data-role="select" multiple>
+                    <optgroup label="Physical servers">
+                        <option value="dedicated_corei3_hp">Core i3 (hp)</option>
+                        <option value="dedicated_pentium_hp">Pentium (hp)</option>
+                        <option value="dedicated_smart_corei3_hp">Smart Core i3 (hp)</option>
+                    </optgroup>
+                    <optgroup label="Virtual hosting">
+                        <option value="mini">Mini</option>
+                        <option value="site">Site</option>
+                        <option value="portal">Portal</option>
+                    </optgroup>
+                    <optgroup label="Virtual servers">
+                        <option value="evps0">eVPS-TEST (30 дней)</option>
+                        <option value="evps1" selected="selected">eVPS-1</option>
+                        <option value="evps2">eVPS-2</option>
+                    </optgroup>
+                </select> -->
+                  <div class="seacrh-grid">
+                    <img src="../assets/hiwsearch.png" alt="" />
+                    <input type="search" placeholder="Search Here.." />
+                  </div>
+                  <div class="scroll-grid">
+                    <p>Afghanistan</p>
+                    <p>Afghanistan</p>
+                    <p>Afghanistan</p>
+                    <p>Afghanistan</p>
+                    <p>Afghanistan</p>
+                    <p>Afghanistan</p>
+                    <p>Afghanistan</p>
+                    <p>Afghanistan</p>
+                  </div>
+                </div>
+              </div>
+              <div class="grids">
+                <div class="grids-upper dropdown">
+                  <p>Language</p>
                   <img src="../assets/Vector 13.png" alt="" />
                 </div>
                 <div class="grids-lower">
@@ -119,43 +223,20 @@
                     <input type="search" placeholder="Search Here.." />
                   </div>
                   <div class="scroll-grid">
-                    <span>Afghanistan</span>
-                    <span>Afghanistan</span>
-                    <span>Afghanistan</span>
-                    <span>Afghanistan</span>
-                    <span>Afghanistan</span>
-                    <span>Afghanistan</span>
-                    <span>Afghanistan</span>
-                    <span>Afghanistan</span>
-                  </div>
-                </div>
-              </div>
-              <div class="grids">
-                <div class="grids-upper dropdown">
-                  <p>Work Mode</p>
-                  <img src="../assets/Vector 13.png" alt="" />
-                </div>
-                <div class="grids-lower">
-                  <div class="seacrh-grid">
-                    <img src="../assets/hiwsearch.png" alt="" />
-                    <input type="search" placeholder="Search Here.." />
-                  </div>
-                  <div class="scroll-grid">
-                    <span>Afghanistan</span>
-                    <span>Afghanistan</span>
-                    <span>Afghanistan</span>
-                    <span>Afghanistan</span>
-                    <span>Afghanistan</span>
-                    <span>Afghanistan</span>
-                    <span>Afghanistan</span>
-                    <span>Afghanistan</span>
-                    <span>Afghanistan</span>
+                    <p>Afghanistan</p>
+                    <p>Afghanistan</p>
+                    <p>Afghanistan</p>
+                    <p>Afghanistan</p>
+                    <p>Afghanistan</p>
+                    <p>Afghanistan</p>
+                    <p>Afghanistan</p>
+                    <p>Afghanistan</p>
                   </div>
                 </div>
               </div>
             </div>
             <hr />
-            <div class="modal-button">
+            <div class="modal-button sub-heading-1">
               <button style="color: white">Show Result</button>
               <button
                 id="close"
@@ -267,74 +348,6 @@
           <button class="next"><img src="/assets/next.png" alt="" /></button>
         </div>
       </section>
-      <div class="publish-right-container" style="display: none">
-        <p class="heading-p">Publish a Job</p>
-        <form class="publish-form">
-          <div class="field-section">
-            <label>Title</label>
-            <input type="text" placeholder="Job Tittle" />
-          </div>
-          <div class="field-section">
-            <label>Skills</label>
-            <select data-role="select" multiple id="skill" placeholder=" skill">
-              <option value="Skill">Skill</option>
-              <option value="Python">Python</option>
-              <option value="Java">Java</option>
-              <option value="HML">HTML</option>
-              <option value="CSS">CSS</option>
-            </select>
-          </div>
-          <div class="field-section">
-            <label>Project Budget(in USD)</label>
-            <div class="field-double">
-              <input type="text" placeholder="$" />
-              <select data-role="select" id="rate">
-                <option value="daily">Daily</option>
-                <option value="hourly">Hourly</option>
-                <option value="monthly">Monthly</option>
-                <option value="yearly">Yearly</option>
-              </select>
-            </div>
-          </div>
-          <div class="field-section">
-            <label>Job Type</label>
-            <div class="field-double">
-              <select data-role="select" id="type">
-                <option value="fulltime">Fulltime</option>
-                <option value="freelancer">Freelancer</option>
-                <option value="recruiter">Recruiter</option>
-              </select>
-            </div>
-          </div>
-          <div class="field-section">
-            <label>Number of Consultants</label>
-            <div class="field-double">
-              <input type="number" id="select-para-2" />
-            </div>
-          </div>
-          <div class="field-section">
-            <label>Description</label>
-            <textarea name="" id="" cols="40" rows="11"></textarea>
-          </div>
-          <div class="btn-section">
-            <button
-              style="background-color: #0d3451; color: white; border: none"
-            >
-              Publish
-            </button>
-            <button
-              style="
-                color: #ff6060;
-                border: 1px solid #ff6060;
-                background-color: #fff;
-              "
-              id="cancel"
-            >
-              Cancel
-            </button>
-          </div>
-        </form>
-      </div>
     </main>
     <footer>
       <div class="f-container">
@@ -384,34 +397,34 @@
       </div>
     </footer>
     <script>
-      $('.chosen-select').chosen({
-        no_results_text: 'Oops, nothing found!',
-      });
-    </script>
-    <script>
-      const filter = document.getElementById('filter');
-      var modal = document.getElementById('myModal');
-      var close = document.getElementById('close');
+      const filter = document.getElementById("filter");
+      var modal = document.getElementById("myModal");
+      var close = document.getElementById("close");
       filter.onclick = function () {
-        modal.style.display = 'block';
+        modal.style.display = "block";
       };
       close.onclick = function () {
-        modal.style.display = 'none';
+        modal.style.display = "none";
       };
       window.onclick = function (event) {
         if (event.target == modal) {
-          modal.style.display = 'none';
+          modal.style.display = "none";
         }
       };
     </script>
     <script>
-      const dropdown = document.getElementsByClassName('dropdown');
+      const dropdown = document.getElementsByClassName("dropdown");
       for (i = 0; i < dropdown.length; i++) {
-        dropdown[i].addEventListener('click', function () {
+        dropdown[i].addEventListener("click", function () {
           var panel = this.nextElementSibling;
-          panel.style.display = 'flex';
+          if (panel.style.display === "flex") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "flex";
+          }
         });
       }
+     
     </script>
   </body>
   f
