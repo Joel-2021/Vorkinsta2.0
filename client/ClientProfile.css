@@ -272,6 +272,7 @@ footer {
 }
 
 .upf-fields>input {
+    height: 52px;
     margin: 10px 0;
     width: 100%;
     font-family: 'Inter';
@@ -287,7 +288,86 @@ footer {
 
 }
 
-.upf-fields>select {
+.calendar-picker {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    border-radius: 10px;
+    height: 52px !important;
+    border: 1px solid rgba(0, 0, 0, 0.4) !important;
+}
+
+.input .button {
+    height: 52px !important;
+}
+
+.calendar-picker>input {
+    height: 100% !important;
+}
+
+.calendar {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 32px rgba(170, 170, 170, 0.03);
+    border-radius: 12px;
+}
+
+.calendar-toolbar {
+    border: none !important;
+}
+
+.calendar-content .week-day {
+    border-bottom: none !important;
+}
+
+.calendar-content .week-day,
+.calendar-content .week-number {
+    font-weight: 700;
+    background-color: white !important;
+}
+
+.calendar-content .today {
+    background-color: #0D3451 !important;
+    border-radius: 50% !important;
+    color: #fff;
+    font-weight: 700;
+}
+
+.calendar .days .day,
+.calendar .months .month,
+.calendar .years .year {
+    border: none !important;
+}
+
+.select {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    border-radius: 10px;
+    height: 52px !important;
+    border: 1px solid rgba(0, 0, 0, 0.4) !important;
+}
+
+.select-input {
+    height: 100% !important;
+}
+
+.dropdown-toggle {
+    height: 100% !important;
+
+}
+
+.select .drop-container .input {
+    display: none !important;
+}
+
+.select .option-list li.active {
+    background-color: #0D3451 !important;
+}
+
+.active {
+    border-bottom: 3px solid #0D3451 !important;
+}
+
+select {
+    height: 52px;
     margin: 10px 0;
     width: 100%;
     font-family: 'Inter';
