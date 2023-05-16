@@ -6,7 +6,7 @@ console.log(publish, modal);
 publish.addEventListener("click", (e) => {
     e.preventDefault()
   modal.style.display = "block";
-  search.style.height = "1400px";
+  search.style.height = "1600px";
   search.classList.add('blur')
 });
 cancel.addEventListener("click", (e) => {

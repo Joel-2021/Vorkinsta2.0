@@ -25,15 +25,10 @@
   box-shadow: 3px 4px 30px 5px rgba(0, 0, 0, 0.62);
 }
 
-.heading-p {
+.publish-right-container>h1 {
   text-align: center;
-  font-family: "DM Serif Text";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 102.52%;
   color: #0d3451;
-  margin-top: 57px;
+  margin-top: 57px !important;
 }
 
 .publish-form {
@@ -49,14 +44,6 @@
   gap: 30px;
 }
 
-.field-section>label {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 102.52%;
-  color: #0d3451;
-}
 
 .field-section>input {
   outline: none;
@@ -145,8 +132,4 @@
   width: 195px;
   height: 59px;
   border-radius: 10px;
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
 }

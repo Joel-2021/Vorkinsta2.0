@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./RecentSearch.css" />
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../Job/search.css" />
+    <link rel="stylesheet" href="./RecentSearch.css" />
     <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro.min.css">
     <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -21,18 +22,14 @@
             <img src="../assets/Ellipse 23.png" alt="" />
           </div>
           <div class="logo">
-            <img src="../assets/image 9.png" alt="" srcset="" />
+            <img src="../assets/image 9.png" alt="" srcset="" onclick="window.location.href='../index.html'"/>
           </div>
           <div class="tabs">
-            <li><a href="../job/search.html">My Jobs</a></li>
-            <li>
-              <a href="/myconsultantpage.html">My Consultants</a>
-            </li>
-            <li class="active">
-              <a href="BrowserSearch.html">Search Consultant</a>
-            </li>
-            <li><a>Apps</a></li>
-            <li><a>Trainings</a></li>
+            <li><a href="../job/search.html" class="para-2">My Jobs</a></li>
+            <li ><a href="myConsultant.html" class="para-2">My Consultants</a></li>
+            <li class="active"><a href="BrowserSearch.html" class="para-2">Search Consultant</a></li>
+            <li><a class="para-2">Apps</a></li>
+            <li><a class="para-2">Trainings</a></li>
             <li><img src="../assets/notification.png" alt="" /></li>
             <li><img src="../assets/profilecircle.png" alt="" /></li>
           </div>
@@ -51,43 +48,41 @@
             <i><img src="../assets/location.png" alt="" /></i>
             <input type="text" id="location" placeholder="Location" />
           </span>
-          <button>Search</button>
+          <button class="sub-heading-2">Search</button>
         </form>
         <div class="job-nav">
-          <ul>
-            <li>
-              <a>Recent Search</a>
-            </li>
-            <li>
-              <a href="./BrowserSearch.html">Browse</a>
+          <ul> 
+            <li class="sub-heading-2 act"><a href="RecentSeach.html">Recent Search</a></li>
+            <li >
+              <a href="BrowserSearch.html" class="sub-heading-2"
+                >Browse</a
+              >
             </li>
           </ul>
-          <li id="filter">
-            <img src="../assets/Group (5).png" alt="" />
-          </li>
+          <img id="filter" src="../assets/Group (5).png" alt="" />
         </div>
-        <div id="myModal" class="modal">
+        <div id="myModal" class="filter-modal">
           <!-- Modal content -->
           <div class="modal-content">
             <div class="model-container">
               <div class="grids">
                 <div class="grids-upper dropdown">
-                  <p>Work Mode</p>
+                  <p class="sub-heading-1">Work Mode</p>
                   <img src="../assets/Vector 13.png" alt="" />
                 </div>
                 <div class="grids-lower">
                   <label for="work-from-home"
-                    ><input type="checkbox" id="work-from-home" /><span
+                    ><input type="checkbox" id="work-from-home" /><span class="para-1"
                       >Work From Home</span
                     ></label
                   >
                   <label for="work-from-office"
-                    ><input type="checkbox" id="work-from-office" /><span
+                    ><input type="checkbox" id="work-from-office" /><span class="para-1"
                       >Work From Office</span
                     ></label
                   >
                   <label for="hybrid"
-                    ><input type="checkbox" id="hybrid" /><span
+                    ><input type="checkbox" id="hybrid" /><span class="para-1"
                       >Hybrid</span
                     ></label
                   >
@@ -95,27 +90,27 @@
               </div>
               <div class="grids">
                 <div class="grids-upper dropdown">
-                  <p>Salary</p>
+                  <p class="sub-heading-1">Salary</p>
                   <img src="../assets/Vector 13.png" alt="" />
                 </div>
                 <div class="grids-lower">
                   <label for="lessThan100"
-                  ><input type="checkbox" id="lessThan100" /><span
+                  ><input type="checkbox" id="lessThan100" /><span  class="para-1"
                     >$0-$100</span
                   ></label
                 >
                 <label for="lessThan1000"
-                  ><input type="checkbox" id="lessThan1000" /><span
+                  ><input type="checkbox" id="lessThan1000" /><span  class="para-1"
                     >$100-$1000</span
                   ></label
                 >
                 <label for="lessThan10000"
-                  ><input type="checkbox" id="lessThan10000" /><span
+                  ><input type="checkbox" id="lessThan10000" /><span  class="para-1"
                     >$1000-$10000</span
                   ></label
                 >
                 <label for="moreThan10000"
-                  ><input type="checkbox" id="moreThan10000" /><span
+                  ><input type="checkbox" id="moreThan10000" /><span  class="para-1"
                     >>$10000</span
                   ></label
                 >
@@ -123,22 +118,22 @@
               </div>
               <div class="grids">
                 <div class="grids-upper dropdown">
-                  <p>Experience Level</p>
+                  <p class="sub-heading-1">Experience Level</p>
                   <img src="../assets/Vector 13.png" alt="" />
                 </div>
                 <div class="grids-lower">
                   <label for="beginner"
-                  ><input type="checkbox" id="beginner" /><span
+                  ><input type="checkbox" id="beginner" /><span  class="para-1"
                     >Beginner</span
                   ></label
                 >
                 <label for="intermediate"
-                ><input type="checkbox" id="intermediate" /><span
-                  >Intermediate</span
+                ><input type="checkbox" id="intermediate" /><span  class="para-1"
+                  >Intermediate</span 
                 ></label
               >
               <label for="expert"
-              ><input type="checkbox" id="expert" /><span
+              ><input type="checkbox" id="expert" /><span  class="para-1"
                 >Expert</span
               ></label
             >
@@ -146,27 +141,27 @@
               </div>
               <div class="grids">
                 <div class="grids-upper dropdown">
-                  <p>Consultant rate</p>
+                  <p class="sub-heading-1">Consultant rate</p>
                   <img src="../assets/Vector 13.png" alt="" />
                 </div>
                 <div class="grids-lower">
                   <label for="lessThan5"
-                  ><input type="checkbox" id="lessThan5" /><span
+                  ><input type="checkbox" id="lessThan5" /><span  class="para-1"
                     >$0-$5</span
                   ></label
                 >
                 <label for="lessThan10"
-                ><input type="checkbox" id="lessThan10" /><span
+                ><input type="checkbox" id="lessThan10" /><span  class="para-1"
                   >$5-$10</span
                 ></label
               >
               <label for="moreThan10"
-              ><input type="checkbox" id="moreThan10" /><span
+              ><input type="checkbox" id="moreThan10" /><span  class="para-1"
                 >$10-$100</span
               ></label
             >
             <label for="moreThan100"
-            ><input type="checkbox" id="moreThan100" /><span
+            ><input type="checkbox" id="moreThan100" /><span  class="para-1"
               >$100</span
             ></label
           >
@@ -175,7 +170,7 @@
               </div>
               <div class="grids">
                 <div class="grids-upper dropdown">
-                  <p>Location</p>
+                  <p class="sub-heading-1">Location</p>
                   <img src="../assets/Vector 13.png" alt="" />
                 </div>
                 <div class="grids-lower">
@@ -201,20 +196,20 @@
                     <input type="search" placeholder="Search Here.." />
                   </div>
                   <div class="scroll-grid">
-                    <p>Afghanistan</p>
-                    <p>Afghanistan</p>
-                    <p>Afghanistan</p>
-                    <p>Afghanistan</p>
-                    <p>Afghanistan</p>
-                    <p>Afghanistan</p>
-                    <p>Afghanistan</p>
-                    <p>Afghanistan</p>
+                    <p class="para-1">Afghanistan</p>
+                    <p class="para-1">Afghanistan</p>
+                    <p class="para-1">Afghanistan</p>
+                    <p class="para-1">Afghanistan</p>
+                    <p class="para-1">Afghanistan</p>
+                    <p class="para-1">Afghanistan</p>
+                    <p class="para-1">Afghanistan</p>
+                    <p class="para-1">Afghanistan</p>
                   </div>
                 </div>
               </div>
               <div class="grids">
                 <div class="grids-upper dropdown">
-                  <p>Language</p>
+                  <p class="sub-heading-1">Language</p>
                   <img src="../assets/Vector 13.png" alt="" />
                 </div>
                 <div class="grids-lower">
@@ -223,22 +218,23 @@
                     <input type="search" placeholder="Search Here.." />
                   </div>
                   <div class="scroll-grid">
-                    <p>Afghanistan</p>
-                    <p>Afghanistan</p>
-                    <p>Afghanistan</p>
-                    <p>Afghanistan</p>
-                    <p>Afghanistan</p>
-                    <p>Afghanistan</p>
-                    <p>Afghanistan</p>
-                    <p>Afghanistan</p>
+                    <p class="para-1">Afghanistan</p>
+                    <p class="para-1">Afghanistan</p>
+                    <p class="para-1">Afghanistan</p>
+                    <p class="para-1">Afghanistan</p>
+                    <p class="para-1">Afghanistan</p>
+                    <p class="para-1">Afghanistan</p>
+                    <p class="para-1">Afghanistan</p>
+                    <p class="para-1">Afghanistan</p>
                   </div>
                 </div>
               </div>
             </div>
             <hr />
             <div class="modal-button sub-heading-1">
-              <button style="color: white">Show Result</button>
+              <button style="color: white;border:none" class="sub-heading-2">Show Result</button>
               <button
+              class="sub-heading-2"
                 id="close"
                 style="
                   color: #ff0000;
@@ -255,10 +251,12 @@
           <div class="job">
             <div class="job-title">
               <div>
-                <img src="../assets/Consultant Picture.png" alt="" />
-                <h3>Job Title</h3>
+                <div class="profile-pic">
+                    <img src="/assets/profilepic.png" alt="">
+                </div>
+                <h3 class="sub-heading-2">Name</h3>
               </div>
-              <div class="icons">
+                <div class="icons">
                 <img src="/assets/save.png" alt="" class="save" />
                 <img src="/assets/edit.png" alt="" class="edit" />
               </div>
@@ -266,28 +264,25 @@
             <div>
               <div class="job-skills">
                 <div class="skills">
-                  <p>Skills</p>
+                  <p class="sub-heading-2">Skills</p>
                 </div>
-                <p>Bootstrap,HTML,CSS,JS,React</p>
+                <p class="para-1">Bootstrap,HTML,CSS,JS,React</p>
               </div>
             </div>
             <div class="desc">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                voluptatibus sunt deserunt inventore, alias vitae doloremque cum
-                magnam adipisci voluptates amet repellat quia rerum maxime
-                voluptas, aut, deleniti dolorum enim.
-              </p>
-              <button>Show More</button>
+              <p class="para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus sunt deserunt inventore, alias vitae doloremque cum magnam adipisci voluptates amet repellat quia rerum maxime voluptas, aut, deleniti dolorum enim.</p>
+              <button class="para-1">Show More</button>
             </div>
           </div>
-          <div class="job">
+        <div class="job">
             <div class="job-title">
               <div>
-                <img src="../assets/Consultant Picture.png" alt="" />
-                <h3>Job Title</h3>
+                <div class="profile-pic">
+                    <img src="/assets/profilepic.png" alt="">
+                </div>
+                <h3 class="sub-heading-2">Name</h3>
               </div>
-              <div class="icons">
+                <div class="icons">
                 <img src="/assets/save.png" alt="" class="save" />
                 <img src="/assets/edit.png" alt="" class="edit" />
               </div>
@@ -295,28 +290,25 @@
             <div>
               <div class="job-skills">
                 <div class="skills">
-                  <p>Skills</p>
+                  <p class="sub-heading-2">Skills</p>
                 </div>
-                <p>Bootstrap,HTML,CSS,JS,React</p>
+                <p class="para-1">Bootstrap,HTML,CSS,JS,React</p>
               </div>
             </div>
             <div class="desc">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                voluptatibus sunt deserunt inventore, alias vitae doloremque cum
-                magnam adipisci voluptates amet repellat quia rerum maxime
-                voluptas, aut, deleniti dolorum enim.
-              </p>
-              <button>Show More</button>
+              <p class="para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus sunt deserunt inventore, alias vitae doloremque cum magnam adipisci voluptates amet repellat quia rerum maxime voluptas, aut, deleniti dolorum enim.</p>
+              <button class="para-1">Show More</button>
             </div>
           </div>
-          <div class="job">
+        <div class="job">
             <div class="job-title">
               <div>
-                <img src="../assets/Consultant Picture.png" alt="" />
-                <h3>Job Title</h3>
+                <div class="profile-pic">
+                    <img src="/assets/profilepic.png" alt="">
+                </div>
+                <h3 class="sub-heading-2">Name</h3>
               </div>
-              <div class="icons">
+                <div class="icons">
                 <img src="/assets/save.png" alt="" class="save" />
                 <img src="/assets/edit.png" alt="" class="edit" />
               </div>
@@ -324,27 +316,29 @@
             <div>
               <div class="job-skills">
                 <div class="skills">
-                  <p>Skills</p>
+                  <p class="sub-heading-2">Skills</p>
                 </div>
-                <p>Bootstrap,HTML,CSS,JS,React</p>
+                <p class="para-1">Bootstrap,HTML,CSS,JS,React</p>
               </div>
             </div>
             <div class="desc">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                voluptatibus sunt deserunt inventore, alias vitae doloremque cum
-                magnam adipisci voluptates amet repellat quia rerum maxime
-                voluptas, aut, deleniti dolorum enim.
-              </p>
-              <button>Show More</button>
+              <p class="para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus sunt deserunt inventore, alias vitae doloremque cum magnam adipisci voluptates amet repellat quia rerum maxime voluptas, aut, deleniti dolorum enim.</p>
+              <button class="para-1">Show More</button>
             </div>
           </div>
+       
         </section>
         <div class="pagination">
-          <button class="prev">
-            <img src="/assets/prev.png" alt="" />
-          </button>
-
+          <button class="prev"><img src="/assets/prev.png" alt="" /></button>
+          <div class="page-num page-num-active">
+            <p class="sub-heading-2">1</p>
+          </div>
+          <div class="page-num">
+            <p class="sub-heading-2">2</p>
+          </div>
+          <div class="page-num">
+            <p class="sub-heading-2">3</p>
+          </div>
           <button class="next"><img src="/assets/next.png" alt="" /></button>
         </div>
       </section>

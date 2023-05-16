@@ -22,14 +22,16 @@
             <img src="../assets/Ellipse 23.png" alt="" />
           </div>
           <div class="logo">
-            <img src="../assets/image 9.png" alt="" srcset="" />
+            <img src="../assets/image 9.png" alt="" srcset="" onclick="window.location.href='../index.html'"/>
           </div>
           <div class="tabs">
-            <li class="active"><a href="search.html">My Jobs</a></li>
-            <li><a href="../Consultant/myConsultant.html">My Consultants</a></li>
-            <li><a href="../Consultant/BrowserSearch.html">Search Consultant</a></li>
-            <li><a>Apps</a></li>
-            <li><a>Trainings</a></li>
+            <li class="active"><a class="para-2" href="../job/search.html">My Jobs</a></li>
+            <li>
+              <a class="para-2" href="../Consultant/myConsultant.html">My Consultants</a>
+            </li>
+            <li><a class="para-2" href="../Consultant/BrowserSearch.html">Search Consultant</a></li>
+            <li><a class="para-2">Apps</a></li>
+            <li><a class="para-2">Trainings</a></li>
             <li><img src="../assets/notification.png" alt="" /></li>
             <li><img src="../assets/profilecircle.png" alt="" /></li>
           </div>
@@ -48,46 +50,46 @@
             <i><img src="../assets/location.png" alt="" /></i>
             <input type="text" id="location" placeholder="Location" />
           </span>
-          <button>Search</button>
+          <button class="sub-heading-2">Search</button>
         </form>
         <div class="job-nav">
           <ul>
-            <li><a>Job Status</a></li>
-            <li><a href="./Jobinprogress.html">In Progress</a></li>
-            <li><a href="./NotHired.html">Not Hired</a></li>
-            <li class="act"><a href="./Archived.html">Archived</a></li>
-            <li><a href="./UnderReview.html">UnderReview</a></li>
+            <li class="sub-heading-2">Job Status</li>
+            <li><a href="./Jobinprogress.html" class="sub-heading-2">In Progress</a></li>
+            <li><a href="./NotHired.html" class="sub-heading-2">Not Hired</a></li>
+            <li class="act"><a href="./Archived.html" class="sub-heading-2">Archived</a></li>
+            <li><a href="./UnderReview.html" class="sub-heading-2">UnderReview</a></li>
           </ul>
-          <li><a href="" id="publish-job">Publish new job</a></li>
+          <li><a href="" id="publish-job" class="para-1">Publish new job</a></li>
         </div>
-        <p>0 Hired</p>
+        <p class="sub-heading-2">0 Hired</p>
         <div class="top-search">
-          <h1>Top Search</h1>
+          <h1 class="heading-2">Top Search</h1>
           <div class="list">
-            <div class="list-item">Business</div>
-            <div class="list-item">Development</div>
-            <div class="list-item">Consultancy</div>
-            <div class="list-item">Apps</div>
-            <div class="list-item">Personal Development</div>
-            <div class="list-item">Design</div>
-            <div class="list-item">Apps</div>
-            <div class="list-item">Development</div>
-            <div class="list-item">Design</div>
-            <div class="list-item">Consultancy</div>
-            <div class="list-item">Personal Development</div>
-            <div class="list-item">Business</div>
+            <div class="list-item para-1">Business</div>
+            <div class="list-item para-1">Development</div>
+            <div class="list-item para-1">Consultancy</div>
+            <div class="list-item para-1">Apps</div>
+            <div class="list-item para-1">Personal Development</div>
+            <div class="list-item para-1">Design</div>
+            <div class="list-item para-1">Apps</div>
+            <div class="list-item para-1">Development</div>
+            <div class="list-item para-1">Design</div>
+            <div class="list-item para-1">Consultancy</div>
+            <div class="list-item para-1">Personal Development</div>
+            <div class="list-item para-1">Business</div>
           </div>
         </div>
       </section>
       <div class="publish-right-container" style="display: none">
-        <p class="heading-p">Publish a Job</p>
+        <h1 class="heading-2">Publish a Job</h1>
         <form class="publish-form">
           <div class="field-section">
-            <label>Title</label>
+            <label class="sub-heading-1">Title</label>
             <input type="text" placeholder="Job Tittle" />
           </div>
           <div class="field-section">
-            <label>Skills</label>
+            <label class="sub-heading-1">Skills</label>
             <select data-role="select" multiple id="skill" placeholder=" skill">
               <option value="Skill">Skill</option>
               <option value="Python">Python</option>
@@ -97,7 +99,7 @@
             </select>
           </div>
           <div class="field-section">
-            <label>Project Budget(in USD)</label>
+            <label class="sub-heading-1">Project Budget(in USD)</label>
             <div class="field-double">
               <input type="text" placeholder="$" />
               <select data-role="select" id="rate">
@@ -109,7 +111,7 @@
             </div>
           </div>
           <div class="field-section">
-            <label>Job Type</label>
+            <label class="sub-heading-1">Job Type</label>
             <div class="field-double">
               <select data-role="select" id="type">
                 <option value="fulltime">Fulltime</option>
@@ -119,22 +121,24 @@
             </div>
           </div>
           <div class="field-section">
-            <label>Number of Consultants</label>
+            <label class="sub-heading-1">Number of Consultants</label>
             <div class="field-double">
               <input type="number" id="select-para-2" />
             </div>
           </div>
           <div class="field-section">
-            <label>Description</label>
+            <label class="sub-heading-1">Description</label>
             <textarea name="" id="" cols="40" rows="11"></textarea>
           </div>
           <div class="btn-section">
             <button
               style="background-color: #0d3451; color: white; border: none"
+              class="sub-heading-1"
             >
               Publish
             </button>
             <button
+            class="sub-heading-1"
               style="
                 color: #ff6060;
                 border: 1px solid #ff6060;
@@ -151,8 +155,8 @@
     <footer>
       <div class="f-container">
         <div class="f-left">
-          <h2>Vorkinsta</h2>
-          <p>
+          <h2 class="sub-heading-2">Vorkinsta</h2>
+          <p class="para-2">
             Vorkinsta lets any client connect with any consultant and
             collaborate independently on their own terms. We aim at increased
             collaboration in IT for a high-tech world. Our objective is to give
@@ -165,24 +169,38 @@
             or any other information.
           </p>
           <span>
-            <p>Follow us</p>
+            <p class="sub-heading-2">Follow us</p>
             <span>
               <img src="/assets/Facebook Circled.png" alt="" />
               <img src="/assets/LinkedIn Circled.png" alt="" />
               <img src="/assets/Instagram.png" alt="" />
             </span>
           </span>
-          <p>&copy 2021 All Rights Reserved</p>
+          <p class="sub-heading-2">&copy 2021 All Rights Reserved</p>
         </div>
         <div class="f-right">
           <h2>Links</h2>
           <div>
             <ul>
-              <li>terms and conditions</li>
-              <li>Privacy Policy</li>
-              <li>Help</li>
-              <li>Vorkinsta License</li>
-              <li>Partners</li>
+              <li>
+                <a href="Footer/tandc.html" class="para-2">
+                  Terms and Conditions</a
+                >
+              </li>
+              <li>
+                <a href="Footer/privacyandpolicy.html" class="para-2">
+                  Privacy Policy</a
+                >
+              </li>
+              <li><a href="Footer/helpcenter.html" class="para-2"> Help</a></li>
+              <li>
+                <a href="Footer/licence.html" class="para-2">
+                  Vorkinsta License</a
+                >
+              </li>
+              <li>
+                <a href="Footer/partners.html" class="para-2"> Partners</a>
+              </li>
               <label for="">Select language</label>
               <select name="languages" id="">
                 <option value="english">English</option>

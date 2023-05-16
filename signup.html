@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vorkinsta</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Newsignin.css" />
     <link rel="stylesheet" href="signup.css" />
   </head>
   <body>
@@ -16,15 +17,15 @@
             <img src="/assets/Ellipse 23.png" alt="" />
           </div>
           <div class="logo">
-            <img src="./assets/image 9.png" alt="" srcset="" />
+            <img src="./assets/image 9.png" alt="" srcset="" onclick="window.location.href='/index.html'" />
           </div>
           <div class="tabs">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="/search.html">Search</a></li>
-            <li><a href="/about.html">About Us</a></li>
-            <li><a href="/FAQ.html">FAQs</a></li>
-            <li><a href="/signin.html">Login</a></li>
-            <button>Sign Up</button>
+            <li><a class="para-2" href="index.html">Home</a></li>
+            <li><a class="para-2" href="./Job/search.html">Search</a></li>
+            <li><a class="para-2" href="/about.html">About Us</a></li>
+            <li><a class="para-2" href="/FAQ.html">FAQs</a></li>
+            <button class="para-2"  onclick="window.location.href = '/signin.html'">Login</button>
+            <button class="para-2" onclick="window.location.href = '/signup.html'">Sign Up</button>
           </div>
           <div class="hamburger">
             <img src="/assets/Group 63.png" alt="" srcset="" />
@@ -34,18 +35,27 @@
     </header>
     <main>
       <div class="container">
-        <div class="signup-left">
-          <h3>Welcome!</h3>
-          <img src="assets/Group.png" alt="" />
-        </div>
-        <div class="signup-right">
-          <div class="hero-section">
-            <img src="assets/Group (4).png" id="hero-img" alt="" />
-            <img src="assets/Ellipse 43.png" id="circle" alt="" />
+        <div class="sign-container">
+
+          <div class="signup-left">
+            <h3 class="heading-1">Welcome!</h3>
+            <img src="assets/Group.png" alt="" />
           </div>
-          <div>
-            <a href="/signin.html" style="color: #0d3451">Sign In</a>or
-            <a href="/signup.html" class="active">Sign Up</a>
+          <div class="signup-right">
+            <div>
+            <a href="/signin.html" class="heading-2" class="heading-2"
+            >Sign In</a
+            >
+            <span class="para-1">
+
+              or
+            </span>
+            <a
+            href="/signup.html"
+            style="color: #0d3451"
+            class="active heading-2"
+              >Sign Up</a
+            >
           </div>
           <form action="">
             <div>
@@ -65,7 +75,7 @@
               />
             </div>
             <input
-              type="text"
+            type="text"
               name=""
               id=""
               placeholder="Mobile Number"
@@ -78,7 +88,7 @@
               id=""
               placeholder="Password"
               required
-            />
+              />
             <input
               type="password"
               name=""
@@ -92,23 +102,26 @@
               Save my details</label
             > -->
             <div class="buttons-sun">
-              <button>Sign Up</button>
-              <p>Already have an account? <a href="/signin.html">SignIn</a></p>
+              <button class="sub-heading-1">Sign Up</button>
+              <p class="sub-heading-2">
+                Already have an account? <a href="/signin.html">SignIn</a>
+              </p>
             </div>
           </form>
 
           <div class="sgnup-goggle">
             <img src="/assets/Google.png" alt="" />
-            <span>Continue with google</span>
+            <span class="para-1">Continue with google</span>
           </div>
         </div>
       </div>
+    </div>
     </main>
     <footer>
       <div class="f-container">
         <div class="f-left">
-          <h2>Vorkinsta</h2>
-          <p>
+          <h2 class="sub-heading-2">Vorkinsta</h2>
+          <p class="para-2">
             Vorkinsta lets any client connect with any consultant and
             collaborate independently on their own terms. We aim at increased
             collaboration in IT for a high-tech world. Our objective is to give
@@ -121,24 +134,38 @@
             or any other information.
           </p>
           <span>
-            <p>Follow us</p>
+            <p class="sub-heading-2">Follow us</p>
             <span>
               <img src="/assets/Facebook Circled.png" alt="" />
               <img src="/assets/LinkedIn Circled.png" alt="" />
               <img src="/assets/Instagram.png" alt="" />
             </span>
           </span>
-          <p>&copy 2021 All Rights Reserved</p>
+          <p class="sub-heading-2">&copy 2021 All Rights Reserved</p>
         </div>
         <div class="f-right">
           <h2>Links</h2>
           <div>
             <ul>
-              <li>terms and conditions</li>
-              <li>Privacy Policy</li>
-              <li>Help</li>
-              <li>Vorkinsta License</li>
-              <li>Partners</li>
+              <li>
+                <a href="Footer/tandc.html" class="para-2">
+                  Terms and Conditions</a
+                >
+              </li>
+              <li>
+                <a href="Footer/privacyandpolicy.html" class="para-2">
+                  Privacy Policy</a
+                >
+              </li>
+              <li><a href="Footer/helpcenter.html" class="para-2"> Help</a></li>
+              <li>
+                <a href="Footer/licence.html" class="para-2">
+                  Vorkinsta License</a
+                >
+              </li>
+              <li>
+                <a href="Footer/partners.html" class="para-2"> Partners</a>
+              </li>
               <label for="">Select language</label>
               <select name="languages" id="">
                 <option value="english">English</option>

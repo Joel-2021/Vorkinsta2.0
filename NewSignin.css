@@ -16,11 +16,6 @@
 }
 
 .sign-left>p {
-    font-family: 'DM Serif Text';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 102.52%;
     color: #0D3451;
     margin-bottom: 35px;
 }
@@ -49,21 +44,8 @@
     gap: 25px;
 }
 
-.sign-options>a {
-    font-family: 'DM Serif Text';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 122.02%;
-    text-transform: capitalize;
-}
 
 .sign-options>span {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 29px;
     color: #0D3451;
 }
 
@@ -81,11 +63,6 @@
 }
 
 .sgn-goggle>a {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
     color: #000000;
 }
 
@@ -131,23 +108,12 @@ input::placeholder {
 }
 
 form>a {
-    text-align: center;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
     text-decoration: underline;
     color: #000000;
 }
 
 form>p {
     text-align: center;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 29px;
     color: #BDBDBD;
 }
 
@@ -166,12 +132,6 @@ form>p>a {
 }
 
 .captach>p {
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
     color: #000000;
 }
 
@@ -185,22 +145,12 @@ form>.sign-btn {
     height: 49px;
     background: #0D3451;
     border-radius: 10px;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 29px;
     color: #FFFFFF;
     border: none;
 }
 
 .forget-info {
     margin-top: 30px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
     color: #000000;
 
 }
@@ -210,12 +160,8 @@ form>.sign-btn {
     height: 49px;
     background: #0D3451;
     border-radius: 10px;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 29px;
     color: #FFFFFF;
+    border: none;
 }
 
 .forget-form {

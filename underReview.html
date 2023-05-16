@@ -4,73 +4,92 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="/NewSignin.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./search.css" />
+    <link rel="stylesheet" href="./PublishJob.css" />
+    <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css"
+    />
+    <title>Vorkinsta</title>
   </head>
   <body>
     <header>
       <div class="top">
         <div>
           <div class="avatar">
-            <img src="/assets/Ellipse 23.png" alt="" />
+            <img src="../assets/Ellipse 23.png" alt="" />
           </div>
           <div class="logo">
-            <img src="./assets/image 9.png" alt="" srcset="" onclick="window.location.href='/index.html'" />
+            <img
+              src="../assets/image 9.png"
+              alt=""
+              srcset=""
+              onclick="window.location.href='../index.html'"
+            />
           </div>
           <div class="tabs">
-            <li><a class="para-2" href="index.html">Home</a></li>
-            <li><a class="para-2" href="./Job/search.html">Search</a></li>
-            <li><a class="para-2" href="/about.html">About Us</a></li>
-            <li><a class="para-2" href="/FAQ.html">FAQs</a></li>
-            <button class="para-2"  onclick="window.location.href = '/signin.html'">Login</button>
-            <button class="para-2" onclick="window.location.href = '/signup.html'">Sign Up</button>
+            <li class="active">
+              <a class="para-2" href="../job/search.html">My Jobs</a>
+            </li>
+            <li>
+              <a class="para-2" href="../Consultant/myConsultant.html"
+                >My Consultants</a
+              >
+            </li>
+            <li>
+              <a class="para-2" href="../Consultant/BrowserSearch.html"
+                >Search Consultant</a
+              >
+            </li>
+            <li><a class="para-2">Apps</a></li>
+            <li><a class="para-2">Trainings</a></li>
+            <li><img src="../assets/notification.png" alt="" /></li>
+            <li><img src="../assets/profilecircle.png" alt="" /></li>
           </div>
           <div class="hamburger">
-            <img src="/assets/Group 63.png" alt="" srcset="" />
+            <img src="../assets/Group 63.png" alt="" srcset="" />
           </div>
         </div>
       </div>
     </header>
-    <main>
-      <section class="signup-section">
-        <div class="sign-container">
-          <div class="sign-left">
-            <p class="heading-1">Welcome!</p>
-            <img src="/assets/Group.png" alt="" />
-          </div>
-          <div class="sign-right">
-            <div class="sign-options">
-              <a style="color: #0d3451" class="heading-2">Sign in</a>
-              <span class="para-2">or</span>
-              <a href="signup.html" style="color: rgba(13, 52, 81, 0.42)"
-                class="heading-2" >Sign Up</a
-              >
-            </div>
-            <div class="sgn-goggle">
-              <img src="/assets/Google.png" alt="" />
-              <a class="para-1">Continue with google</a>
-            </div>
-            <div class="sing-divider para-2">
-              <div class="div-line"></div>
-              or
-              <div class="div-line"></div>
-            </div>
-            <form>
-              <input type="text" placeholder="Email address" required />
-              <input type="password" placeholder="Password" required />
-              <a href="NewForgetPassword.html" class="para-1">Forget Password?</a>
-              <p class="sub-heading-2">Don’t have an account? <a href="signup.html"> SignUp </a></p>
-              <div class="captach">
-                <input type="checkbox" />
-                <p class="para-1">I’m not a Robot</p>
-                <img src="/assets/arrowrotateleft.png" alt="" />
-              </div>
-              <button class="sign-btn sub-heading-1">Sign in</button>
-            </form>
-          </div>
-        </div>
-      </section>
+    <main style="padding: 10px 105px">
+      <div
+        style="
+          padding: 55px 90px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        "
+      >
+        <h1 class="heading-1">your profile is under review!</h1>
+        <p class="para-1" style="color: #0d3451">
+          your profile is under review to avoid spam. we will be approving
+          shortly upon review. you will receive an conformation email shortly on
+          the status. you can always
+          <a href="" style="color: red">contact us </a>in case any questions.
+        </p>
+        <p class="para-1" style="color: red">
+          NOTE: your approval will delayed if you have not filled any details
+          correctly. you can use
+          <a href="" style="color: #0d3451">edit profile</a> to correct the
+          details before approval.
+        </p>
+        <button
+          class="para-2"
+          style="
+            align-self: flex-end;
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            color: rgba(13, 52, 81, 0.5);
+            width: 179px;
+            height: 41px;
+          "
+        >
+          Vorkinsta Support
+        </button>
+      </div>
     </main>
     <footer>
       <div class="f-container">
@@ -133,5 +152,6 @@
         </div>
       </div>
     </footer>
+    <script src="./scripts.js"></script>
   </body>
 </html>

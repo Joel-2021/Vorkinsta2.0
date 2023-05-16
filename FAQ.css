@@ -16,11 +16,6 @@
 }
 
 .content > h3 {
-  font-family: "DM Serif Text";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 102.52%;
   text-align: center;
   padding: 55px 0;
   /* or 66px */
@@ -39,11 +34,6 @@ background: #E2EDFF;
 padding-bottom: 55px;
 }
 .faq-search>h1{
-  font-family: 'DM Serif Text';
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 102.52%;
 color: #000000;
 padding: 55px 0 0px 0;
 }
