@@ -50,7 +50,6 @@ font-weight: 400 !important;
 font-size: 14px !important;
 line-height: 122.02% !important;
 text-transform: capitalize !important;
-
 color: #0D3451;
 
 }
@@ -200,8 +199,8 @@ header {
 .left {
   width: 55%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .left>div:first-child {
@@ -258,11 +257,6 @@ header {
 
 
 .left>div>p {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
   padding: 26px 0;
   width: 585px;
 }
@@ -275,7 +269,6 @@ header {
 
 .buttons>button {
   padding: 10px 30px;
-  width: 160px;
   height: 39px;
   background: #3062ad;
   border: none;

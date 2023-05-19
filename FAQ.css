@@ -156,7 +156,7 @@ padding: 55px 0 0px 0;
 }
 
 .accordion:after {
-  content: url(/assets/Vector\ 13.png);
+  content: url(/assets/images/Vector\ 13.png);
   color: #777;
   font-weight: bold;
   float: right;
@@ -167,7 +167,7 @@ padding: 55px 0 0px 0;
 }
 
 .open:after {
-  content: url(/assets/Vector\ 12.png);
+  content: url(/assets/images/Vector\ 12.png);
 }
 
 .faq-grid {

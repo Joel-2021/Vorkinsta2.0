@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
+    <link
+      href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="consultantType.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="top">
+        <div>
+          <div class="avatar">
+            <img src="/assets/images/Ellipse 23.png" alt="" />
+          </div>
+          <div class="logo">
+            <img
+              src="./assets/images/image 9.png"
+              alt=""
+              srcset=""
+              onclick="window.location.href='/index.html'"
+            />
+          </div>
+          <div class="tabs">
+            <li><a class="para-2" href="index.html">Home</a></li>
+            <li><a class="para-2" href="./Job/search.html">Search</a></li>
+            <li><a class="para-2" href="/about.html">About Us</a></li>
+            <li><a class="para-2" href="/FAQ.html">FAQs</a></li>
+            <button
+              class="para-2"
+              onclick="window.location.href = '/signin.html'"
+            >
+              Login
+            </button>
+            <button
+              class="para-2"
+              onclick="window.location.href = '/signup.html'"
+            >
+              Sign Up
+            </button>
+          </div>
+          <div class="hamburger">
+            <img src="/assets/images/Group 63.png" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="cp-container">
+          <div class="consultant-type-container align-center">
+            <h3 class="heading-2">consultant type</h3>
+            <div class="radio-align-row">
+              <div class="radio-align activate-radio">
+                <input
+                  type="radio"
+                  name="consultant-type"
+                  id="freelancer"
+                  checked
+                />
+                <label for="freelancer" class="radio-content-align">
+                  <h1 class="heading-2">freelancer</h1>
+                  <p class="para-1">(flexible hours)</p>
+                </label>
+              </div>
+              <div class="radio-align">
+                <input type="radio" id="fulltime" name="consultant-type" />
+                <label for="fulltime" class="radio-content-align">
+                  <h1 class="heading-2">Full time</h1>
+                  <p class="para-1">(Employment)</p>
+                </label>
+              </div>
+            </div>
+
+            <form>
+              <div class="form-content">
+                <div id="resume" style="display: none;">
+                  <label class="sub-heading-2">Resume<span>*</span></label>
+                  <input
+                    type="file"
+                    data-role="file"
+                    placeholder="Upload your resume"
+                  />
+                </div>
+                <label class="sub-heading-2">Skills<span>*</span></label>
+                <select
+                  data-role="select"
+                  multiple
+                  id="skill"
+                >
+                  <option value="Skill">Skill</option>
+                  <option value="Python">Python</option>
+                  <option value="Java">Java</option>
+                  <option value="HML">HTML</option>
+                  <option value="CSS">CSS</option>
+                </select>
+                <label class="sub-heading-2">Title<span>*</span></label>
+                <input type="text" id="" class="" placeholder="Title" />
+                <label class="sub-heading-2">Description<span>*</span></label>
+                <textarea placeholder="Description" rows="" cols="10"></textarea>
+              </div>
+            </form>
+            <button class="save-button sub-heading-2">Save</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="f-container">
+        <div class="f-left">
+          <h2>Vorkinsta</h2>
+          <p>
+            Vorkinsta lets any client connect with any consultant and
+            collaborate independently on their own terms. We aim at increased
+            collaboration in IT for a high-tech world. Our objective is to give
+            every member of our platform, big or small, the opportunity to
+            realize their dreams of achieving their goals of becoming an
+            entrepreneur.
+            <br />
+            We strictly advise using your own discretion on any confidential
+            information to be shared, such as Name, Phone, Address, ID, Photo,
+            or any other information.
+          </p>
+          <span>
+            <p>Follow us</p>
+            <span>
+              <img src="/assets/Facebook Circled.png" alt="" />
+              <img src="/assets/LinkedIn Circled.png" alt="" />
+              <img src="/assets/Instagram.png" alt="" />
+            </span>
+          </span>
+          <p>&copy 2021 All Rights Reserved</p>
+        </div>
+        <div class="f-right">
+          <h2>Links</h2>
+          <div>
+            <ul>
+              <li>terms and conditions</li>
+              <li>Privacy Policy</li>
+              <li>Help</li>
+              <li>Vorkinsta License</li>
+              <li>Partners</li>
+              <label for="">Select language</label>
+              <select name="languages" id="">
+                <option value="english">English</option>
+                <option value="hindi">Hindi</option>
+                <option value="spanish">Spanish</option>
+                <option value="german">German</option>
+              </select>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      let freelancer = document.getElementById("freelancer");
+      let fulltime = document.getElementById("fulltime");
+      let resume = document.getElementById("resume");
+      console.log(resume);
+      freelancer.addEventListener("change", () => {
+        if (freelancer.checked === true) {
+          resume.style.display = "none";
+        } else {
+          resume.style.display = "flex";
+        }
+      });
+      fulltime.addEventListener("change", () => {
+        if (fulltime.checked === true) {
+          resume.style.display = "flex";
+        } else {
+          resume.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
