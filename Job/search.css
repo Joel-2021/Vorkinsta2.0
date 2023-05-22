@@ -138,11 +138,8 @@
 .job-title>div {
   display: flex;
   align-items: center;
-<<<<<<< HEAD
   gap: 25px;
-=======
-  gap:14px;
->>>>>>> 1596eb6599487e477e051aaf19587bd10d3d6344
+  gap: 14px;
 }
 
 .job-title p {
@@ -349,28 +346,23 @@ input::placeholder {
   margin: 3.125rem 6.75rem;
   flex-direction: column;
 }
-<<<<<<< HEAD
+
+/* <<<<<<< HEAD */
 
 /* Result Page*/
 .result>div:first-child {
-=======
-.result > div:first-child {
->>>>>>> 1596eb6599487e477e051aaf19587bd10d3d6344
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 26px;
 }
 
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
 /* .result>div>img {
   position: relative;
 } */
 
 .result>div>h1 {
-=======
-.result > div > h1 {
->>>>>>> 1596eb6599487e477e051aaf19587bd10d3d6344
   text-transform: capitalize;
 }
 
@@ -404,7 +396,6 @@ input::placeholder {
   gap: 20px;
   align-items: center;
 }
-<<<<<<< HEAD
 
 @media screen and (max-width: 430px) {
   .top {
@@ -602,5 +593,3 @@ input:checked + label:before {
   content: '';
   background:#666;
 } */
-=======
->>>>>>> 1596eb6599487e477e051aaf19587bd10d3d6344
