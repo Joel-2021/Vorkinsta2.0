@@ -4,14 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="./search.css" />
-    <link rel="stylesheet" href="./PublishJob.css" />
-    <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
+    <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
+    <link
+      href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/publishJob.css" />
+    <link rel="stylesheet" href="../assets/css/Search.css" />
+    <link rel="stylesheet" href="../assets/css/Homepage.css" />
+    <link rel="stylesheet" href="../assets/css/config.css" />
+
     <title>Vorkinsta</title>
   </head>
   <body>
@@ -22,17 +30,37 @@
             <img src="../assets/images/Ellipse 23.png" alt="" />
           </div>
           <div class="logo">
-            <img src="../assets/images/image 9.png" alt="" srcset="" onclick="window.location.href='../index.html'"/>
+            <img
+              src="../assets/images/image 9.png"
+              alt=""
+              srcset=""
+              onclick="window.location.href='../index.html'"
+            />
           </div>
           <div class="tabs">
-            <li class="active"><a class="para-2" href="../job/search.html">My Jobs</a></li>
-            <li>
-              <a class="para-2" href="../Consultant/myConsultant.html">My Consultants</a>
+            <li class="active">
+              <a class="para-2" href="../job/search.html">My Jobs</a>
             </li>
-            <li><a class="para-2" href="../Consultant/BrowserSearch.html">Search Consultant</a></li>
-            <li><a class="para-2">Apps</a></li>
-            <li><a class="para-2">Trainings</a></li>
-            <li><img src="../assets/images/notification.png" alt="" /></li>
+            <li>
+              <a class="para-2" href="../Consultant/myConsultant.html"
+                >My Consultants</a
+              >
+            </li>
+            <li>
+              <a class="para-2" href="../Consultant/BrowserSearch.html"
+                >Search Consultant</a
+              >
+            </li>
+            <li><a class="para-2" href="../Apps/Apps.html">Apps</a></li>
+            <li>
+              <a class="para-2" href="../Training/Training.html">Trainings</a>
+            </li>
+            <li>
+              <a class="para-2" href="../Meeting/Meeting.html">Meeting Room</a>
+            </li>
+            <li onclick="window.location.href='../consultantNotification.html'">
+              <img src="../assets/images/notification.png" alt="" />
+            </li>
             <li><img src="../assets/images/profilecircle.png" alt="" /></li>
           </div>
           <div class="hamburger">
@@ -55,12 +83,24 @@
         <div class="job-nav">
           <ul>
             <li class="sub-heading-2">Job Status</li>
-            <li><a href="./Jobinprogress.html" class="sub-heading-2">In Progress</a></li>
-            <li class="act"><a href="./NotHired.html" class="sub-heading-2">Not Hired</a></li>
-            <li><a href="./Archived.html" class="sub-heading-2">Archived</a></li>
-            <li><a href="./UnderReview.html" class="sub-heading-2">UnderReview</a></li>
+            <li>
+              <a href="./Jobinprogress.html" class="sub-heading-2"
+                >In Progress</a
+              >
+            </li>
+            <li class="act">
+              <a href="./NotHired.html" class="sub-heading-2">Not Hired</a>
+            </li>
+            <li>
+              <a href="./Archived.html" class="sub-heading-2">Archived</a>
+            </li>
+            <li>
+              <a href="./UnderReview.html" class="sub-heading-2">UnderReview</a>
+            </li>
           </ul>
-          <li><a href="" id="publish-job" class="para-1">Publish new job</a></li>
+          <li>
+            <a href="" id="publish-job" class="para-1">Publish new job</a>
+          </li>
         </div>
         <p class="sub-heading-2">0 Hired</p>
         <div class="top-search">
@@ -86,7 +126,7 @@
         <form class="publish-form">
           <div class="field-section">
             <label class="sub-heading-1">Title</label>
-            <input type="text" placeholder="Job Tittle" />
+            <input type="text" placeholder="Job Title" class="popup_input para-2" />
           </div>
           <div class="field-section">
             <label class="sub-heading-1">Skills</label>
@@ -101,7 +141,7 @@
           <div class="field-section">
             <label class="sub-heading-1">Project Budget(in USD)</label>
             <div class="field-double">
-              <input type="text" placeholder="$" />
+              <input type="text" data-prepend="$" class="popup_input para-2" />
               <select data-role="select" id="rate">
                 <option value="daily">Daily</option>
                 <option value="hourly">Hourly</option>
@@ -110,40 +150,36 @@
               </select>
             </div>
           </div>
-          <div class="field-section">
-            <label class="sub-heading-1">Job Type</label>
-            <div class="field-double">
+          <div class="field-double">
+            <div class="field-section">
+              <label class="sub-heading-1">Job Type</label>
+
               <select data-role="select" id="type">
                 <option value="fulltime">Fulltime</option>
                 <option value="freelancer">Freelancer</option>
                 <option value="recruiter">Recruiter</option>
               </select>
             </div>
-          </div>
-          <div class="field-section">
-            <label class="sub-heading-1">Number of Consultants</label>
-            <div class="field-double">
-              <input type="number" id="select-para-2" />
+            <div class="field-section">
+              <label class="sub-heading-1">Number of Consultants</label>
+
+              <input type="number" class="popup_input para-2" />
             </div>
           </div>
+
           <div class="field-section">
             <label class="sub-heading-1">Description</label>
-            <textarea name="" id="" cols="40" rows="11"></textarea>
+            <textarea name="" id="" cols="40" rows="5"></textarea>
           </div>
           <div class="btn-section">
             <button
               style="background-color: #0d3451; color: white; border: none"
-              class="sub-heading-1"
+              class="sub-heading-1 blue-btn" 
             >
               Publish
             </button>
             <button
-            class="sub-heading-1"
-              style="
-                color: #ff6060;
-                border: 1px solid #ff6060;
-                background-color: #fff;
-              "
+              class="sub-heading-1 cancel-btn"
               id="cancel"
             >
               Cancel
@@ -213,6 +249,6 @@
         </div>
       </div>
     </footer>
-    <script src="./scripts.js"></script>
+    <script src="../assets/js/publishJob.js"></script>
   </body>
 </html>

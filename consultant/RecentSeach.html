@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../Job/search.css" />
-    <link rel="stylesheet" href="./RecentSearch.css" />
-    <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.korzh.com/metroui/v4/css/metro.min.css"
+    />
     <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../assets/css/Homepage.css" />
+    <link rel="stylesheet" href="../assets/css/Search.css" />
+    <link rel="stylesheet" href="../assets/css/RecentSearch.css" />
+    <link rel="stylesheet" href="../assets/css/config.css" />
   </head>
   <body>
     <header>
@@ -22,15 +23,35 @@
             <img src="../assets/images/Ellipse 23.png" alt="" />
           </div>
           <div class="logo">
-            <img src="../assets/images/image 9.png" alt="" srcset="" onclick="window.location.href='../index.html'"/>
+            <img
+              src="../assets/images/image 9.png"
+              alt=""
+              srcset=""
+              onclick="window.location.href='../index.html'"
+            />
           </div>
           <div class="tabs">
-            <li><a href="../job/search.html" class="para-2">My Jobs</a></li>
-            <li ><a href="myConsultant.html" class="para-2">My Consultants</a></li>
-            <li class="active"><a href="BrowserSearch.html" class="para-2">Search Consultant</a></li>
-            <li><a class="para-2">Apps</a></li>
-            <li><a class="para-2">Trainings</a></li>
-            <li><img src="../assets/images/notification.png" alt="" /></li>
+            <li><a class="para-2" href="../job/search.html">My Jobs</a></li>
+            <li>
+              <a class="para-2" href="../Consultant/myConsultant.html"
+                >My Consultants</a
+              >
+            </li>
+            <li class="active">
+              <a class="para-2" href="../Consultant/BrowserSearch.html"
+                >Search Consultant</a
+              >
+            </li>
+            <li><a class="para-2" href="../Apps/Apps.html">Apps</a></li>
+            <li>
+              <a class="para-2" href="../Training/Training.html">Trainings</a>
+            </li>
+            <li>
+              <a class="para-2" href="../Meeting/Meeting.html">Meeting Room</a>
+            </li>
+            <li onclick="window.location.href='../consultantNotification.html'">
+              <img src="../assets/images/notification.png" alt="" />
+            </li>
             <li><img src="../assets/images/profilecircle.png" alt="" /></li>
           </div>
           <div class="hamburger">
@@ -51,12 +72,12 @@
           <button class="sub-heading-2">Search</button>
         </form>
         <div class="job-nav">
-          <ul> 
-            <li class="sub-heading-2 act"><a href="RecentSeach.html">Recent Search</a></li>
-            <li >
-              <a href="BrowserSearch.html" class="sub-heading-2"
-                >Browse</a
-              >
+          <ul>
+            <li class="sub-heading-2 act">
+              <a href="RecentSeach.html">Recent Search</a>
+            </li>
+            <li>
+              <a href="BrowserSearch.html" class="sub-heading-2">Browse</a>
             </li>
           </ul>
           <img id="filter" src="../assets/images/Group (5).png" alt="" />
@@ -72,12 +93,14 @@
                 </div>
                 <div class="grids-lower">
                   <label for="work-from-home"
-                    ><input type="checkbox" id="work-from-home" /><span class="para-1"
+                    ><input type="checkbox" id="work-from-home" /><span
+                      class="para-1"
                       >Work From Home</span
                     ></label
                   >
                   <label for="work-from-office"
-                    ><input type="checkbox" id="work-from-office" /><span class="para-1"
+                    ><input type="checkbox" id="work-from-office" /><span
+                      class="para-1"
                       >Work From Office</span
                     ></label
                   >
@@ -95,25 +118,29 @@
                 </div>
                 <div class="grids-lower">
                   <label for="lessThan100"
-                  ><input type="checkbox" id="lessThan100" /><span  class="para-1"
-                    >$0-$100</span
-                  ></label
-                >
-                <label for="lessThan1000"
-                  ><input type="checkbox" id="lessThan1000" /><span  class="para-1"
-                    >$100-$1000</span
-                  ></label
-                >
-                <label for="lessThan10000"
-                  ><input type="checkbox" id="lessThan10000" /><span  class="para-1"
-                    >$1000-$10000</span
-                  ></label
-                >
-                <label for="moreThan10000"
-                  ><input type="checkbox" id="moreThan10000" /><span  class="para-1"
-                    >>$10000</span
-                  ></label
-                >
+                    ><input type="checkbox" id="lessThan100" /><span
+                      class="para-1"
+                      >$0-$100</span
+                    ></label
+                  >
+                  <label for="lessThan1000"
+                    ><input type="checkbox" id="lessThan1000" /><span
+                      class="para-1"
+                      >$100-$1000</span
+                    ></label
+                  >
+                  <label for="lessThan10000"
+                    ><input type="checkbox" id="lessThan10000" /><span
+                      class="para-1"
+                      >$1000-$10000</span
+                    ></label
+                  >
+                  <label for="moreThan10000"
+                    ><input type="checkbox" id="moreThan10000" /><span
+                      class="para-1"
+                      >>$10000</span
+                    ></label
+                  >
                 </div>
               </div>
               <div class="grids">
@@ -123,20 +150,21 @@
                 </div>
                 <div class="grids-lower">
                   <label for="beginner"
-                  ><input type="checkbox" id="beginner" /><span  class="para-1"
-                    >Beginner</span
-                  ></label
-                >
-                <label for="intermediate"
-                ><input type="checkbox" id="intermediate" /><span  class="para-1"
-                  >Intermediate</span 
-                ></label
-              >
-              <label for="expert"
-              ><input type="checkbox" id="expert" /><span  class="para-1"
-                >Expert</span
-              ></label
-            >
+                    ><input type="checkbox" id="beginner" /><span class="para-1"
+                      >Beginner</span
+                    ></label
+                  >
+                  <label for="intermediate"
+                    ><input type="checkbox" id="intermediate" /><span
+                      class="para-1"
+                      >Intermediate</span
+                    ></label
+                  >
+                  <label for="expert"
+                    ><input type="checkbox" id="expert" /><span class="para-1"
+                      >Expert</span
+                    ></label
+                  >
                 </div>
               </div>
               <div class="grids">
@@ -146,26 +174,29 @@
                 </div>
                 <div class="grids-lower">
                   <label for="lessThan5"
-                  ><input type="checkbox" id="lessThan5" /><span  class="para-1"
-                    >$0-$5</span
-                  ></label
-                >
-                <label for="lessThan10"
-                ><input type="checkbox" id="lessThan10" /><span  class="para-1"
-                  >$5-$10</span
-                ></label
-              >
-              <label for="moreThan10"
-              ><input type="checkbox" id="moreThan10" /><span  class="para-1"
-                >$10-$100</span
-              ></label
-            >
-            <label for="moreThan100"
-            ><input type="checkbox" id="moreThan100" /><span  class="para-1"
-              >$100</span
-            ></label
-          >
-      
+                    ><input type="checkbox" id="lessThan5" /><span
+                      class="para-1"
+                      >$0-$5</span
+                    ></label
+                  >
+                  <label for="lessThan10"
+                    ><input type="checkbox" id="lessThan10" /><span
+                      class="para-1"
+                      >$5-$10</span
+                    ></label
+                  >
+                  <label for="moreThan10"
+                    ><input type="checkbox" id="moreThan10" /><span
+                      class="para-1"
+                      >$10-$100</span
+                    ></label
+                  >
+                  <label for="moreThan100"
+                    ><input type="checkbox" id="moreThan100" /><span
+                      class="para-1"
+                      >$100</span
+                    ></label
+                  >
                 </div>
               </div>
               <div class="grids">
@@ -174,24 +205,7 @@
                   <img src="../assets/images/Vector 13.png" alt="" />
                 </div>
                 <div class="grids-lower">
-                  <!-- <select data-role="select" multiple>
-                    <optgroup label="Physical servers">
-                        <option value="dedicated_corei3_hp">Core i3 (hp)</option>
-                        <option value="dedicated_pentium_hp">Pentium (hp)</option>
-                        <option value="dedicated_smart_corei3_hp">Smart Core i3 (hp)</option>
-                    </optgroup>
-                    <optgroup label="Virtual hosting">
-                        <option value="mini">Mini</option>
-                        <option value="site">Site</option>
-                        <option value="portal">Portal</option>
-                    </optgroup>
-                    <optgroup label="Virtual servers">
-                        <option value="evps0">eVPS-TEST (30 дней)</option>
-                        <option value="evps1" selected="selected">eVPS-1</option>
-                        <option value="evps2">eVPS-2</option>
-                    </optgroup>
-                </select> -->
-                  <div class="seacrh-grid">
+                  <div class="search-grid">
                     <img src="../assets/images/hiwsearch.png" alt="" />
                     <input type="search" placeholder="Search Here.." />
                   </div>
@@ -213,7 +227,7 @@
                   <img src="../assets/images/Vector 13.png" alt="" />
                 </div>
                 <div class="grids-lower">
-                  <div class="seacrh-grid">
+                  <div class="search-grid">
                     <img src="../assets/images/hiwsearch.png" alt="" />
                     <input type="search" placeholder="Search Here.." />
                   </div>
@@ -232,15 +246,12 @@
             </div>
             <hr />
             <div class="modal-button sub-heading-1">
-              <button style="color: white;border:none" class="sub-heading-2">Show Result</button>
+              <button class="sub-heading-2 blue-btn">
+                Show Result
+              </button>
               <button
-              class="sub-heading-2"
+                class="sub-heading-2 cancel-btn"
                 id="close"
-                style="
-                  color: #ff0000;
-                  background-color: white;
-                  border: 1px solid #ff0000;
-                "
               >
                 Clear
               </button>
@@ -252,11 +263,11 @@
             <div class="job-title">
               <div>
                 <div class="profile-pic">
-                    <img src="/assets/images/profilepic.png" alt="">
+                  <img src="/assets/images/profilepic.png" alt="" />
                 </div>
                 <h3 class="sub-heading-2">Name</h3>
               </div>
-                <div class="icons">
+              <div class="icons">
                 <img src="/assets/images/save.png" alt="" class="save" />
                 <img src="/assets/images/edit.png" alt="" class="edit" />
               </div>
@@ -270,19 +281,24 @@
               </div>
             </div>
             <div class="desc">
-              <p class="para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus sunt deserunt inventore, alias vitae doloremque cum magnam adipisci voluptates amet repellat quia rerum maxime voluptas, aut, deleniti dolorum enim.</p>
+              <p class="para-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                voluptatibus sunt deserunt inventore, alias vitae doloremque cum
+                magnam adipisci voluptates amet repellat quia rerum maxime
+                voluptas, aut, deleniti dolorum enim.
+              </p>
               <button class="para-1">Show More</button>
             </div>
           </div>
-        <div class="job">
+          <div class="job">
             <div class="job-title">
               <div>
                 <div class="profile-pic">
-                    <img src="/assets/images/profilepic.png" alt="">
+                  <img src="/assets/images/profilepic.png" alt="" />
                 </div>
                 <h3 class="sub-heading-2">Name</h3>
               </div>
-                <div class="icons">
+              <div class="icons">
                 <img src="/assets/images/save.png" alt="" class="save" />
                 <img src="/assets/images/edit.png" alt="" class="edit" />
               </div>
@@ -296,19 +312,24 @@
               </div>
             </div>
             <div class="desc">
-              <p class="para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus sunt deserunt inventore, alias vitae doloremque cum magnam adipisci voluptates amet repellat quia rerum maxime voluptas, aut, deleniti dolorum enim.</p>
+              <p class="para-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                voluptatibus sunt deserunt inventore, alias vitae doloremque cum
+                magnam adipisci voluptates amet repellat quia rerum maxime
+                voluptas, aut, deleniti dolorum enim.
+              </p>
               <button class="para-1">Show More</button>
             </div>
           </div>
-        <div class="job">
+          <div class="job">
             <div class="job-title">
               <div>
                 <div class="profile-pic">
-                    <img src="/assets/images/profilepic.png" alt="">
+                  <img src="/assets/images/profilepic.png" alt="" />
                 </div>
                 <h3 class="sub-heading-2">Name</h3>
               </div>
-                <div class="icons">
+              <div class="icons">
                 <img src="/assets/images/save.png" alt="" class="save" />
                 <img src="/assets/images/edit.png" alt="" class="edit" />
               </div>
@@ -322,14 +343,20 @@
               </div>
             </div>
             <div class="desc">
-              <p class="para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus sunt deserunt inventore, alias vitae doloremque cum magnam adipisci voluptates amet repellat quia rerum maxime voluptas, aut, deleniti dolorum enim.</p>
+              <p class="para-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                voluptatibus sunt deserunt inventore, alias vitae doloremque cum
+                magnam adipisci voluptates amet repellat quia rerum maxime
+                voluptas, aut, deleniti dolorum enim.
+              </p>
               <button class="para-1">Show More</button>
             </div>
           </div>
-       
         </section>
         <div class="pagination">
-          <button class="prev"><img src="/assets/images/prev.png" alt="" /></button>
+          <button class="prev">
+            <img src="/assets/images/prev.png" alt="" />
+          </button>
           <div class="page-num page-num-active">
             <p class="sub-heading-2">1</p>
           </div>
@@ -339,15 +366,17 @@
           <div class="page-num">
             <p class="sub-heading-2">3</p>
           </div>
-          <button class="next"><img src="/assets/images/next.png" alt="" /></button>
+          <button class="next">
+            <img src="/assets/images/next.png" alt="" />
+          </button>
         </div>
       </section>
     </main>
     <footer>
       <div class="f-container">
         <div class="f-left">
-          <h2>Vorkinsta</h2>
-          <p>
+          <h2 class="sub-heading-2">Vorkinsta</h2>
+          <p class="para-2">
             Vorkinsta lets any client connect with any consultant and
             collaborate independently on their own terms. We aim at increased
             collaboration in IT for a high-tech world. Our objective is to give
@@ -360,24 +389,38 @@
             or any other information.
           </p>
           <span>
-            <p>Follow us</p>
+            <p class="sub-heading-2">Follow us</p>
             <span>
               <img src="/assets/images/Facebook Circled.png" alt="" />
               <img src="/assets/images/LinkedIn Circled.png" alt="" />
               <img src="/assets/images/Instagram.png" alt="" />
             </span>
           </span>
-          <p>&copy 2021 All Rights Reserved</p>
+          <p class="sub-heading-2">&copy 2021 All Rights Reserved</p>
         </div>
         <div class="f-right">
           <h2>Links</h2>
           <div>
             <ul>
-              <li>terms and conditions</li>
-              <li>Privacy Policy</li>
-              <li>Help</li>
-              <li>Vorkinsta License</li>
-              <li>Partners</li>
+              <li>
+                <a href="Footer/tandc.html" class="para-2">
+                  Terms and Conditions</a
+                >
+              </li>
+              <li>
+                <a href="Footer/privacyandpolicy.html" class="para-2">
+                  Privacy Policy</a
+                >
+              </li>
+              <li><a href="Footer/helpcenter.html" class="para-2"> Help</a></li>
+              <li>
+                <a href="Footer/licence.html" class="para-2">
+                  Vorkinsta License</a
+                >
+              </li>
+              <li>
+                <a href="Footer/partners.html" class="para-2"> Partners</a>
+              </li>
               <label for="">Select language</label>
               <select name="languages" id="">
                 <option value="english">English</option>
@@ -390,36 +433,7 @@
         </div>
       </div>
     </footer>
-    <script>
-      const filter = document.getElementById("filter");
-      var modal = document.getElementById("myModal");
-      var close = document.getElementById("close");
-      filter.onclick = function () {
-        modal.style.display = "block";
-      };
-      close.onclick = function () {
-        modal.style.display = "none";
-      };
-      window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      };
-    </script>
-    <script>
-      const dropdown = document.getElementsByClassName("dropdown");
-      for (i = 0; i < dropdown.length; i++) {
-        dropdown[i].addEventListener("click", function () {
-          var panel = this.nextElementSibling;
-          if (panel.style.display === "flex") {
-            panel.style.display = "none";
-          } else {
-            panel.style.display = "flex";
-          }
-        });
-      }
-     
+    <script src="../assets/js/filter.js">
     </script>
   </body>
-  f
 </html>

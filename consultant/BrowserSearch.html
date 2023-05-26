@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../Job/search.css" />
-    <link rel="stylesheet" href="./RecentSearch.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.korzh.com/metroui/v4/css/metro.min.css"
+    />
+    <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/Homepage.css" />
+    <link rel="stylesheet" href="../assets/css/Search.css" />
+    <link rel="stylesheet" href="../assets/css/RecentSearch.css" />
+    <link rel="stylesheet" href="../assets/css/config.css" />
     <title>Document</title>
   </head>
   <body>
@@ -17,18 +23,28 @@
             <img src="../assets/images/Ellipse 23.png" alt="" />
           </div>
           <div class="logo">
-            <img src="../assets/images/image 9.png" alt="" srcset="" onclick="window.location.href='../index.html'"/>
+             <img src="../assets/images/image 9.png" alt="" srcset="" onclick="window.location.href='../index.html'" />
           </div>
           <div class="tabs">
-            <li><a class="para-2" href="../job/search.html">My Jobs</a></li>
-            <li>
-              
-              <a class="para-2" href="../Consultant/myConsultant.html">My Consultants</a>
+            <li ><a class="para-2" href="../job/search.html">My Jobs</a></li>
+            <li >
+              <a class="para-2" href="../Consultant/myConsultant.html"
+                >My Consultants</a
+              >
             </li>
-            <li class="active"><a class="para-2" href="../Consultant/BrowserSearch.html">Search Consultant</a></li>
-            <li><a class="para-2">Apps</a></li>
-            <li><a class="para-2">Trainings</a></li>
-            <li><img src="../assets/images/notification.png" alt="" /></li>
+            <li class="active">
+              <a class="para-2" href="../Consultant/BrowserSearch.html"
+                >Search Consultant</a
+              >
+            </li>
+            <li><a class="para-2" href="../Apps/Apps.html">Apps</a></li>
+            <li>
+              <a class="para-2" href="../Training/Training.html">Trainings</a>
+            </li>
+            <li>
+              <a class="para-2" href="../Meeting/Meeting.html">Meeting Room</a>
+            </li>
+            <li onclick="window.location.href='../consultantNotification.html'"><img src="../assets/images/notification.png" alt="" /></li>
             <li><img src="../assets/images/profilecircle.png" alt="" /></li>
           </div>
           <div class="hamburger">
@@ -388,33 +404,7 @@
         </div>
       </div>
     </footer>
-    <script>
-      const filter = document.getElementById('filter');
-      console.log(filter)
-      var modal = document.getElementById('myModal');
-      console.log(modal)
-      var close = document.getElementById('close');
-      filter.onclick = function () {
-        console.log("dwadwa")
-        modal.style.display = 'block';
-      };
-      close.onclick = function () {
-        modal.style.display = 'none';
-      };
-      window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = 'none';
-        }
-      };
-    </script>
-    <script>
-      const dropdown = document.getElementsByClassName('dropdown');
-      for (i = 0; i < dropdown.length; i++) {
-        dropdown[i].addEventListener('click', function () {
-          var panel = this.nextElementSibling;
-          panel.style.display = 'flex';
-        });
-      }
+    <script src="../assets/js/filter.js">
     </script>
   </body>
 </html>

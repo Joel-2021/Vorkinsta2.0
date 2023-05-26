@@ -28,7 +28,7 @@
 .publish-right-container>h1 {
   text-align: center;
   color: #0d3451;
-  margin-top: 57px !important;
+  margin-top: 57px ;
 }
 
 .publish-form {
@@ -60,10 +60,10 @@
 }
 
 .select.multiple {
-  width: 100% !important;
-  height: 45px !important;
-  border-radius: 10px !important;
-  border: 1px solid black !important;
+  width: 100% ;
+  height: 45px ;
+  border-radius: 10px ;
+  border: 1px solid black ;
 }
 
 .field-section>textarea {
@@ -115,11 +115,11 @@
 
 .select,
 .input-normal {
-  width: 280px !important;
-  height: 45px !important;
-  border-radius: 10px !important;
-  border: 1px solid black !important;
-  align-items: center !important;
+  width: 280px ;
+  height: 45px ;
+  border-radius: 10px ;
+  border: 1px solid black ;
+  align-items: center ;
 }
 
 .btn-section {

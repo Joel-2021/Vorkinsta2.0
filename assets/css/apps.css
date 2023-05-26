@@ -1,0 +1,23 @@
+.app {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .app>div {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .app-details {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .name {
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+  }
+  

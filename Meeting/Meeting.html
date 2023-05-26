@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Meeting.css" />
+
+    <link rel="stylesheet" href="/assets/css/config.css" />
+    <link rel="stylesheet" href="/assets/css/Homepage.css" />
+    <link rel="stylesheet" href="/assets/css/meeting.css" />
     <title>Document</title>
   </head>
   <body>
@@ -12,10 +15,10 @@
       <div class="top">
         <div>
           <div class="avatar">
-            <img src="../assets/Ellipse 23.png" alt="" />
+            <img src="../assets/images/Ellipse 23.png" alt="" />
           </div>
           <div class="logo">
-            <img src="../assets/image 9.png" alt="" srcset="" />
+             <img src="../assets/images/image 9.png" alt="" srcset="" onclick="window.location.href='../index.html'" />
           </div>
           <div class="tabs">
             <li><a class="para-2" href="../job/search.html">My Jobs</a></li>
@@ -29,15 +32,18 @@
                 >Search Consultant</a
               >
             </li>
-            <li class="active"><a class="para-2" href="Apps.html">Apps</a></li>
+            <li><a class="para-2" href="Apps.html">Apps</a></li>
             <li>
               <a class="para-2" href="../Training/Training.html">Trainings</a>
             </li>
-            <li><img src="../assets/notification.png" alt="" /></li>
-            <li><img src="../assets/profilecircle.png" alt="" /></li>
+            <li class="active">
+              <a class="para-2" href="Meeting.html">Meeting Room</a>
+            </li>
+            <li onclick="window.location.href='../consultantNotification.html'"><img src="../assets/images/notification.png" alt="" /></li>
+            <li><img src="../assets/images/profilecircle.png" alt="" /></li>
           </div>
           <div class="hamburger">
-            <img src="../assets/Group 63.png" alt="" srcset="" />
+            <img src="../assets/images/Group 63.png" alt="" srcset="" />
           </div>
         </div>
       </div>
@@ -45,41 +51,42 @@
     <main>
       <section class="meeting" style="margin: 50px 0">
         <div class="meeting-container">
-          <div class="left">
+          <div class="m-left">
             <div class="left-upper">
               <input type="text" placeholder="Search here....." />
             </div>
             <div class="left-lower">
               <div class="list">
                 <div class="single-chat">
-                  <img src="/assets/Meetingggg.png" alt="" />
+                  <img src="/assets/images/Meetingggg.png" alt="" />
                   <div class="info">
-                    <p>all_Hub</p>
-                    <span>client</span>
+                    <p class="para-1">all_Hub</p>
+                    <span class="para-2">client</span>
                   </div>
                 </div>
                 <div class="single-chat">
-                  <img src="/assets/Meetingggg.png" alt="" />
+                  <img src="/assets/images/Meetingggg.png" alt="" />
                   <div class="info">
-                    <p>all_Hub</p>
-                    <span>client</span>
+                    <p class="para-1">all_Hub</p>
+                    <span class="para-2">client</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="right">
+          <div class="m-right">
             <div style="height: 80vh">
               <div class="right-upper">
                 <div class="left-h">
-                  <img src="/assets/Meetingggg.png" alt="" />
+                  <img src="/assets/images/Meetingggg.png" alt="" />
                   <div class="info">
-                    <p>All_hub</p>
-                    <span>client</span>
+                    <p class="para-1">All_hub</p>
+                    <span class="para-2">client</span>
                   </div>
                 </div>
                 <div class="right-h">
                   <svg
+                  id="menu"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
@@ -97,15 +104,15 @@
               </div>
               <div class="right-middle">
                 <div class="recevier">
-                  <img src="/assets/Meetingggg.png" alt="" srcset="" />
+                  <img src="/assets/images/Meetingggg.png" alt="" srcset="" />
                   <div class="text">
-                    <span> hello </span>
+                    <span class="para-2"> hello </span>
                   </div>
                 </div>
                 <div class="sender">
-                  <img src="/assets/Meetingggg.png" alt="" srcset="" />
+                  <img src="/assets/images/Meetingggg.png" alt="" srcset="" />
                   <div class="text">
-                    <span>
+                    <span class="para-2">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Vero porro, pariatur voluptatem eligendi sint alias optio.
                       Reiciendis non aliquam voluptatem eum rem veniam
@@ -117,16 +124,21 @@
               </div>
               <div class="right-lower">
                 <div class="input-section">
-                  <img src="/assets/shareinput.png" alt="" />
+                  <input type="file" accept="png/jpg*" id="file-upload" style="display: none;"
+                  >
+                  <label for="file-upload" >
+                    <img src="/assets/images/shareinput.png" alt="" />
+                  </label >
                   <input type="text" placeholder="Type here" />
-                  <img src="/assets/sendINput.png" alt="" />
+                  <img src="/assets/images/sendINput.png" alt="" />
                 </div>
               </div>
             </div>
-            <div class="" style="width: 80%">
-              <div class="right-upper" style="justify-content: end">
+            <div style="width: 80%; display: none" id="sidebar">
+              <div class="right-upper" style="justify-content: flex-end">
                 <div class="right-h">
                   <svg
+                    id="close"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
@@ -146,26 +158,26 @@
               <div class="hidden-content">
                 <div class="secrh-conetext">
                   <div class="name">
-                    <span>Search Image</span>
+                    <span class="para-1">Search Image</span>
                     <img src="/assets/Vector 13.png" alt="" />
                   </div>
                   <div class="imgs">
-                    <img src="/assets/Srachsc asciamsgasc.png" alt="" />
-                    <img src="/assets/Srachsc asciamsgasc.png" alt="" />
-                    <img src="/assets/Srachsc asciamsgasc.png" alt="" />
-                    <img src="/assets/Srachsc asciamsgasc.png" alt="" />
-                    <img src="/assets/Srachsc asciamsgasc.png" alt="" />
-                    <img src="/assets/Srachsc asciamsgasc.png" alt="" />
-                    <img src="/assets/Srachsc asciamsgasc.png" alt="" />
-                    <img src="/assets/Srachsc asciamsgasc.png" alt="" />
+                    <img src="/assets/images/Srachsc asciamsgasc.png" alt="" />
+                    <img src="/assets/images/Srachsc asciamsgasc.png" alt="" />
+                    <img src="/assets/images/Srachsc asciamsgasc.png" alt="" />
+                    <img src="/assets/images/Srachsc asciamsgasc.png" alt="" />
+                    <img src="/assets/images/Srachsc asciamsgasc.png" alt="" />
+                    <img src="/assets/images/Srachsc asciamsgasc.png" alt="" />
+                    <img src="/assets/images/Srachsc asciamsgasc.png" alt="" />
+                    <img src="/assets/images/Srachsc asciamsgasc.png" alt="" />
                   </div>
                 </div>
               </div>
               <div class="hidden-content">
                 <div class="secrh-conetext">
                   <div class="name">
-                    <span>Search Chat</span>
-                    <img src="/assets/Vector 13.png" alt="" />
+                    <span class="para-1">Search Chat</span>
+                    <img src="/assets/images/Vector 13.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -235,5 +247,23 @@
         </div>
       </div>
     </footer>
+    <script>
+      let menu = document.getElementById("menu");
+      let sidebar = document.getElementById("sidebar");
+      let closeIcon = document.getElementById("close");
+      console.log(menu, sidebar);
+      menu.addEventListener('click', () => {
+        if(sidebar.style.display=='none'){
+          sidebar.style.display='block'
+        }
+        else{
+          sidebar.style.display='none'
+        }
+      });
+      closeIcon.addEventListener('click', () => {
+        console.log('clicked')
+        sidebar.style.display='none'
+      });
+    </script>
   </body>
 </html>

@@ -2,12 +2,16 @@ let publish = document.querySelector("#publish-job");
 let cancel = document.querySelector("#cancel");
 let modal = document.querySelector(".publish-right-container");
 let search = document.querySelector(".search");
-console.log(publish, modal);
+let header=document.querySelector('header')
+let footer=document.querySelector('footer')
+
 publish.addEventListener("click", (e) => {
+  console.log(modal)
     e.preventDefault()
   modal.style.display = "block";
-  search.style.height = "1600px";
   search.classList.add('blur')
+  header.classList.add('blur')
+  footer.classList.add('blur')
 });
 cancel.addEventListener("click", (e) => {
   e.preventDefault();
@@ -15,4 +19,6 @@ cancel.addEventListener("click", (e) => {
   search.style.height = "fit-content";
   search.scrollIntoView();
   search.classList.remove('blur')
+  header.classList.remove('blur')
+  footer.classList.remove('blur')
 });

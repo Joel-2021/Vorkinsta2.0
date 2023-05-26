@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="/Job/search.css" />
+    <link rel="stylesheet" href="/Job/PublishJob.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      textarea {
+        padding: 10px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+      }
+      ::placeholder {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+      }
+    </style>
+    <header>
+      <div class="top">
+        <div>
+          <div class="avatar">
+            <img src="../assets/images/Ellipse 23.png" alt="" />
+          </div>
+          <div class="logo">
+             <img src="./assets/images/image 9.png" alt="" srcset="" onclick="window.location.href='../index.html'" />
+          </div>
+          <div class="tabs">
+            <li class="active">
+              <a class="para-2" href="../job/search.html">My Jobs</a>
+            </li>
+            <li>
+              <a class="para-2" href="../Consultant/myConsultant.html"
+                >My Consultants</a
+              >
+            </li>
+            <li>
+              <a class="para-2" href="../Consultant/BrowserSearch.html"
+                >Search Consultant</a
+              >
+            </li>
+            <li><a class="para-2" href="../Apps/Apps.html">Apps</a></li>
+            <li>
+              <a class="para-2" href="../Training/Training.html">Trainings</a>
+            </li>
+            <li>
+              <a class="para-2" href="../Meeting/Meeting.html">Meeting Room</a>
+            </li>
+            <li onclick="window.location.href='../consultantNotification.html'"><img src="../assets/images/notification.png" alt="" /></li>
+            <li><img src="../assets/images/profilecircle.png" alt="" /></li>
+          </div>
+          <div class="hamburger">
+            <img src="../assets/images/Group 63.png" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="search">
+        <form action="">
+          <input type="text" name="" id="job" placeholder="Search here..." />
+          <div class="vr"></div>
+          <span>
+            <i><img src="../assets/images/location.png" alt="" /></i>
+            <input type="text" id="location" placeholder="Location" />
+          </span>
+          <button class="sub-heading-2">Search</button>
+        </form>
+        <div class="job-nav">
+          <ul style="display: flex; gap: 15px; padding: 0">
+            <li class="sub-heading-2">Job Status</li>
+            <li style="padding: 0">
+              <a href="#proposal_recieved" class="para-1">Proposal Recieved</a>
+            </li>
+            <li style="padding: 0">
+              <a href="#invitation_sent" class="para-1">Invitation Sent</a>
+            </li>
+            <li class="act" style="padding: 0">
+              <a href="#in_progress" class="para-1">Task In Progress</a>
+            </li>
+            <li style="padding: 0">
+              <a href="#close_request" class="para-1">Task Close Request</a>
+            </li>
+            <li style="padding: 0">
+              <a href="#closed_task" class="para-1">Completed Tasks</a>
+            </li>
+          </ul>
+
+          <li>
+            <a
+              href="Consultant/RecentSeach.html"
+              id="publish-job"
+              class="para-1"
+              >Find Consultant</a
+            >
+          </li>
+        </div>
+
+        <section id="in_progress">
+          <div class="job">
+            <div class="job-title">
+              <div>
+                <h3 class="sub-heading-2">Job Title</h3>
+                <div class="status">
+                  <img src="/assets/images/progress.png" alt="" />
+                  <p class="para-1">In Progress</p>
+                </div>
+                <p class="posted-on para-1">2 days ago</p>
+              </div>
+              <div class="icons">
+                <img src="/assets/images/save.png" alt="" class="save" />
+                <img src="/assets/images/edit.png" alt="" class="edit" />
+              </div>
+            </div>
+            <div>
+              <div class="job-skills">
+                <div class="skills">
+                  <p class="sub-heading-2">Skills</p>
+                </div>
+                <p class="para-1">Bootstrap,HTML,CSS,JS,React</p>
+              </div>
+              <div class="budget">
+                <p class="para-1">Project Budget- $1500-$2000</p>
+              </div>
+              <div class="budget">
+                <p class="para-1" id="close">Close Task</p>
+              </div>
+            </div>
+            <div class="desc">
+              <p class="para-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                voluptatibus sunt deserunt inventore, alias vitae doloremque cum
+                magnam adipisci voluptates amet repellat quia rerum maxime
+                voluptas, aut, deleniti dolorum enim.
+              </p>
+              <button class="para-1">Meeting Room</button>
+            </div>
+          </div>
+        </section>
+        <section id="close_request" style="display: none">
+          <div class="job">
+            <div class="job-title">
+              <div>
+                <h3 class="sub-heading-2">Job Title</h3>
+                <div class="status">
+                  <img src="/assets/images/progress.png" alt="" />
+                  <p class="para-1">In Progress</p>
+                </div>
+                <p class="posted-on para-1">2 days ago</p>
+              </div>
+              <div class="icons">
+                <img src="/assets/images/save.png" alt="" class="save" />
+                <img src="/assets/images/edit.png" alt="" class="edit" />
+              </div>
+            </div>
+            <div>
+              <div class="job-skills">
+                <div class="skills">
+                  <p class="sub-heading-2">Skills</p>
+                </div>
+                <p class="para-1">Bootstrap,HTML,CSS,JS,React</p>
+              </div>
+              <div class="budget">
+                <p class="para-1">Project Budget- $1500-$2000</p>
+              </div>
+              <div class="budget">
+                <p class="para-1">Close Task</p>
+              </div>
+            </div>
+            <div class="desc">
+              <p class="para-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                voluptatibus sunt deserunt inventore, alias vitae doloremque cum
+                magnam adipisci voluptates amet repellat quia rerum maxime
+                voluptas, aut, deleniti dolorum enim.
+              </p>
+              <button class="para-1">Meeting Room</button>
+            </div>
+          </div>
+        </section>
+        <section id="closed_task" style="display: none">
+          <div class="job">
+            <div class="job-title">
+              <div>
+                <h3 class="sub-heading-2">Job Title</h3>
+                <div class="status">
+                  <img src="/assets/images/progress.png" alt="" />
+                  <p class="para-1">In Progress</p>
+                </div>
+                <p class="posted-on para-1">2 days ago</p>
+              </div>
+              <div class="icons">
+                <img src="/assets/images/save.png" alt="" class="save" />
+                <img src="/assets/images/edit.png" alt="" class="edit" />
+              </div>
+            </div>
+            <div>
+              <div class="job-skills">
+                <div class="skills">
+                  <p class="sub-heading-2">Skills</p>
+                </div>
+                <p class="para-1">Bootstrap,HTML,CSS,JS,React</p>
+              </div>
+              <div class="budget">
+                <p class="para-1">Project Budget- $1500-$2000</p>
+              </div>
+              <div class="budget">
+                <p class="para-1">Close Task</p>
+              </div>
+            </div>
+            <div class="desc">
+              <p class="para-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                voluptatibus sunt deserunt inventore, alias vitae doloremque cum
+                magnam adipisci voluptates amet repellat quia rerum maxime
+                voluptas, aut, deleniti dolorum enim.
+              </p>
+              <button class="para-1">Meeting Room</button>
+            </div>
+          </div>
+        </section>
+        <section id="invitation_sent" style="display: none">
+          <p class="sub-heading-2" style="text-align: center">0 Hired</p>
+        </section>
+        <section id="proposal_recieved" style="display: none">
+          <div class="job">
+            <div class="job-title">
+              <div>
+                <h3 class="sub-heading-2">Job Title</h3>
+                <div class="status">
+                  <img src="/assets/images/progress.png" alt="" />
+                  <p class="para-1">In Progress</p>
+                </div>
+                <p class="posted-on para-1">2 days ago</p>
+              </div>
+              <div class="icons">
+                <img src="/assets/images/save.png" alt="" class="save" />
+                <img src="/assets/images/edit.png" alt="" class="edit" />
+              </div>
+            </div>
+            <div>
+              <div class="job-skills">
+                <div class="skills">
+                  <p class="sub-heading-2">Skills</p>
+                </div>
+                <p class="para-1">Bootstrap,HTML,CSS,JS,React</p>
+              </div>
+              <div class="budget">
+                <p class="para-1">Project Budget- $1500-$2000</p>
+              </div>
+              <div class="budget">
+                <p class="para-1">Close Task</p>
+              </div>
+            </div>
+            <div class="desc">
+              <p class="para-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                voluptatibus sunt deserunt inventore, alias vitae doloremque cum
+                magnam adipisci voluptates amet repellat quia rerum maxime
+                voluptas, aut, deleniti dolorum enim.
+              </p>
+              <button class="para-1">Meeting Room</button>
+            </div>
+          </div>
+        </section>
+        <div class="pagination">
+                <button class="prev"><img src="/assets/images/prev.png" alt=""></button>
+                  <div class="page-num page-num-active">
+                    <p class="sub-heading-2">1</p>
+                  </div>
+                  <div class="page-num">
+                    <p class="sub-heading-2">2</p>
+                  </div>
+                  <div class="page-num">
+                    <p class="sub-heading-2">3</p>
+                  </div>
+                <button class="next"><img src="/assets/images/next.png" alt=""></button>
+              </div> 
+      </section>
+      <div
+        id="rating"
+        class="publish-right-container"
+        style="
+          width: 80%;
+          top: 50px;
+          border: 1px solid black;
+          border-radius: 0;
+          display: none;
+        "
+      >
+        <h1 class="heading-2">
+          Rate your Experience With <span id="con_name">Nilesh Gholap</span>
+        </h1>
+        <form class="publish-form">
+          <div class="field-section">
+            <label class="sub-heading-1">Rating</label>
+            <input
+              data-role="rating"
+              data-value="0"
+              data-stared-color="#FCB808"
+            />
+          </div>
+          <div class="field-section">
+            <label for="desc" class="sub-heading-1">Description</label>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              id="desc"
+              placeholder="Enter you Feedback"
+              style="border-radius: 0"
+            ></textarea>
+          </div>
+          <div class="btn-section">
+            <button
+              style="background-color: #0d3451; color: white; border: none"
+              class="sub-heading-1"
+            >
+              Submit
+            </button>
+            <button
+              class="sub-heading-1"
+              style="
+                color: #ff6060;
+                border: 1px solid #ff6060;
+                background-color: #fff;
+              "
+              id="cancel"
+            >
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="f-container">
+        <div class="f-left">
+          <h2 class="sub-heading-2">Vorkinsta</h2>
+          <p class="para-2">
+            Vorkinsta lets any client connect with any consultant and
+            collaborate independently on their own terms. We aim at increased
+            collaboration in IT for a high-tech world. Our objective is to give
+            every member of our platform, big or small, the opportunity to
+            realize their dreams of achieving their goals of becoming an
+            entrepreneur.
+            <br />
+            We strictly advise using your own discretion on any confidential
+            information to be shared, such as Name, Phone, Address, ID, Photo,
+            or any other information.
+          </p>
+          <span>
+            <p class="sub-heading-2">Follow us</p>
+            <span>
+              <img src="/assets/images/Facebook Circled.png" alt="" />
+              <img src="/assets/images/LinkedIn Circled.png" alt="" />
+              <img src="/assets/images/Instagram.png" alt="" />
+            </span>
+          </span>
+          <p class="sub-heading-2">&copy 2021 All Rights Reserved</p>
+        </div>
+        <div class="f-right">
+          <h2>Links</h2>
+          <div>
+            <ul>
+              <li>
+                <a href="Footer/tandc.html" class="para-2">
+                  Terms and Conditions</a
+                >
+              </li>
+              <li>
+                <a href="Footer/privacyandpolicy.html" class="para-2">
+                  Privacy Policy</a
+                >
+              </li>
+              <li><a href="Footer/helpcenter.html" class="para-2"> Help</a></li>
+              <li>
+                <a href="Footer/licence.html" class="para-2">
+                  Vorkinsta License</a
+                >
+              </li>
+              <li>
+                <a href="Footer/partners.html" class="para-2"> Partners</a>
+              </li>
+              <label for="">Select language</label>
+              <select name="languages" id="">
+                <option value="english">English</option>
+                <option value="hindi">Hindi</option>
+                <option value="spanish">Spanish</option>
+                <option value="german">German</option>
+              </select>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var navLinks = document.querySelectorAll(".job-nav a");
+        console.log(navLinks);
+        navLinks.forEach(function (link) {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            let act = document.getElementsByClassName("act");
+            act[0].classList.remove("act");
+            link.parentElement.classList.add("act");
+            let target = link.getAttribute("href");
+            let id = document.querySelector(target);
+            let sections = document.querySelectorAll("section[id]");
+            if (id) {
+              sections.forEach((section) => {
+                section.style.display = "none";
+              });
+              // document.querySelector('.search').style.display='flex'
+              id.style.display = "block";
+            }
+          });
+        });
+        let rating = document.getElementById("rating");
+        let close_task = document.getElementById("close");
+        let close_modal = document.getElementById("cancel");
+        console.log(close_modal);
+        close_task.addEventListener("click", () => {
+          rating.style.display = "block";
+        });
+      });
+      var cancelButton = document.getElementById("cancel");
+      cancelButton.addEventListener("click", close_rating);
+
+      function close_rating(event) {
+        event.preventDefault();
+        rating.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
