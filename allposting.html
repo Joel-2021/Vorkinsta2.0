@@ -9,9 +9,10 @@
       rel="stylesheet"
       href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css"
     />
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="/Job/search.css" />
-    <link rel="stylesheet" href="/Job/PublishJob.css" />
+   <link rel="stylesheet" href="assets/css/config.css">
+   <link rel="stylesheet" href="assets/css/Homepage.css">
+   <link rel="stylesheet" href="assets/css/publishJob.css">
+   <link rel="stylesheet" href="assets/css/Search.css">
     <title>Document</title>
   </head>
   <body>
@@ -40,7 +41,7 @@
              <img src="./assets/images/image 9.png" alt="" srcset="" onclick="window.location.href='../index.html'" />
           </div>
           <div class="tabs">
-            <li class="active">
+            <li>
               <a class="para-2" href="../job/search.html">My Jobs</a>
             </li>
             <li>
@@ -102,8 +103,7 @@
 
           <li>
             <a
-              href="Consultant/RecentSeach.html"
-              id="publish-job"
+              href="/Consultant/BrowserSearch.html"
               class="para-1"
               >Find Consultant</a
             >
@@ -328,18 +328,14 @@
           </div>
           <div class="btn-section">
             <button
-              style="background-color: #0d3451; color: white; border: none"
-              class="sub-heading-1"
+              
+              class="sub-heading-1 blue-btn"
             >
               Submit
             </button>
             <button
-              class="sub-heading-1"
-              style="
-                color: #ff6060;
-                border: 1px solid #ff6060;
-                background-color: #fff;
-              "
+              class="sub-heading-1 cancel-btn"
+              
               id="cancel"
             >
               Cancel
@@ -411,7 +407,7 @@
     </footer>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        var navLinks = document.querySelectorAll(".job-nav a");
+        var navLinks = document.querySelectorAll(".job-nav ul a");
         console.log(navLinks);
         navLinks.forEach(function (link) {
           link.addEventListener("click", function (e) {

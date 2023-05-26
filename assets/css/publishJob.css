@@ -93,3 +93,7 @@
     height: 59px;
     border-radius: 10px;
   }
+
+  #close:hover{
+    cursor: pointer;
+  }
