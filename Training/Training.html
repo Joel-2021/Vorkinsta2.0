@@ -54,7 +54,7 @@
             <li>
               <a class="para-2" href="../Meeting/Meeting.html">Meeting Room</a>
             </li>
-            <li onclick="window.location.href='../consultantNotification.html'">
+            <li onclick="window.location.href='../clientNotification.html'">
               <img src="../assets/images/notification.png" alt="" />
             </li>
             <li><img src="../assets/images/profilecircle.png" alt="" /></li>
@@ -202,7 +202,7 @@
         <form class="publish-form">
           <div class="field-section">
             <label class="sub-heading-1">Title</label>
-            <input type="text" placeholder="Job Tittle" />
+            <input type="text" placeholder="App Title" class="popup_input" />
           </div>
           <div class="field-section">
             <label class="sub-heading-1">Category</label>
@@ -220,7 +220,7 @@
           <div class="field-section">
             <label class="sub-heading-1">Project Budget(in USD)</label>
             <div class="field-double">
-              <input type="text" placeholder="$" />
+              <input type="text" placeholder="$" class="popup_input"/>
               <select data-role="select" id="rate">
                 <option value="daily">Daily</option>
                 <option value="hourly">Hourly</option>
@@ -232,22 +232,18 @@
     
           <div class="field-section">
             <label class="sub-heading-1">Description</label>
-            <textarea name="" id="" cols="40" rows="11"></textarea>
+            <textarea name="" id="" cols="40" rows="4"></textarea>
           </div>
           <div class="btn-section">
             <button
-              style="background-color: #0d3451; color: white; border: none"
-              class="sub-heading-1"
+        
+              class="sub-heading-1 blue-btn"
             >
               Publish
             </button>
             <button
-            class="sub-heading-1"
-              style="
-                color: #ff6060;
-                border: 1px solid #ff6060;
-                background-color: #fff;
-              "
+            class="sub-heading-1 cancel-btn"
+          
               id="cancel"
             >
               Cancel
@@ -317,23 +313,7 @@
         </div>
       </div>
     </footer>
-    <script>
-      const more=document.querySelector('#more')
-      const dropdown=document.querySelector('.more-dropdown')
-      console.log(more, dropdown)
-      more.addEventListener('mouseover',()=>{
-        dropdown.style.display='flex'
-      })
-      more.addEventListener('mouseout',()=>{
-        dropdown.style.display='none'
-      })
-      dropdown.addEventListener('mouseover',()=>{
-        dropdown.style.display='flex'
-      })
-      dropdown.addEventListener('mouseout',()=>{
-        dropdown.style.display='none'
-      })
-    </script>
-    <script src="../Job/scripts.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/publishJob.js"></script>
   </body>
 </html>

@@ -4,12 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css" />
     <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
-
+  
     <link rel="stylesheet" href="../assets/css/Search.css" />
     <link rel="stylesheet" href="../assets/css/publishJob.css" />
     <link rel="stylesheet" href="../assets/css/apps.css" />
@@ -54,7 +51,7 @@
             <li>
               <a class="para-2" href="../Meeting/Meeting.html">Meeting Room</a>
             </li>
-            <li onclick="window.location.href='../consultantNotification.html'">
+            <li onclick="window.location.href='../clientNotification.html'">
               <img src="../assets/images/notification.png" alt="" />
             </li>
             <li><img src="../assets/images/profilecircle.png" alt="" /></li>
@@ -185,7 +182,7 @@
         <form class="publish-form">
           <div class="field-section">
             <label class="sub-heading-1">Title</label>
-            <input type="text" placeholder="Job Tittle" />
+            <input type="text" placeholder="App Title" class="popup_input" />
           </div>
           <div class="field-section">
             <label class="sub-heading-1">Category</label>
@@ -198,16 +195,12 @@
           </div>
           <div class="field-section">
             <label class="sub-heading-1">Images/Videos</label>
-            <input
-              type="file"
-              data-role="file"
-              data-prepend="Select your photo(s):"
-            />
+            <input type="file" data-role="file" data-prepend="Select your photo(s):">
           </div>
           <div class="field-section">
             <label class="sub-heading-1">Project Budget(in USD)</label>
             <div class="field-double">
-              <input type="text" placeholder="$" />
+              <input type="text" placeholder="$" class="popup_input"/>
               <select data-role="select" id="rate">
                 <option value="daily">Daily</option>
                 <option value="hourly">Hourly</option>
@@ -216,25 +209,21 @@
               </select>
             </div>
           </div>
-
+    
           <div class="field-section">
             <label class="sub-heading-1">Description</label>
-            <textarea name="" id="" cols="40" rows="11"></textarea>
+            <textarea name="" id="" cols="40" rows="4"></textarea>
           </div>
           <div class="btn-section">
             <button
-              style="background-color: #0d3451; color: white; border: none"
-              class="sub-heading-1"
+        
+              class="sub-heading-1 blue-btn"
             >
               Publish
             </button>
             <button
-              class="sub-heading-1"
-              style="
-                color: #ff6060;
-                border: 1px solid #ff6060;
-                background-color: #fff;
-              "
+            class="sub-heading-1 cancel-btn"
+          
               id="cancel"
             >
               Cancel
