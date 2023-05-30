@@ -81,7 +81,7 @@
   }
   
   .search>section {
-    margin-top: 5px;
+    /* margin-top: 5px; */
     width: 100%;
   }
   
@@ -96,6 +96,7 @@
   
   .job {
     width: 100%;
+    margin-top: 2px;
     padding: 45px 36px;
     border: 1px solid rgba(0, 0, 0, 0.4);
     display: flex;
@@ -342,8 +343,8 @@
 }
 .job-nav>ul{
   display: flex;
-  justify-content: space-between;
-  width: 70%;
+  /* justify-content: space-between; */
+  /* width: 70%; */
 }
   .trapezoid{
     position: relative;
