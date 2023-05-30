@@ -1,65 +1,69 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter:wght@700&family=Jost&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.heading-1{
-font-family: 'DM Serif Text' !important;
-font-style: normal !important;
-font-weight: 400 !important;
-font-size: 64px !important;
-line-height: 122.02% !important;
-text-transform: capitalize !important;
-color: #0D3451;
+.heading-1 {
+  font-family: 'DM Serif Text' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 64px !important;
+  line-height: 122.02% !important;
+  text-transform: capitalize !important;
+  color: #0D3451;
 }
-.heading-2{
-font-family: 'DM Serif Text' !important;
-font-style: normal !important;
-font-weight: 400 !important;
-font-size: 36px !important;
-line-height: 122.02% !important;
-text-transform: capitalize !important;
-color: #0D3451;
+
+.heading-2 {
+  font-family: 'DM Serif Text' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 36px !important;
+  line-height: 122.02% !important;
+  text-transform: capitalize !important;
+  color: #0D3451;
 }
-.sub-heading-1{
+
+.sub-heading-1 {
   font-family: 'Jost' !important;
   font-style: normal !important;
   font-weight: 500 !important;
   font-size: 24px !important;
   line-height: 122.02% !important;
-  text-transform: capitalize !important;  
+  text-transform: capitalize !important;
   color: #0D3451;
 }
 
-.sub-heading-2{
+.sub-heading-2 {
   font-family: 'Inter' !important;
   font-style: normal !important;
   font-weight: 500 !important;
   font-size: 20px !important;
-  line-height: 122.02% !important; 
+  line-height: 122.02% !important;
   text-transform: capitalize !important;
-    color: #0D3451;
+  color: #0D3451;
 }
-.para-1{
+
+.para-1 {
   font-family: 'Inter' !important;
-font-style: normal !important;
-font-weight: 400 !important;
-font-size: 14px !important;
-line-height: 122.02% !important;
-text-transform: capitalize !important;
-color: #0D3451;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 122.02% !important;
+  text-transform: capitalize !important;
+  color: #0D3451;
 
 }
- .para-2{
+
+.para-2 {
   font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 122.02%;
-text-transform: capitalize;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 122.02%;
+  text-transform: capitalize;
 }
 
 .hamburger,
@@ -87,7 +91,8 @@ header {
   align-items: center !important;
 }
 
-.top>div,.bottom>div {
+.top>div,
+.bottom>div {
   max-width: 1500px !important;
   width: 100% !important;
   display: flex !important;
@@ -113,7 +118,7 @@ header {
 }
 
 .tabs>li {
-  text-decoration: none  !important;
+  text-decoration: none !important;
   list-style: none !important;
 }
 
@@ -133,41 +138,48 @@ header {
 .active {
   border-bottom: 3px solid #a5d7e8 !important;
 }
+
 /* .bottom>div{
   display: flex;
   justify-content: space-between;
 } */
-.bottom{
+.bottom {
   height: 35px;
   display: flex;
   justify-content: center;
   background: #E2EDFF;
 }
-.bottom>div{
+
+.bottom>div {
   position: relative;
 }
-.bottom>div>ul{
+
+.bottom>div>ul {
   display: flex;
-  gap:25px;
+  gap: 25px;
 }
-.bottom>div>li{
+
+.bottom>div>li {
   color: #0b2447;
 }
-.bottom>div>ul>li>a{
+
+.bottom>div>ul>li>a {
   color: #000000;
   text-decoration: none;
 }
-.bottom>div li{
+
+.bottom>div li {
   list-style: none;
-  text-decoration: none;  
+  text-decoration: none;
 }
-#more{
+
+#more {
   color: #0b2447;
   /* padding-left: 100px; */
   cursor: pointer;
 }
 
-.more-dropdown{
+.more-dropdown {
   position: absolute;
   background-color: #E2EDFF;
   right: 0px;
@@ -175,12 +187,14 @@ header {
   justify-content: center;
   flex-direction: column;
 }
-.more-dropdown>a{
+
+.more-dropdown>a {
   text-decoration: none;
   color: #0b2447;
   padding: 10px;
 }
-.more-dropdown>a:hover{
+
+.more-dropdown>a:hover {
   background-color: #787c80;
 }
 
@@ -192,8 +206,8 @@ header {
 
 .right {
   position: absolute;
-  left:60%;
-  top:40px
+  left: 60%;
+  top: 40px
 }
 
 .left {
@@ -208,7 +222,7 @@ header {
 }
 
 .left>div>h1 {
-  width:590px;
+  width: 590px;
   color: #0b2447;
 }
 
@@ -453,7 +467,7 @@ hr {
 }
 
 .project {
-  margin:  0rem 0 50px 0;
+  margin: 0rem 0 50px 0;
   height: 333px;
   background-color: #e2edff;
   display: flex;
@@ -555,7 +569,7 @@ iframe {
   gap: 1rem;
   background-color: #e2edff;
   padding-top: 66px;
-  margin-bottom:50px;
+  margin-bottom: 50px;
   height: 151px;
 }
 
@@ -668,10 +682,12 @@ footer {
   margin-bottom: 0 !important;
   padding-bottom: 2rem !important;
 }
-.f-left>p{
+
+.f-left>p {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
+
 .f-right>h2 {
   font-weight: 700;
   font-size: 25px;
@@ -694,9 +710,10 @@ footer {
 .f-right>div>ul>li {
   margin-bottom: 6px !important;
 }
-.f-right>div>ul>li>a{
+
+.f-right>div>ul>li>a {
   text-decoration: none;
-  color:#FFFFFF
+  color: #FFFFFF
 }
 
 .f-right {
