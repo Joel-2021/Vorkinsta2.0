@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="accountType.css" />
+    <link rel="stylesheet" href="/assets/css/accountType.css">
+    <link rel="stylesheet" href="/assets/css/config.css">
     <title>Document</title>
   </head>
 
@@ -17,19 +17,28 @@
             <img src="../assets/images/Ellipse 23.png" alt="" />
           </div>
           <div class="logo">
-            <img src="../assets/images/image 9.png" alt="" srcset="" />
+             <img src="../assets/images/image 9.png" alt="" srcset="" onclick="window.location.href='../index.html'" />
           </div>
           <div class="tabs">
-            <li><a href="../job/search.html">My Jobs</a></li>
+            <li><a class="para-2" href="../job/jobinprogress.html">My Jobs</a></li>
             <li>
-              <a href="/myconsultantpage.html">My Consultants</a>
+              <a class="para-2" href="../Consultant/ConsultantInProgress.html"
+                >My Consultants</a
+              >
             </li>
             <li>
-              <a href="BrowserSearch.html">Search Consultant</a>
+              <a class="para-2" href="../Consultant/BrowserSearch.html"
+                >Search Consultant</a
+              >
             </li>
-            <li><a>Apps</a></li>
-            <li><a>Trainings</a></li>
-            <li><img src="../assets/images/notification.png" alt="" /></li>
+            <li><a class="para-2" href="Apps.html">Apps</a></li>
+            <li>
+              <a class="para-2" href="../Training/Training.html">Trainings</a>
+            </li>
+            <li>
+              <a class="para-2" href="Meeting.html">Meeting Room</a>
+            </li>
+            <li onclick="window.location.href='../clientNotification.html'"><img src="../assets/images/notification.png" alt="" /></li>
             <li><img src="../assets/images/profilecircle.png" alt="" /></li>
           </div>
           <div class="hamburger">
@@ -42,19 +51,19 @@
       <section>
         <div class="cp-container">
           <div class="border-style">
-            <h1 class="heading-2">account selection</h1>
+            <h1 class="heading-2">Account selection</h1>
             <p class="para-1">
-              choose your account type as (you cannot change after registration)
+              Choose your account type as (you cannot change after registration)
             </p>
             <div class="radio-align h-w">
               <div class="radio-align-items">
                 <input type="radio" name="radio" checked id="client"/>
                 <label class="radio-align-items-p" for="client">
-                  <p>client</p>
-                  <h1>
-                    provide jobs(full time or freelancing)<br />
-                    looking for trainin g(IT or non-IT)
-                  </h1>
+                  <h1 class="heading-2">Client</h1>
+                  <p class="para-1">
+                    Provide jobs(full time or freelancing)<br />
+                    Looking for training(IT or non-IT)
+                  </p>
                 </label>
               </div>
             </div>
@@ -62,11 +71,11 @@
               <div class="radio-align-items">
                 <input type="radio" name="radio" checked id="consultant" />
                 <label class="radio-align-items-p" for="consultant">
-                  <p>consultant</p>
-                  <h1>
-                    need a jobs(full time or freelancing)<br />
-                    provide training(IT or non IT)
-                  </h1>
+                  <h1 class="heading-2">Consultant</h1>
+                  <p class="para-1">
+                    Need a jobs(full time or freelancing)<br />
+                    Provide training(IT or non IT)
+                  </p>
                 </label>
               </div>
             </div>
@@ -78,8 +87,8 @@
     <footer>
       <div class="f-container">
         <div class="f-left">
-          <h2>Vorkinsta</h2>
-          <p>
+          <h2 class="sub-heading-2">Vorkinsta</h2>
+          <p class="para-2">
             Vorkinsta lets any client connect with any consultant and
             collaborate independently on their own terms. We aim at increased
             collaboration in IT for a high-tech world. Our objective is to give
@@ -92,24 +101,38 @@
             or any other information.
           </p>
           <span>
-            <p>Follow us</p>
+            <p class="sub-heading-2">Follow us</p>
             <span>
               <img src="/assets/Facebook Circled.png" alt="" />
               <img src="/assets/LinkedIn Circled.png" alt="" />
               <img src="/assets/Instagram.png" alt="" />
             </span>
           </span>
-          <p>&copy 2021 All Rights Reserved</p>
+          <p class="sub-heading-2">&copy 2021 All Rights Reserved</p>
         </div>
         <div class="f-right">
           <h2>Links</h2>
           <div>
             <ul>
-              <li>terms and conditions</li>
-              <li>Privacy Policy</li>
-              <li>Help</li>
-              <li>Vorkinsta License</li>
-              <li>Partners</li>
+              <li>
+                <a href="Footer/tandc.html" class="para-2">
+                  Terms and Conditions</a
+                >
+              </li>
+              <li>
+                <a href="Footer/privacyandpolicy.html" class="para-2">
+                  Privacy Policy</a
+                >
+              </li>
+              <li><a href="Footer/helpcenter.html" class="para-2"> Help</a></li>
+              <li>
+                <a href="Footer/licence.html" class="para-2">
+                  Vorkinsta License</a
+                >
+              </li>
+              <li>
+                <a href="Footer/partners.html" class="para-2"> Partners</a>
+              </li>
               <label for="">Select language</label>
               <select name="languages" id="">
                 <option value="english">English</option>

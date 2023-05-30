@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="./search.css" />
+    <link rel="stylesheet" href="../assets/css/config.css" />
+    <link rel="stylesheet" href="../assets/css/Search.css" />
+    
     <title>Vorkinsta</title>
   </head>
   <body>
@@ -16,17 +17,28 @@
             <img src="../assets/images/Ellipse 23.png" alt="" />
           </div>
           <div class="logo">
-            <img src="../assets/images/image 9.png" alt="" srcset="" onclick="window.location.href='../index.html'"/>
+             <img src="../assets/images/image 9.png" alt="" srcset="" onclick="window.location.href='../index.html'" />
           </div>
           <div class="tabs">
-            <li class="active"><a class="para-2" href="../job/search.html">My Jobs</a></li>
+            <li class="active"><a class="para-2" href="../job/jobinprogress.html">My Jobs</a></li>
             <li>
-              <a class="para-2" href="../Consultant/myConsultant.html">My Consultants</a>
+              <a class="para-2" href="../Consultant/ConsultantInProgress.html"
+                >My Consultants</a
+              >
             </li>
-            <li><a class="para-2" href="../Consultant/BrowserSearch.html">Search Consultant</a></li>
-            <li><a class="para-2">Apps</a></li>
-            <li><a class="para-2">Trainings</a></li>
-            <li><img src="../assets/images/notification.png" alt="" /></li>
+            <li>
+              <a class="para-2" href="../Consultant/BrowserSearch.html"
+                >Search Consultant</a
+              >
+            </li>
+            <li><a class="para-2" href="../Apps/Apps.html">Apps</a></li>
+            <li>
+              <a class="para-2" href="../Training/Training.html">Trainings</a>
+            </li>
+            <li>
+              <a class="para-2" href="../Meeting/Meeting.html">Meeting Room</a>
+            </li>
+            <li onclick="window.location.href='../clientNotification.html'"><img src="../assets/images/notification.png" alt="" /></li>
             <li><img src="../assets/images/profilecircle.png" alt="" /></li>
           </div>
           <div class="hamburger">
@@ -44,7 +56,7 @@
             <i><img src="assets/images/location.png" alt="" /></i>
             <input type="text" id="location" placeholder="Location" />
           </span>
-          <button>Search</button>
+          <button class="sub-heading-2">Search</button>
         </form>
         <section class="result">
           <div>
@@ -286,41 +298,4 @@
       </div>
     </footer>
   </body>
-  <!-- <script src="./scripts.js"></script> -->
-  <script>
-    var modal = document.getElementById("myModal");
-    var btn = document.getElementById("myBtn");
-    var span = document.getElementsByClassName("close")[0];
-    var cancel = document.getElementsByClassName("btn-cancel")[0];
-    var result = document.querySelector(".job-results");
-    let range = document.querySelector("#range");
-    let exp = document.querySelector(".exp");
-    exp.value = range.value;
-
-    range.oninput = function () {
-      exp.value = range.value;
-    };
-    exp.oninput = function () {
-      range.value = exp.value;
-    };
-    btn.onclick = function () {
-      modal.style.display = "block";
-      result.classList.add("blur");
-    };
-    span.onclick = function () {
-      modal.style.display = "none";
-      result.classList.remove("blur");
-    };
-    cancel.onclick = function () {
-      modal.style.display = "none";
-      result.classList.remove("blur");
-    };
-
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-        result.classList.remove("blur");
-      }
-    };
-  </script>
 </html>

@@ -1,0 +1,201 @@
+.signup-section {
+    margin: 25px 105px;
+}
+
+.sign-container {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 30px 65px;
+    /* gap: 150px; */
+}
+
+.sign-left {
+    width: 50%;
+    text-align: center;
+}
+
+.sign-left>p {
+    color: #0D3451;
+    margin-bottom: 35px;
+}
+
+.sign-left>img {
+    width: 441px;
+    height: 462px;
+}
+
+.sign-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-right>.sign-options>.active {
+    color: #ffffff;
+    border-bottom: 3px solid #a5d7e8;
+}
+
+.sign-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding-bottom: 30px;
+}
+
+
+.sign-options>span {
+    color: #0D3451;
+}
+
+.sgn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    margin-top: 35px;
+    background: #F5F5F5;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.sgn-google>a {
+    color: #000000;
+}
+
+.sing-divider {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.sing-divider>.div-line {
+    display: block;
+    border: 1px solid #73899A;
+    width: 215px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+form>input {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    height: 49px;
+    padding-left: 30px;
+}
+
+input::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+form>a {
+    text-decoration: underline;
+    color: #000000;
+}
+
+form>p {
+    text-align: center;
+    color: #BDBDBD;
+}
+
+form>p>a {
+    color: rgba(48, 98, 173, 0.8);
+}
+
+.captach {
+    width: 230px;
+    height: 59px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.captach>p {
+    color: #000000;
+}
+
+.captach>input {
+    width: 20px;
+    height: 20px;
+}
+
+form>.sign-btn {
+    width: 183px;
+    height: 49px;
+    background: #0D3451;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.forget-info {
+    margin-top: 30px;
+    color: #000000;
+
+}
+
+.forget-btn {
+    width: 340px;
+    height: 49px;
+    background: #0D3451;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.forget-form {
+    margin-top: 15px;
+    gap: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+  height: 49px;
+  border-radius: 10px;
+  border: 1px solid black;
+  /* color: #fff; */
+  font-size: 20px;
+  padding: 0 1rem;
+  outline: none;
+}
+
+.sign-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blue-btn{
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+
+.fullname{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}

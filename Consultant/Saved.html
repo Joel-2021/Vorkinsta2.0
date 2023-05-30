@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../Job/search.css" />
-    <link rel="stylesheet" href="./PublishJob.css" />
+    <link rel="stylesheet" href="../assets/css/config.css">
+    <link rel="stylesheet" href="../assets/css/Search.css">
     <title>Vorkinsta</title>
   </head>
 
@@ -18,15 +17,28 @@
             <img src="../assets/images/Ellipse 23.png" alt="" />
           </div>
           <div class="logo">
-            <img src="../assets/images/image 9.png" alt="" srcset="" onclick="window.location.href='../index.html'"/>
+             <img src="../assets/images/image 9.png" alt="" srcset="" onclick="window.location.href='../index.html'" />
           </div>
           <div class="tabs">
-            <li><a href="../job/search.html" class="para-2">My Jobs</a></li>
-            <li class="active"><a href="myConsultant.html" class="para-2">My Consultants</a></li>
-            <li><a href="BrowserSearch.html" class="para-2">Search Consultant</a></li>
-            <li><a class="para-2">Apps</a></li>
-            <li><a class="para-2">Trainings</a></li>
-            <li><img src="../assets/images/notification.png" alt="" /></li>
+            <li ><a class="para-2" href="../job/jobinprogress.html">My Jobs</a></li>
+            <li class="active">
+              <a class="para-2" href="../Consultant/ConsultantInProgress.html"
+                >My Consultants</a
+              >
+            </li>
+            <li>
+              <a class="para-2" href="../Consultant/BrowserSearch.html"
+                >Search Consultant</a
+              >
+            </li>
+            <li><a class="para-2" href="../Apps/Apps.html">Apps</a></li>
+            <li>
+              <a class="para-2" href="../Training/Training.html">Trainings</a>
+            </li>
+            <li>
+              <a class="para-2" href="../Meeting/Meeting.html">Meeting Room</a>
+            </li>
+            <li onclick="window.location.href='../clientNotification.html'"><img src="../assets/images/notification.png" alt="" /></li>
             <li><img src="../assets/images/profilecircle.png" alt="" /></li>
           </div>
           <div class="hamburger">
@@ -48,15 +60,24 @@
         </form>
         <div class="job-nav">
           <ul>
+            <!-- <li class="para-1 trapezoid">Job Status</li> -->
+            <li class="trapezoid"><a href="./consultantinprogress.html" class="para-1">In Progress</a></li>
+            <li class="act trapezoid"><a href="./Saved.html" class="para-1">Saved</a></li>
+            <li class=" trapezoid"><a href="./InvitationSent.html" class="para-1">Invitation Sent</a></li>
+            <li class="trapezoid"><a href="BrowserSearch.html" id="publish-job" class="para-1">Search Consultant</a></li>
+          </ul>
+        </div>
+        <!-- <div class="job-nav">
+          <ul>
             <li class="sub-heading-2">Consultant Status</li>
             <li ><a href="./consultantinprogress.html" class="sub-heading-2">In Progress</a></li>
             <li class="act"><a href="./Saved.html" class="sub-heading-2">Saved</a></li>
             <li><a href="./InvitationSent.html" class="sub-heading-2">Invitation Sent</a></li>
           </ul>
-          <li><a href="searchConsultant.html" id="publish-job" class="para-2">Search Consultant</a></li>
-        </div>
+          <li><a href="BrowserSearch.html" class="para-2">Search Consultant</a></li>
+        </div> -->
        <section>
-        <div class="job">
+      <div class="job">
           <div class="job-title">
             <div>
               <div class="profile-pic">
@@ -65,8 +86,7 @@
               <h3 class="sub-heading-2">Name</h3>
             </div>
               <div class="icons">
-              <img src="/assets/images/save.png" alt="" class="save" />
-              <img src="/assets/images/edit.png" alt="" class="edit" />
+              <img src="/assets/images/saved.png" alt="" class="save" />
             </div>
           </div>
           <div>
@@ -79,7 +99,7 @@
           </div>
           <div class="desc">
             <p class="para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus sunt deserunt inventore, alias vitae doloremque cum magnam adipisci voluptates amet repellat quia rerum maxime voluptas, aut, deleniti dolorum enim.</p>
-            <button class="para-1">Show More</button>
+            <button class="para-1">Send Request</button>
           </div>
         </div>
       <div class="job">
@@ -91,8 +111,7 @@
               <h3 class="sub-heading-2">Name</h3>
             </div>
               <div class="icons">
-              <img src="/assets/images/save.png" alt="" class="save" />
-              <img src="/assets/images/edit.png" alt="" class="edit" />
+              <img src="/assets/images/saved.png" alt="" class="save" />
             </div>
           </div>
           <div>
@@ -105,7 +124,7 @@
           </div>
           <div class="desc">
             <p class="para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus sunt deserunt inventore, alias vitae doloremque cum magnam adipisci voluptates amet repellat quia rerum maxime voluptas, aut, deleniti dolorum enim.</p>
-            <button class="para-1">Show More</button>
+            <button class="para-1">Send Request</button>
           </div>
         </div>
       <div class="job">
@@ -117,8 +136,7 @@
               <h3 class="sub-heading-2">Name</h3>
             </div>
               <div class="icons">
-              <img src="/assets/images/save.png" alt="" class="save" />
-              <img src="/assets/images/edit.png" alt="" class="edit" />
+              <img src="/assets/images/saved.png" alt="" class="save" />
             </div>
           </div>
           <div>
@@ -131,7 +149,7 @@
           </div>
           <div class="desc">
             <p class="para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus sunt deserunt inventore, alias vitae doloremque cum magnam adipisci voluptates amet repellat quia rerum maxime voluptas, aut, deleniti dolorum enim.</p>
-            <button class="para-1">Show More</button>
+            <button class="para-1">Send Request</button>
           </div>
         </div>
        
@@ -139,13 +157,13 @@
         <div class="pagination">
           <button class="prev"><img src="/assets/images/prev.png" alt=""></button>
             <div class="page-num page-num-active">
-              <p class="number">1</p>
+              <p class="sub-heading-2">1</p>
             </div>
             <div class="page-num">
-              <p class="number">2</p>
+              <p class="sub-heading-2">2</p>
             </div>
             <div class="page-num">
-              <p class="number">3</p>
+              <p class="sub-heading-2">3</p>
             </div>
           <button class="next"><img src="/assets/images/next.png" alt=""></button>
         </div>
@@ -154,8 +172,8 @@
     <footer>
       <div class="f-container">
         <div class="f-left">
-          <h2>Vorkinsta</h2>
-          <p>
+          <h2 class="sub-heading-2">Vorkinsta</h2>
+          <p class="para-2">
             Vorkinsta lets any client connect with any consultant and
             collaborate independently on their own terms. We aim at increased
             collaboration in IT for a high-tech world. Our objective is to give
@@ -168,24 +186,38 @@
             or any other information.
           </p>
           <span>
-            <p>Follow us</p>
+            <p class="sub-heading-2">Follow us</p>
             <span>
               <img src="/assets/images/Facebook Circled.png" alt="" />
               <img src="/assets/images/LinkedIn Circled.png" alt="" />
               <img src="/assets/images/Instagram.png" alt="" />
             </span>
           </span>
-          <p>&copy 2021 All Rights Reserved</p>
+          <p class="sub-heading-2">&copy 2021 All Rights Reserved</p>
         </div>
         <div class="f-right">
           <h2>Links</h2>
           <div>
             <ul>
-              <li>terms and conditions</li>
-              <li>Privacy Policy</li>
-              <li>Help</li>
-              <li>Vorkinsta License</li>
-              <li>Partners</li>
+              <li>
+                <a href="Footer/tandc.html" class="para-2">
+                  Terms and Conditions</a
+                >
+              </li>
+              <li>
+                <a href="Footer/privacyandpolicy.html" class="para-2">
+                  Privacy Policy</a
+                >
+              </li>
+              <li><a href="Footer/helpcenter.html" class="para-2"> Help</a></li>
+              <li>
+                <a href="Footer/licence.html" class="para-2">
+                  Vorkinsta License</a
+                >
+              </li>
+              <li>
+                <a href="Footer/partners.html" class="para-2"> Partners</a>
+              </li>
               <label for="">Select language</label>
               <select name="languages" id="">
                 <option value="english">English</option>
@@ -198,6 +230,5 @@
         </div>
       </div>
     </footer>
-    <script src="./scripts.js"></script>
   </body>
 </html>

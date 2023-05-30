@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../Job/search.css" />
-    <link rel="stylesheet" href="./RecentSearch.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.korzh.com/metroui/v4/css/metro.min.css"
+    />
+    <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
+    
+    <link rel="stylesheet" href="../assets/css/Search.css" />
+    <link rel="stylesheet" href="../assets/css/RecentSearch.css" />
+    <link rel="stylesheet" href="../assets/css/config.css" />
     <title>Document</title>
   </head>
   <body>
@@ -17,18 +23,28 @@
             <img src="../assets/images/Ellipse 23.png" alt="" />
           </div>
           <div class="logo">
-            <img src="../assets/images/image 9.png" alt="" srcset="" onclick="window.location.href='../index.html'"/>
+             <img src="../assets/images/image 9.png" alt="" srcset="" onclick="window.location.href='../index.html'" />
           </div>
           <div class="tabs">
-            <li><a class="para-2" href="../job/search.html">My Jobs</a></li>
-            <li>
-              
-              <a class="para-2" href="../Consultant/myConsultant.html">My Consultants</a>
+            <li ><a class="para-2" href="../job/jobinprogress.html">My Jobs</a></li>
+            <li >
+              <a class="para-2" href="../Consultant/ConsultantInProgress.html"
+                >My Consultants</a
+              >
             </li>
-            <li class="active"><a class="para-2" href="../Consultant/BrowserSearch.html">Search Consultant</a></li>
-            <li><a class="para-2">Apps</a></li>
-            <li><a class="para-2">Trainings</a></li>
-            <li><img src="../assets/images/notification.png" alt="" /></li>
+            <li class="active">
+              <a class="para-2" href="../Consultant/BrowserSearch.html"
+                >Search Consultant</a
+              >
+            </li>
+            <li><a class="para-2" href="../Apps/Apps.html">Apps</a></li>
+            <li>
+              <a class="para-2" href="../Training/Training.html">Trainings</a>
+            </li>
+            <li>
+              <a class="para-2" href="../Meeting/Meeting.html">Meeting Room</a>
+            </li>
+            <li onclick="window.location.href='../clientNotification.html'"><img src="../assets/images/notification.png" alt="" /></li>
             <li><img src="../assets/images/profilecircle.png" alt="" /></li>
           </div>
           <div class="hamburger">
@@ -50,6 +66,13 @@
         </form>
         <div class="job-nav">
           <ul>
+            <!-- <li class="para-1 trapezoid">Job Status</li> -->
+            <li class=" trapezoid"><a href="RecentSeach.html" class="para-1">Recent Search</a></li>
+            <li class="act trapezoid"><a href="BrowserSearch.html" class="para-1">Browse</a></li>
+          </ul>
+        </div>
+        <!-- <div class="job-nav">
+          <ul>
             <li class="sub-heading-2"><a href="RecentSeach.html">Recent Search</a></li>
             <li class="act">
               <a href="BrowserSearch.html" class="sub-heading-2"
@@ -58,7 +81,7 @@
             </li>
           </ul>
           <img id="filter" src="../assets/images/Group (5).png" alt="" />
-        </div>
+        </div> -->
         <div id="myModal" class="filter-modal">
           <!-- Modal content -->
           <div class="modal-content">
@@ -172,23 +195,7 @@
                   <img src="../assets/images/Vector 13.png" alt="" />
                 </div>
                 <div class="grids-lower">
-                  <!-- <select data-role="select" multiple>
-                    <optgroup label="Physical servers">
-                        <option value="dedicated_corei3_hp">Core i3 (hp)</option>
-                        <option value="dedicated_pentium_hp">Pentium (hp)</option>
-                        <option value="dedicated_smart_corei3_hp">Smart Core i3 (hp)</option>
-                    </optgroup>
-                    <optgroup label="Virtual hosting">
-                        <option value="mini">Mini</option>
-                        <option value="site">Site</option>
-                        <option value="portal">Portal</option>
-                    </optgroup>
-                    <optgroup label="Virtual servers">
-                        <option value="evps0">eVPS-TEST (30 дней)</option>
-                        <option value="evps1" selected="selected">eVPS-1</option>
-                        <option value="evps2">eVPS-2</option>
-                    </optgroup>
-                </select> -->
+                 
                   <div class="seacrh-grid">
                     <img src="../assets/images/hiwsearch.png" alt="" />
                     <input type="search" placeholder="Search Here.." />
@@ -230,15 +237,10 @@
             </div>
             <hr />
             <div class="modal-button sub-heading-1">
-              <button style="color: white;border:none" class="sub-heading-2">Show Result</button>
+              <button class="sub-heading-2 blue-btn">Show Result</button>
               <button
-              class="sub-heading-2"
+              class="sub-heading-2 cancel-btn"
                 id="close"
-                style="
-                  color: #ff0000;
-                  background-color: white;
-                  border: 1px solid #ff0000;
-                "
               >
                 Clear
               </button>
@@ -388,33 +390,7 @@
         </div>
       </div>
     </footer>
-    <script>
-      const filter = document.getElementById('filter');
-      console.log(filter)
-      var modal = document.getElementById('myModal');
-      console.log(modal)
-      var close = document.getElementById('close');
-      filter.onclick = function () {
-        console.log("dwadwa")
-        modal.style.display = 'block';
-      };
-      close.onclick = function () {
-        modal.style.display = 'none';
-      };
-      window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = 'none';
-        }
-      };
-    </script>
-    <script>
-      const dropdown = document.getElementsByClassName('dropdown');
-      for (i = 0; i < dropdown.length; i++) {
-        dropdown[i].addEventListener('click', function () {
-          var panel = this.nextElementSibling;
-          panel.style.display = 'flex';
-        });
-      }
+    <script src="../assets/js/filter.js">
     </script>
   </body>
 </html>

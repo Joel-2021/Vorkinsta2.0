@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vorkinsta</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="Newsignin.css" />
-    <link rel="stylesheet" href="signup.css" />
+    <link rel="stylesheet" href="/assets/css/Homepage.css">
+    <link rel="stylesheet" href="/assets/css/sign.css" />
+    <link rel="stylesheet" href="/assets/css/config.css">
   </head>
   <body>
     <header>
@@ -34,31 +34,23 @@
       </div>
     </header>
     <main>
-      <div class="container">
+      <div class="signup-section">
         <div class="sign-container">
 
-          <div class="signup-left">
+          <div class="sign-left">
             <h3 class="heading-1">Welcome!</h3>
-            <img src="assets/images/Group.png" alt="" />
+            <img src="assets/images/sign.png" alt="" />
           </div>
-          <div class="signup-right">
-            <div>
-            <a href="/signin.html" class="heading-2" class="heading-2"
-            >Sign In</a
-            >
-            <span class="para-1">
-
-              or
-            </span>
-            <a
-            href="/signup.html"
-            style="color: #0d3451"
-            class="active heading-2"
-              >Sign Up</a
-            >
-          </div>
+          <div class="sign-right">
+            <div class="sign-options">
+              <a style="color: rgba(13, 52, 81, 0.42)" class="heading-2" href="signin.html">Sign in</a>
+              <span class="para-2">or</span>
+              <a href="signup.html"
+                class="heading-2" style="color: #0d3451"  >Sign Up</a
+              >
+            </div>
           <form action="">
-            <div>
+            <div class="fullname">
               <input
                 type="text"
                 name=""
@@ -96,20 +88,15 @@
               placeholder="Confirm Password"
               required
             />
-
-            <!-- <label for="thing">
-              <input type="checkbox" name="thing" value="valuable" id="thing" />
-              Save my details</label
-            > -->
-            <div class="buttons-sun">
-              <button class="sub-heading-1">Sign Up</button>
+            <div class="sign-buttons">
+              <button class="blue-btn sub-heading-1">Sign Up</button>
               <p class="sub-heading-2">
                 Already have an account? <a href="/signin.html">SignIn</a>
               </p>
             </div>
           </form>
 
-          <div class="sgnup-goggle">
+          <div class="sgn-google">
             <img src="/assets/images/Google.png" alt="" />
             <span class="para-1">Continue with google</span>
           </div>

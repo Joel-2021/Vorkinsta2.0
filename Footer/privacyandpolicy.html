@@ -7,8 +7,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=yes"
     />
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="./helpcenter.css" />
+    <link rel="stylesheet" href="/assets/css/config.css" />
+    <link rel="stylesheet" href="/assets/css/footerPages.css" />
     
     <title>Vorkinsta</title>
   </head>
@@ -21,16 +21,27 @@
             <img src="../assets/images/Ellipse 23.png" alt="" />
           </div>
           <div class="logo">
-            <img src="../assets/images/image 9.png" alt="" srcset="" />
+            <img
+              src="../assets/images/image 9.png"
+              alt=""
+              srcset=""
+              onclick="window.location.href='../index.html'"
+            />
           </div>
-          <div class="tabs">
-            <li class="active"><a href="../job/search.html">My Jobs</a></li>
-            <li><a href="">My Consultants</a></li>
-            <li><a href="">Search Consultant</a></li>
-            <li><a href="">Apps</a></li>
-            <li><a href="">Trainings</a></li>
-            <li><img src="../assets/images/notification.png" /></li>
-            <li><img src="../assets/images/profilecircle.png" /></li>
+          <div class="tabs para-2">
+            <li><a href="../job/search.html">My Jobs</a></li>
+            <li>
+              <a href="/myconsultantpage.html">My Consultants</a>
+            </li>
+            <li>
+              <a href="BrowserSearch.html">Search Consultant</a>
+            </li>
+            <li><a href="/Apps/Apps.html">Apps</a></li>
+            <li><a href="/Training/Training.html">Trainings</a></li>
+            <li onclick="window.location.href='../clientNotification.html'">
+              <img src="../assets/images/notification.png" alt="" />
+            </li>
+            <li><img src="../assets/images/profilecircle.png" alt="" /></li>
           </div>
           <div class="hamburger">
             <img src="../assets/images/Group 63.png" alt="" srcset="" />
@@ -41,7 +52,7 @@
     <main>
       <div class="help-container">
         <div class="help-content">
-          <h3>How may we help you?</h3>
+          <h3 class="heading-2">How may we help you?</h3>
           <form>
             <div class="help-search">
               <input type="text" id="" placeholder="Write your questions ?" />
@@ -50,41 +61,40 @@
           </form>
         </div>
         <div class="help-content2">
-          <h3>Collecting and using your personal data</h3>
+          <h3 class="heading-2">Collecting and using your personal data</h3>
           <div class="help-options">
             <div class="box-option">
               <a href="personaldatahelp.html"
                 ><img src="../assets/images/Data Center.png"
               /></a>
-              <p>Personal Data</p>
+              <p class="sub-heading-2">Personal Data</p>
             </div>
             <div class="box-option">
               <a href="usagehelp.html"
                 ><img src="../assets/images/Data Protection.png"
               /></a>
-              <p>Usage Data</p>
+              <p class="sub-heading-2">Usage Data</p>
             </div>
             <div class="box-option">
               <a href="agerestriction.html"><img src="../assets/images/Age.png" /></a>
-              <p>Age Restrictions</p>
+              <p class="sub-heading-2">Age Restrictions</p>
             </div>
             <div class="box-option">
               <a href="tandc.html"
-                ><img src="../assets/images/Terms and Conditions.png"
+                ><img src="../assets/images/t&c.png"
               /></a>
-              <p>Terms And</p>
-              <p>conditions</p>
+              <p class="sub-heading-2">T & Cs</p>
             </div>
-            <div class="box-option active-option">
+            <div class="box-option act-opt">
               <a href="privacyandpolicy.html"
                 ><img src="../assets/images/User Shield1.png"
               /></a>
-              <p class="color-text">Privacy Policy</p>
+              <p class="sub-heading-2">Privacy Policy</p>
             </div>
           </div>
           <div class="content-help-option">
-            <h1>Interpretation</h1>
-            <p>
+            <h1 class="heading-2">Interpretation</h1>
+            <p class="para-1">
               The words in which the initial letter is capitalized have meanings
               defined under the following conditions. The following definitions
               shall have the same meaning regardless of whether they appear in
@@ -92,8 +102,8 @@
             </p>
           </div>
           <div class="content-help-option">
-            <h1>Definitions</h1>
-            <p>
+            <h1 class="heading-2">Definitions</h1>
+            <p class="para-1">
               For the purposes of this Privacy Policy: Account means a unique
               account created for you to access our Service or parts of our
               Service. Company (referred to as either "the Company", "We", "Us"
@@ -120,8 +130,8 @@
             </p>
           </div>
           <div class="content-help-option">
-            <h1>Changes to this Privacy Policy</h1>
-            <ol>
+            <h1 class="heading-2">Changes to this Privacy Policy</h1>
+            <ol class="para-1">
               <li>
                 We may update Our Privacy Policy from time to time. We will
                 notify you of any changes by posting the new Privacy Policy on
@@ -140,10 +150,10 @@
             </ol>
           </div>
           <div class="content-help-option">
-            <h1>
+            <h1 class="heading-2">
               When does Vorkinsta use end user information from third parties?
             </h1>
-            <p>
+            <p class="para-1">
               Vorkinsta will collect End User Data necessary to provide the
               Vorkinsta services to our customers. End-users may voluntarily
               provide us with the information they have made available on social
@@ -155,8 +165,8 @@
             </p>
           </div>
           <div class="content-help-option">
-            <h1>Do we share the information we collect with third parties?</h1>
-            <ol>
+            <h1 class="heading-2">Do we share the information we collect with third parties?</h1>
+            <ol class="para-1">
               <li>
                 We may share the information that we collect, both personal and
                 non-personal, with third parties such as advertisers, contest
@@ -205,11 +215,11 @@
             </ol>
           </div>
           <div class="content-help-option">
-            <h1>
+            <h1 class="heading-2">
               Where and when is information collected from customers and
               end-users?
             </h1>
-            <p>
+            <p class="para-1">
               Vorkinsta will collect personal information that you submit to us.
               We may also receive personal information about you from third
               parties as described above.
@@ -222,8 +232,8 @@
     <footer>
       <div class="f-container">
         <div class="f-left">
-          <h2>Vorkinsta</h2>
-          <p>
+          <h2 class="sub-heading-2">Vorkinsta</h2>
+          <p class="para-2">
             Vorkinsta lets any client connect with any consultant and
             collaborate independently on their own terms. We aim at increased
             collaboration in IT for a high-tech world. Our objective is to give
@@ -236,24 +246,38 @@
             or any other information.
           </p>
           <span>
-            <p>Follow us</p>
+            <p class="sub-heading-2">Follow us</p>
             <span>
               <img src="/assets/images/Facebook Circled.png" alt="" />
               <img src="/assets/images/LinkedIn Circled.png" alt="" />
               <img src="/assets/images/Instagram.png" alt="" />
             </span>
           </span>
-          <p>&copy 2021 All Rights Reserved</p>
+          <p class="sub-heading-2">&copy 2021 All Rights Reserved</p>
         </div>
         <div class="f-right">
           <h2>Links</h2>
           <div>
             <ul>
-              <li><a href="tandc.html">Terms and conditions</a></li>
-              <li><a href="privacyandpolicy.html"> Privacy Policy</a></li>
-              <li><a href="helpcenter.html">Help</a></li>
-              <li><a href="license.html">Vorkinsta License</a></li>
-              <li><a href="partners.html">Partners</a></li>
+              <li>
+                <a href="Footer/tandc.html" class="para-2">
+                  T & Cs</a
+                >
+              </li>
+              <li>
+                <a href="Footer/privacyandpolicy.html" class="para-2">
+                  Privacy Policy</a
+                >
+              </li>
+              <li><a href="Footer/helpcenter.html" class="para-2"> Help</a></li>
+              <li>
+                <a href="Footer/licence.html" class="para-2">
+                  Vorkinsta License</a
+                >
+              </li>
+              <li>
+                <a href="Footer/partners.html" class="para-2"> Partners</a>
+              </li>
               <label for="">Select language</label>
               <select name="languages" id="">
                 <option value="english">English</option>

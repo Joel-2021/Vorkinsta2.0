@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter:wght@700&family=Jost&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 122%;
+}
+.heading-1 {
+  font-family: "DM Serif Text";
+  font-weight: 400;
+  font-size: 64px;
+}
+.heading-2 {
+  font-family: "DM Serif Text";
+  font-weight: 400;
+  font-size: 36px;
+}
+.sub-heading-1 {
+  font-family: "DM Serif Text";
+  font-weight: 400;
+  font-size: 24px;
+}
+.sub-heading-2 {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+}
+.para-1 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+}
+.para-2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.blue-btn {
+  color: white;
+  background-color: #0d3451;
+  border: none;
+}
+
+.cancel-btn {
+  color: red;
+  background-color: white;
+  border: 1px solid red;
+}
+
+.file .button {
+  color: white;
+  background-color: rgba(13, 52, 81, 1);
+  border-radius: 10px;
+  width: 137px;
+  height: 41px;
+  margin-right: 5px;
+}
+.file .button {
+  font-size: 0;
+  color: transparent;
+  /* visibility: hidden; */
+}
+.file .button::after {
+  font-family: "DM Serif Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "Browse";
+  color: white;
+  background-color: rgba(13, 52, 81, 1);
+  border-radius: 10px;
+  width: 137px;
+  height: 41px;
+  margin-right: 5px;
+}
+
+.file {
+  border-radius: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+
+/* header*/
+.hamburger,
+.avatar {
+  display: none;
+}
+
+main {
+  max-width: 1500px;
+  margin: 0 auto;
+  color: #0b2447;
+}
+
+header {
+  color: white;
+  width: 100%;
+}
+
+.top {
+  background-color: #0d3451;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top > div,
+.bottom > div {
+  max-width: 1500px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 105px;
+}
+
+.tabs {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  gap: 1rem;
+  background-color: transparent;
+  border: none;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tabs > li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.tabs > li > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.tabs > button {
+  padding: 4px 15px;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+.active {
+  border-bottom: 3px solid #a5d7e8;
+}
+
+.bottom {
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  background: #e2edff;
+  color: #0b2447;
+}
+.bottom > div {
+  position: relative;
+}
+.bottom > div > ul {
+  display: flex;
+  gap: 25px;
+}
+
+.bottom > div > ul > li > a {
+  color: #000000;
+  text-decoration: none;
+}
+.bottom > div li {
+  list-style: none;
+  text-decoration: none;
+}
+#more {
+  cursor: pointer;
+}
+
+.more-dropdown {
+  z-index: 100;
+  position: absolute;
+  background-color: #e2edff;
+  color: #0b2447;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.more-dropdown > a {
+  text-decoration: none;
+  padding: 10px;
+  width: 150px;
+}
+.more-dropdown > a:hover {
+  background-color: #0b2447;
+  color: #e2edff;
+}
+
+/* footer*/
+footer {
+  background: #0d3451;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 2rem 0px;
+}
+
+.f-container {
+  padding: 0rem 105px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1500px;
+}
+
+.f-left {
+  color: #ffffff;
+  width: 50%;
+}
+
+.f-left > h2 {
+  color: #ffffff;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+.f-right > h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  padding-bottom: 1rem;
+  color: #ffffff;
+}
+
+.f-right > div > ul {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  margin: 0;
+  list-style-position: unset;
+}
+
+.f-right > div > ul > li {
+  margin-bottom: 6px;
+}
+.f-right > div > ul > li > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.f-right {
+  font-family: "Inter";
+  font-style: normal;
+  color: #ffffff;
+}
+
+.f-right > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.f-left > span {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  gap: 1rem;
+}
+
+.f-left > p:last-child {
+  color: #ffffff;
+}
+
+.f-left > span > p {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.f-right > div > ul > select {
+  margin: 10px;
+}
+
+.f-right > ul > li {
+  padding-bottom: 0.5rem;
+}

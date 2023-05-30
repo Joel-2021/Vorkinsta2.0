@@ -43,7 +43,7 @@ input[type="radio"] {
   content: none;
   outline: none;
   margin: 0;
-  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  border: 1px solid rgba(0, 0, 0, 0.2) ;
 
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -60,12 +60,12 @@ input[type="radio"]:checked {
 
 input[type="radio"]:checked::before {
   position: absolute;
-  color: #ffffff !important;
-  content: "\00A0\2713\00A0" !important;
+  color: #ffffff ;
+  content: "\00A0\2713\00A0" ;
 
   font-weight: bolder;
   font-size: 20px;
-  border: 2px solid rgba(0, 0, 0, 0.2) !important;
+  border: 2px solid rgba(0, 0, 0, 0.2) ;
   border-radius: 50%;
 }
 
@@ -121,7 +121,7 @@ input[type="radio"]:checked::before {
 
 button{
     background-color: #0d3451;
-    color: white !important;
+    color: white ;
     border-radius: 10px;
     padding: 12px 50px;
     margin: 30px 0;

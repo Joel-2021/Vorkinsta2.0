@@ -4,43 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-    rel="stylesheet"
-    href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css"
-  />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
-  <link
-    href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css"
-    rel="stylesheet"
-  />
-  <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css" />
+    <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
   
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../Job/search.css" />
-    <link rel="stylesheet" href="../Job/PublishJob.css" />
+    <link rel="stylesheet" href="../assets/css/Search.css" />
+    <link rel="stylesheet" href="../assets/css/publishJob.css" />
+    <link rel="stylesheet" href="../assets/css/apps.css" />
+    
+    <link rel="stylesheet" href="../assets/css/config.css" />
     <title>Vorkinsta</title>
   </head>
 
   <body>
     <header>
       <div class="top">
+        <!-- Top section of the header -->
         <div>
           <div class="avatar">
             <img src="../assets/images/Ellipse 23.png" alt="" />
           </div>
           <div class="logo">
-            <img src="../assets/images/image 9.png" alt="" srcset="" />
+            <img
+              src="../assets/images/image 9.png"
+              alt=""
+              srcset=""
+              onclick="window.location.href='../index.html'"
+            />
           </div>
           <div class="tabs">
-            <li><a class="para-2" href="../job/search.html">My Jobs</a></li>
+            <!-- List of navigation tabs -->
+            <li><a class="para-2" href="../job/jobinprogress.html">My Jobs</a></li>
             <li>
-              <a class="para-2" href="../Consultant/myConsultant.html">My Consultants</a>
+              <a class="para-2" href="../Consultant/ConsultantInProgress.html"
+                >My Consultants</a
+              >
             </li>
-            <li><a class="para-2" href="../Consultant/BrowserSearch.html">Search Consultant</a></li>
+            <li>
+              <a class="para-2" href="../Consultant/BrowserSearch.html"
+                >Search Consultant</a
+              >
+            </li>
             <li class="active"><a class="para-2" href="Apps.html">Apps</a></li>
-            <li><a class="para-2" href="../Training/Training.html">Trainings</a></li>
-            <li><img src="../assets/images/notification.png" alt="" /></li>
+            <li>
+              <a class="para-2" href="../Training/Training.html">Trainings</a>
+            </li>
+            <li>
+              <a class="para-2" href="../Meeting/Meeting.html">Meeting Room</a>
+            </li>
+            <li onclick="window.location.href='../clientNotification.html'">
+              <img src="../assets/images/notification.png" alt="" />
+            </li>
             <li><img src="../assets/images/profilecircle.png" alt="" /></li>
           </div>
           <div class="hamburger">
@@ -49,93 +62,103 @@
         </div>
       </div>
       <div class="bottom">
+        <!-- Bottom section of the header -->
         <div>
-
-          <li>Browse Category</li>
+          <li class="para-1">Browse Category</li>
           <ul>
-          <li><a href="">Development</a></li>
-          <li><a href="">Business</a></li>
-          <li><a href="">Finance & Account</a></li>
-          <li><a href="">IT & Software</a></li>
-          <li><a href="">Design</a></li>
-          <li><a href="">Personal Development</a></li>
-          <div>
-            <li id="more">More</li>
-            <div class="more-dropdown" style="display:none">
-              <a href="">Office Productivity</a>
-              <a href="">Music</a>
-              <a href="">Teaching & academics</a>
-              <a href="">Health & Fitness</a>
-              <a href="">Photography and video</a>
-              <a href="">Lifestyle</a>
-              <a href="">Marketing</a>
+            <!-- List of category links -->
+            <li><a href="" class="para-1">Development</a></li>
+            <li><a href="" class="para-1">Business</a></li>
+            <li><a href="" class="para-1">Finance & Account</a></li>
+            <li><a href="" class="para-1">IT & Software</a></li>
+            <li><a href="" class="para-1">Design</a></li>
+            <li><a href="" class="para-1">Personal Development</a></li>
+            <div>
+              <!-- "More" dropdown section -->
+              <li id="more" class="para-1">More</li>
+              <div class="more-dropdown" style="display: none">
+                <!-- Additional category links -->
+                <a href="" class="para-1">Office Productivity</a>
+                <a href="" class="para-1">Music</a>
+                <a href="" class="para-1">Teaching & academics</a>
+                <a href="" class="para-1">Health & Fitness</a>
+                <a href="" class="para-1">Photography and video</a>
+                <a href="" class="para-1">Lifestyle</a>
+                <a href="" class="para-1">Marketing</a>
+              </div>
             </div>
-          </div>
+          </ul>
         </div>
-        </ul>
-    </div>
+      </div>
     </header>
+
     <main>
       <section class="search">
         <form action="">
-          <input type="text" name="" id="job" placeholder="Search here..." style="width:537px" />
+          <input
+            type="text"
+            name=""
+            id="job"
+            placeholder="Search here..."
+            style="width: 537px"
+          />
           <button class="sub-heading-2">Search</button>
         </form>
         <div class="job-nav">
           <ul>
-            <li ><a href="Apps.html" class="sub-heading-2">Search</a></li>
-            <li class="act"><a href="myApps.html" class="sub-heading-2">My Apps</a></li>
+            <!-- <li class="para-1 trapezoid">Job Status</li> -->
+            <li class=" trapezoid"><a href="Apps.html" class="para-1">Search</a></li>
+            <li class="act trapezoid"><a href="myApps.html" class="para-1">My Training</a></li>
           </ul>
-          <li><a href="" id="publish-job" class="para-2">Publish new app</a></li>
         </div>
         <section class="app-results">
-            <div class="job">
-              <div class="app">
+          <div class="job">
+            <div class="app">
               <div>
-                  <img src="../assets/images/app-img.png" alt="">
-                  <div class="app-details">
-                    <h4 class="sub-heading-2">Rental Application</h4>
-                    <div class="budget">
-                      <p class="para-1"> Budget- $1500</p>
-                    </div>
-                    <div class="status">
-                      <img src="/assets/images/progress.png" alt="" />
-                      <p class="para-1">Under Review</p>
-                    </div>
+                <img src="../assets/images/app-img.png" alt="" />
+                <div class="app-details">
+                  <h4 class="sub-heading-2">Rental Application</h4>
+                  <div class="budget">
+                    <p class="para-1">Budget- $1500</p>
                   </div>
-                  </div>
-                  <div class="icons" style="align-self: flex-start;">
-                    <img src="/assets/images/save.png" alt="" class="save" />
-                    <img src="/assets/images/edit.png" alt="" class="edit" />
+                  <div class="status">
+                    <img src="/assets/images/progress.png" alt="" />
+                    <p class="para-1">Under Review</p>
                   </div>
                 </div>
+              </div>
+              <div class="icons" style="align-self: flex-start">
+                <img src="/assets/images/save.png" alt="" class="save" />
+                <img src="/assets/images/edit.png" alt="" class="edit" />
+              </div>
             </div>
-            <div class="job">
-              <div class="app">
+          </div>
+          <div class="job">
+            <div class="app">
               <div>
-                  <img src="../assets/images/app-img.png" alt="">
-                  <div class="app-details">
-                    <h4 class="sub-heading-2">Rental Application</h4>
-                    <div class="budget">
-                      <p class="para-1"> Budget- $1500</p>
-                    </div>
-                    <div class="status">
-                      <img src="/assets/images/progress.png" alt="" />
-                      <p class="para-1">Under Review</p>
-                    </div>
+                <img src="../assets/images/app-img.png" alt="" />
+                <div class="app-details">
+                  <h4 class="sub-heading-2">Rental Application</h4>
+                  <div class="budget">
+                    <p class="para-1">Budget- $1500</p>
                   </div>
-                  </div>
-                  <div class="icons" style="align-self: flex-start;">
-                    <img src="/assets/images/save.png" alt="" class="save" />
-                    <img src="/assets/images/edit.png" alt="" class="edit" />
+                  <div class="status">
+                    <img src="/assets/images/progress.png" alt="" />
+                    <p class="para-1">Under Review</p>
                   </div>
                 </div>
+              </div>
+              <div class="icons" style="align-self: flex-start">
+                <img src="/assets/images/save.png" alt="" class="save" />
+                <img src="/assets/images/edit.png" alt="" class="edit" />
+              </div>
             </div>
-
-        
+          </div>
         </section>
         <div class="pagination">
-        <button class="prev"><img src="/assets/images/prev.png" alt=""></button>
+          <button class="prev">
+            <img src="/assets/images/prev.png" alt="" />
+          </button>
           <div class="page-num page-num-active">
             <p class="sub-heading-2">1</p>
           </div>
@@ -145,7 +168,9 @@
           <div class="page-num">
             <p class="sub-heading-2">3</p>
           </div>
-          <button class="next"><img src="/assets/images/next.png" alt=""></button>
+          <button class="next">
+            <img src="/assets/images/next.png" alt="" />
+          </button>
         </div>
       </section>
       <div class="publish-right-container" style="display: none">
@@ -153,7 +178,7 @@
         <form class="publish-form">
           <div class="field-section">
             <label class="sub-heading-1">Title</label>
-            <input type="text" placeholder="Job Tittle" />
+            <input type="text" placeholder="App Title" class="popup_input" />
           </div>
           <div class="field-section">
             <label class="sub-heading-1">Category</label>
@@ -171,7 +196,7 @@
           <div class="field-section">
             <label class="sub-heading-1">Project Budget(in USD)</label>
             <div class="field-double">
-              <input type="text" placeholder="$" />
+              <input type="text" placeholder="$" class="popup_input"/>
               <select data-role="select" id="rate">
                 <option value="daily">Daily</option>
                 <option value="hourly">Hourly</option>
@@ -183,22 +208,18 @@
     
           <div class="field-section">
             <label class="sub-heading-1">Description</label>
-            <textarea name="" id="" cols="40" rows="11"></textarea>
+            <textarea name="" id="" cols="40" rows="4"></textarea>
           </div>
           <div class="btn-section">
             <button
-              style="background-color: #0d3451; color: white; border: none"
-              class="sub-heading-1"
+        
+              class="sub-heading-1 blue-btn"
             >
               Publish
             </button>
             <button
-            class="sub-heading-1"
-              style="
-                color: #ff6060;
-                border: 1px solid #ff6060;
-                background-color: #fff;
-              "
+            class="sub-heading-1 cancel-btn"
+          
               id="cancel"
             >
               Cancel
@@ -268,23 +289,7 @@
         </div>
       </div>
     </footer>
-    <script>
-      const more=document.querySelector('#more')
-      const dropdown=document.querySelector('.more-dropdown')
-      console.log(more, dropdown)
-      more.addEventListener('mouseover',()=>{
-        dropdown.style.display='flex'
-      })
-      more.addEventListener('mouseout',()=>{
-        dropdown.style.display='none'
-      })
-      dropdown.addEventListener('mouseover',()=>{
-        dropdown.style.display='flex'
-      })
-      dropdown.addEventListener('mouseout',()=>{
-        dropdown.style.display='none'
-      })
-    </script>
-    <script src="../Job/scripts.js"></script>
+    <script src="../assets/js/publishJob.js"></script>
+    <script src="../assets/js/app.js"></script>
   </body>
 </html>

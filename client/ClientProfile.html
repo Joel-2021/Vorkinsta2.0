@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./ClientProfile.css" />
+
     <link
       rel="stylesheet"
       href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css"
@@ -16,6 +16,11 @@
       rel="stylesheet"
     />
     <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/Homepage.css" />
+    <!-- <link rel="stylesheet" href="/assets/css/profileForm.css" /> -->
+    <link rel="stylesheet" href="/assets/css/config.css" />
+    <link rel="stylesheet" href="ClientProfile.css" />
+
     <title>Document</title>
   </head>
   <body>
@@ -26,9 +31,14 @@
             <img src="../assets/images/Ellipse 23.png" alt="" />
           </div>
           <div class="logo">
-            <img src="../assets/images/image 9.png" alt="" srcset="" />
+            <img
+              src="../assets/images/image 9.png"
+              alt=""
+              srcset=""
+              onclick="window.location.href='../index.html'"
+            />
           </div>
-          <div class="tabs">
+          <div class="tabs para-2">
             <li><a href="../job/search.html">My Jobs</a></li>
             <li>
               <a href="/myconsultantpage.html">My Consultants</a>
@@ -36,9 +46,11 @@
             <li class="active">
               <a href="BrowserSearch.html">Search Consultant</a>
             </li>
-            <li><a>Apps</a></li>
-            <li><a>Trainings</a></li>
-            <li><img src="../assets/images/notification.png" alt="" /></li>
+            <li><a href="/Apps/Apps.html">Apps</a></li>
+            <li><a href="/Training/Training.html">Trainings</a></li>
+            <li onclick="window.location.href='../clientNotification.html'">
+              <img src="../assets/images/notification.png" alt="" />
+            </li>
             <li><img src="../assets/images/profilecircle.png" alt="" /></li>
           </div>
           <div class="hamburger">
@@ -50,18 +62,19 @@
     <main>
       <section>
         <div class="cp-container">
+          <h2>Personal Details</h2>
           <div class="cp-upper">
             <div class="upper-left">
               <h2 style="text-align: center">Profile</h2>
               <div>
-                <div class="img-con">
-                  <span>+</span>
-                </div>
+                <label for="image-upload" id="img-circle">
+                  <img src="../assets/images/addPlus.png" alt="" />
+                  <input type="file" id="image-upload" style="display: none" />
+                </label>
               </div>
               <button class="priofilebutton">Profile View</button>
             </div>
             <div class="upper-right">
-              <h2>Personal Details</h2>
               <div class="upper-right-field">
                 <div class="upf-fields">
                   <p class="maintext">Full Name</p>
@@ -73,7 +86,7 @@
                 </div>
               </div>
               <div class="upper-right-field">
-                <div class="upf-fields">
+                <!-- <div class="upf-fields">
                   <p class="maintext">Date Of Birth</p>
                   <input
                     type="text"
@@ -81,38 +94,40 @@
                     data-input-format="%d/%m/%y"
                     value="16/05/2023"
                   />
+                </div> -->
+                <div class="upf-fields">
+                  <p class="maintext">Country</p>
+                  <select data-role="select" id="gender">
+                    <option value="man">India</option>
+                    <option value="female">Eng</option>
+                    <option value="other">Aus</option>
+                  </select>
                 </div>
                 <div class="upf-fields">
-                  <p class="maintext">Gender</p>
+                  <p class="maintext">State</p>
                   <select data-role="select" id="gender">
-                    <option value="man">Man</option>
-                    <option value="female">Female</option>
-                    <option value="other">other</option>
+                    <option value="man">Kerala</option>
+                    <option value="female">Odisha</option>
+                    <option value="other">Goa</option>
                   </select>
                 </div>
               </div>
               <div class="upper-right-field">
                 <div class="upf-fields">
-                  <p class="maintext">Marital Status</p>
-                  <select data-role="select" id="MaritalStatus">
-                    <option value="Married">Married</option>
-                    <option value="Unmarried">Unmarried</option>
-                  </select>
+                  <p class="maintext">Phone Number</p>
+                  <input type="text" placeholder="Enter Phone Number" />
+                </div>
+                <div class="upf-fields">
+                  <p class="maintext">Email Address</p>
+                  <input type="text" placeholder="Enter Your Email Address " />
                 </div>
               </div>
+              <div class="upper-right-field"></div>
             </div>
           </div>
-          <div class="cp-middle">
+          <!-- <div class="cp-middle">
             <div class="middle-left">
               <h2>Contact Details</h2>
-              <div class="upf-fields">
-                <p class="maintext">Phone Number</p>
-                <input type="text" placeholder="Enter Phone Number" />
-              </div>
-              <div class="upf-fields">
-                <p class="maintext">Email Address</p>
-                <input type="text" placeholder="Enter Your Email Address " />
-              </div>
             </div>
             <div class="middle-right">
               <h2>Address</h2>
@@ -139,7 +154,8 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
+          <h2>Client Information</h2>
           <div class="cp-middle-two">
             <div class="middle-left-two">
               <div class="upf-fields">
@@ -153,6 +169,10 @@
               <div class="upf-fields">
                 <p class="maintext">Experience</p>
                 <input type="text" placeholder="Experience" />
+              </div>
+              <div class="upf-fields">
+                <p class="maintext">Client Industry</p>
+                <input type="text" placeholder="Enter Phone Number" />
               </div>
             </div>
             <div class="middle-right-two">
@@ -177,68 +197,23 @@
                   </select>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="cp-heading">
-            <p>Client Information</p>
-          </div>
-          <div class="two-opon">
-            <div class="inside" style="width: 40%">
-              <div class="single-field">
-                <div class="sf-upper">
-                  <p>Client Industry</p>
-                  <img src="/assets/images/addPlus.png" alt="" srcset="" />
-                </div>
-                <p class="dec">Enter Industry</p>
-              </div>
-            </div>
-            <div class="inside">
-              <div class="single-field">
-                <div class="sf-upper">
-                  <p>Client Website</p>
-                  <img src="/assets/images/addPlus.png" alt="" srcset="" />
-                </div>
-                <p class="dec">Website link</p>
+              <div class="upf-fields">
+                <p class="maintext">Client Website</p>
+                <input type="text" placeholder="Enter Phone Number" />
               </div>
             </div>
           </div>
           <div class="single-field">
-            <div class="sf-upper">
-              <p>Skills</p>
-              <img src="/assets/images/addPlus.png" alt="" srcset="" />
+            <div class="upf-fields">
+              <p class="maintext">Skills</p>
+              <select data-role="select" id="gender" multiple>
+                <option value="man">HTML</option>
+                <option value="female">CSS</option>
+                <option value="other">JS</option>
+              </select>
             </div>
-            <p class="dec">Enter Your Specialization</p>
           </div>
-          <div class="single-field">
-            <div class="sf-upper">
-              <p>Resume</p>
-              <img src="/assets/images/addPlus.png" alt="" srcset="" />
-            </div>
-            <p class="dec">Add Your Resume</p>
-          </div>
-          <div class="single-field">
-            <div class="sf-upper">
-              <p>Portfolio</p>
-              <img src="/assets/images/addPlus.png" alt="" srcset="" />
-            </div>
-            <p class="dec">
-              Your work will get you to the next level in the crowd
-            </p>
-          </div>
-          <div class="single-field">
-            <div class="sf-upper">
-              <p>School</p>
-              <img src="/assets/images/addPlus.png" alt="" srcset="" />
-            </div>
-            <p class="dec">Add your Higher Secondary</p>
-          </div>
-          <div class="single-field">
-            <div class="sf-upper">
-              <p>College</p>
-              <img src="/assets/images/addPlus.png" alt="" srcset="" />
-            </div>
-            <p class="dec">Add Your Highest Qualifications</p>
-          </div>
+
           <div class="single-field">
             <div class="sf-upper">
               <p>Description</p>
@@ -250,10 +225,8 @@
             ></textarea>
           </div>
           <div class="cp-btn">
-            <button style="background: #0d3451; color: white">Save</button>
-            <button style="color: #ff0000; border: 1px solid #ff0000">
-              Cancel
-            </button>
+            <button class="blue-btn sub-heading-2">Save</button>
+            <button class="cancel-btn sub-heading-2">Cancel</button>
           </div>
         </div>
       </section>
@@ -261,8 +234,8 @@
     <footer>
       <div class="f-container">
         <div class="f-left">
-          <h2>Vorkinsta</h2>
-          <p>
+          <h2 class="sub-heading-2">Vorkinsta</h2>
+          <p class="para-2">
             Vorkinsta lets any client connect with any consultant and
             collaborate independently on their own terms. We aim at increased
             collaboration in IT for a high-tech world. Our objective is to give
@@ -275,24 +248,38 @@
             or any other information.
           </p>
           <span>
-            <p>Follow us</p>
+            <p class="sub-heading-2">Follow us</p>
             <span>
               <img src="/assets/images/Facebook Circled.png" alt="" />
               <img src="/assets/images/LinkedIn Circled.png" alt="" />
               <img src="/assets/images/Instagram.png" alt="" />
             </span>
           </span>
-          <p>&copy 2021 All Rights Reserved</p>
+          <p class="sub-heading-2">&copy 2021 All Rights Reserved</p>
         </div>
         <div class="f-right">
           <h2>Links</h2>
           <div>
             <ul>
-              <li>terms and conditions</li>
-              <li>Privacy Policy</li>
-              <li>Help</li>
-              <li>Vorkinsta License</li>
-              <li>Partners</li>
+              <li>
+                <a href="Footer/tandc.html" class="para-2">
+                  Terms and Conditions</a
+                >
+              </li>
+              <li>
+                <a href="Footer/privacyandpolicy.html" class="para-2">
+                  Privacy Policy</a
+                >
+              </li>
+              <li><a href="Footer/helpcenter.html" class="para-2"> Help</a></li>
+              <li>
+                <a href="Footer/licence.html" class="para-2">
+                  Vorkinsta License</a
+                >
+              </li>
+              <li>
+                <a href="Footer/partners.html" class="para-2"> Partners</a>
+              </li>
               <label for="">Select language</label>
               <select name="languages" id="">
                 <option value="english">English</option>
@@ -307,3 +294,211 @@
     </footer>
   </body>
 </html>
+
+<!-- <div class="cp-container">
+  <div class="cp-upper">
+    <div class="upper-left">
+      <h2 style="text-align: center">Profile</h2>
+      <div>
+        <div class="img-con">
+          <span>+</span>
+        </div>
+      </div>
+      <button class="priofilebutton">Profile View</button>
+    </div>
+    <div class="upper-right">
+      <h2>Personal Details</h2>
+      <div class="upper-right-field">
+        <div class="upf-fields">
+          <p class="maintext">Full Name</p>
+          <input type="text" placeholder="Enter Your First Name" />
+        </div>
+        <div class="upf-fields">
+          <p class="maintext">Last Name</p>
+          <input type="text" placeholder="Enter Your Sur Name" />
+        </div>
+      </div>
+      <div class="upper-right-field">
+        <div class="upf-fields">
+          <p class="maintext">Date Of Birth</p>
+          <input
+            type="text"
+            data-role="calendarpicker"
+            data-input-format="%d/%m/%y"
+            value="16/05/2023"
+          />
+        </div>
+        <div class="upf-fields">
+          <p class="maintext">Gender</p>
+          <select data-role="select" id="gender">
+            <option value="man">Man</option>
+            <option value="female">Female</option>
+            <option value="other">other</option>
+          </select>
+        </div>
+      </div>
+      <div class="upper-right-field">
+        <div class="upf-fields">
+          <p class="maintext">Marital Status</p>
+          <select data-role="select" id="MaritalStatus">
+            <option value="Married">Married</option>
+            <option value="Unmarried">Unmarried</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cp-middle">
+    <div class="middle-left">
+      <h2>Contact Details</h2>
+      <div class="upf-fields">
+        <p class="maintext">Phone Number</p>
+        <input type="text" placeholder="Enter Phone Number" />
+      </div>
+      <div class="upf-fields">
+        <p class="maintext">Email Address</p>
+        <input type="text" placeholder="Enter Your Email Address " />
+      </div>
+    </div>
+    <div class="middle-right">
+      <h2>Address</h2>
+      <div class="upf-fields" style="margin-bottom: 15px">
+        <p class="maintext">Street Address</p>
+        <input type="text" placeholder="Street Name" />
+      </div>
+      <div class="upper-right-field">
+        <div class="upf-fields">
+          <p class="maintext">State</p>
+          <select data-role="select" id="State">
+            <option value="1">India</option>
+            <option value="2">England</option>
+            <option value="3">Amreica</option>
+          </select>
+        </div>
+        <div class="upf-fields">
+          <p class="maintext">Country</p>
+          <select data-role="select" id="Country">
+            <option value="1">India</option>
+            <option value="2">England</option>
+            <option value="3">Amreica</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cp-middle-two">
+    <div class="middle-left-two">
+      <div class="upf-fields">
+        <p class="maintext">Language</p>
+        <select data-role="select" id="language">
+          <option value="Married">Hindi</option>
+          <option value="Unmarried">English</option>
+          <option value="Unmarried">Marathi</option>
+        </select>
+      </div>
+      <div class="upf-fields">
+        <p class="maintext">Experience</p>
+        <input type="text" placeholder="Experience" />
+      </div>
+    </div>
+    <div class="middle-right-two">
+      <div class="upf-fields" style="margin-bottom: 15px">
+        <p class="maintext">Availability Per Hour /Week</p>
+        <select data-role="select" id="Availability">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <div class="upper-right-field">
+        <div class="upf-fields">
+          <p class="maintext">Project Budget(in USD)</p>
+          <input type="text" placeholder="$" />
+        </div>
+        <div class="upf-fields" style="margin-top: 22px">
+          <select data-role="select" id="Budget">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cp-heading">
+    <p>Client Information</p>
+  </div>
+  <div class="two-opon">
+    <div class="inside" style="width: 40%">
+      <div class="single-field">
+        <div class="sf-upper">
+          <p>Client Industry</p>
+          <img src="/assets/images/addPlus.png" alt="" srcset="" />
+        </div>
+        <p class="dec">Enter Industry</p>
+      </div>
+    </div>
+    <div class="inside">
+      <div class="single-field">
+        <div class="sf-upper">
+          <p>Client Website</p>
+          <img src="/assets/images/addPlus.png" alt="" srcset="" />
+        </div>
+        <p class="dec">Website link</p>
+      </div>
+    </div>
+  </div>
+  <div class="single-field">
+    <div class="sf-upper">
+      <p>Skills</p>
+      <img src="/assets/images/addPlus.png" alt="" srcset="" />
+    </div>
+    <p class="dec">Enter Your Specialization</p>
+  </div>
+  <div class="single-field">
+    <div class="sf-upper">
+      <p>Resume</p>
+      <img src="/assets/images/addPlus.png" alt="" srcset="" />
+    </div>
+    <p class="dec">Add Your Resume</p>
+  </div>
+  <div class="single-field">
+    <div class="sf-upper">
+      <p>Portfolio</p>
+      <img src="/assets/images/addPlus.png" alt="" srcset="" />
+    </div>
+    <p class="dec">
+      Your work will get you to the next level in the crowd
+    </p>
+  </div>
+  <div class="single-field">
+    <div class="sf-upper">
+      <p>School</p>
+      <img src="/assets/images/addPlus.png" alt="" srcset="" />
+    </div>
+    <p class="dec">Add your Higher Secondary</p>
+  </div>
+  <div class="single-field">
+    <div class="sf-upper">
+      <p>College</p>
+      <img src="/assets/images/addPlus.png" alt="" srcset="" />
+    </div>
+    <p class="dec">Add Your Highest Qualifications</p>
+  </div>
+  <div class="single-field">
+    <div class="sf-upper">
+      <p>Description</p>
+    </div>
+    <textarea
+      name=""
+      id=""
+      placeholder="Write about yourself to your profile summary"
+    ></textarea>
+  </div>
+  <div class="cp-btn">
+    <button style="background: #0d3451; color: white">Save</button>
+    <button style="color: #ff0000; border: 1px solid #ff0000">
+      Cancel
+    </button>
+  </div>
+</div> -->
