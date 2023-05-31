@@ -156,7 +156,12 @@ header {
 }
 
 .active {
-  border-bottom: 3px solid #a5d7e8;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 6px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px
 }
 
 .bottom {
