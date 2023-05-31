@@ -1,22 +1,13 @@
-/* //global  */
-
-.maintext {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 102.52%;
-    color: #0D3451;
-}
-
 /* //main  */
-.select .select-input{
+.select .select-input {
     height: 52px;
 }
-.select .dropdown-toggle{
+
+.select .dropdown-toggle {
     width: inherit;
     height: inherit;
 }
+
 #img-circle {
     width: 200px;
     height: 200px;
@@ -25,11 +16,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  #img-circle > img {
+}
+
+#img-circle>img {
     width: 20px;
     height: 20px;
-  }
+}
+
+.priofilebutton {
+    width: 177px;
+    height: 42px;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 102.52%;
+    background: #0d3451;
+    color: white
+}
 
 .cp-container {
     padding: 50px 105px;
@@ -50,35 +56,11 @@
     gap: 20px;
 }
 
-.img-con {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.img-con>span {
-    font-family: 'DM Serif Text';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 120px;
-    line-height: 102.52%;
-    color: rgba(13, 52, 81, 0.4);
-}
-
-.upper-left>p {
-    text-align: center;
-}
-
 .upper-right {
     width: 70%;
 }
 
 .upper-right-field {
-    margin-bottom: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -92,11 +74,6 @@
     height: 52px;
     margin: 10px 0;
     width: 100%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 102.52%;
     color: rgba(13, 52, 81, 0.5);
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.4);
@@ -105,20 +82,148 @@
 
 }
 
-.calendar-picker {
-    margin-top: 10px ;
-    margin-bottom: 10px ;
+.select {
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 10px;
-    height: 52px ;
-    border: 1px solid rgba(0, 0, 0, 0.4) ;
+    height: 52px !important;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.select-input {
+    height: 100%;
+}
+
+.dropdown-toggle {
+    height: 100%;
+
+}
+
+.select .drop-container .input {
+    display: none;
+}
+
+.select .option-list li.active {
+    background-color: #0D3451;
+}
+
+.active {
+    border-bottom: 3px solid #0D3451;
+}
+
+select {
+    height: 52px;
+    margin: 10px 0;
+    width: 100%;
+    color: rgba(13, 52, 81, 0.5);
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    outline: none;
+}
+
+.cp-middle {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.middle-left {
+    width: 30%;
+    padding: 23px 25px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.middle-right {
+    width: 70%;
+    padding: 23px 25px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.cp-middle-two {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.middle-left-two {
+    width: 50%;
+    padding: 23px 25px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.middle-right-two {
+    width: 50%;
+    padding: 23px 25px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.cp-heading {
+    margin: 10px 0;
+    padding: 20px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.cp-heading>p {
+    font-family: 'DM Serif Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 102.52%;
+    color: #0D3451;
+}
+
+.single-field {
+    margin: 10px 0;
+    padding: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.single-field>.sf-upper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.single-field>textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px 10px;
+    outline: none;
+    resize: none;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    color: rgba(13, 52, 81, 0.5);
+}
+
+.cp-btn {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.cp-btn>button {
+    width: 195px;
+    height: 59px;
+    border-radius: 10px;
+}
+
+.calendar-picker {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    height: 52px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 .input .button {
-    height: 52px ;
+    height: 52px;
 }
 
 .calendar-picker>input {
-    height: 100% ;
+    height: 100%;
 }
 
 .calendar {
@@ -128,22 +233,22 @@
 }
 
 .calendar-toolbar {
-    border: none ;
+    border: none;
 }
 
 .calendar-content .week-day {
-    border-bottom: none ;
+    border-bottom: none;
 }
 
 .calendar-content .week-day,
 .calendar-content .week-number {
     font-weight: 700;
-    background-color: white ;
+    background-color: white;
 }
 
 .calendar-content .today {
-    background-color: #0D3451 ;
-    border-radius: 50% ;
+    background-color: #0D3451;
+    border-radius: 50%;
     color: #fff;
     font-weight: 700;
 }
@@ -151,57 +256,12 @@
 .calendar .days .day,
 .calendar .months .month,
 .calendar .years .year {
-    border: none ;
-}
-
-.select {
-    margin-top: 10px ;
-    margin-bottom: 10px ;
-    border-radius: 10px;
-    height: 52px ;
-    border: 1px solid rgba(0, 0, 0, 0.4) ;
-}
-
-.select-input {
-    height: 100% ;
-}
-
-.dropdown-toggle {
-    height: 100% ;
-
-}
-
-.select .drop-container .input {
-    display: none ;
-}
-
-.select .option-list li.active {
-    background-color: #0D3451 ;
-}
-
-.active {
-    border-bottom: 3px solid #0D3451 ;
-}
-
-select {
-    height: 52px;
-    margin: 10px 0;
-    width: 100%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 102.52%;
-    color: rgba(13, 52, 81, 0.5);
-    padding: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    outline: none;
+    border: none;
 }
 
 .toogle {
     width: 70%;
-    margin-top: 15px;
+    margin-top: 10px;
     border: 1px solid rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     text-align: center;
@@ -209,7 +269,7 @@ select {
     align-items: center;
     gap: 10px;
     justify-content: center;
-    padding: 12px;
+    padding: 8px;
 }
 
 .toogle>.switch {
@@ -273,147 +333,13 @@ select {
     border-radius: 50%;
 }
 
-.cp-middle {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.middle-left {
-    width: 30%;
-    padding: 23px 25px;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-}
-
-.middle-right {
-    width: 70%;
-    padding: 23px 25px;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-}
-
-h2 {
-    font-family: 'DM Serif Text';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 102.52%;
-    color: #0D3451;
-    margin-bottom: 25px;
-
-}
-
-.cp-middle-two {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.middle-left-two {
-    width: 50%;
-    padding: 23px 25px;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-}
-
-.middle-right-two {
-    width: 50%;
-    padding: 23px 25px;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-}
-
-.cp-heading {
-    margin: 10px 0;
-    padding: 20px 30px;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-}
-
-.cp-heading>p {
-    font-family: 'DM Serif Text';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 102.52%;
-    color: #0D3451;
-}
-
-.two-opon {
-    display: flex;
-    gap: 10px;
-}
-
-.two-opon>.inside {
-    width: 60%;
-}
-
-.single-field {
-    margin: 10px 0;
-    padding: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-}
-
-.single-field>.sf-upper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.sf-upper>p {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 102.52%;
-    color: #0D3451;
-}
-
-.single-field>.dec {
-    margin-top: 30px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 102.52%;
-    color: rgba(13, 52, 81, 0.5);
-}
-
-.single-field>textarea {
-    width: 100%;
-    height: 150px;
-    padding: 10px 0;
-    outline: none;
-    border: none;
-    resize: none;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 102.52%;
-    color: rgba(13, 52, 81, 0.5);
-}
-
-.cp-btn {
-    margin-top: 20px;
+.btn-exrta {
+    background: #0D3451;
+    border-radius: 10px;
+    color: white;
+    width: 110px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 150px;
-}
-
-.cp-btn>button {
-    width: 195px;
-    height: 59px;
-    border-radius: 10px;
-}
-
-.priofilebutton {
-    width: 177px;
-    height: 42px;
-    border-radius: 10px;
-    outline: none;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 102.52%;
-    background: #0d3451;
-    color: white
 }

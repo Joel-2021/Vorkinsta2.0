@@ -17,7 +17,6 @@
     />
     <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
     <link rel="stylesheet" href="/assets/css/Homepage.css" />
-    <!-- <link rel="stylesheet" href="/assets/css/profileForm.css" /> -->
     <link rel="stylesheet" href="/assets/css/config.css" />
     <link rel="stylesheet" href="ClientProfile.css" />
 
@@ -95,15 +94,6 @@
                 </div>
               </div>
               <div class="upper-right-field">
-                <!-- <div class="upf-fields">
-                  <p class="maintext">Date Of Birth</p>
-                  <input
-                    type="text"
-                    data-role="calendarpicker"
-                    data-input-format="%d/%m/%y"
-                    value="16/05/2023"
-                  />
-                </div> -->
                 <div class="upf-fields">
                   <p class="sub-heading-1">Country</p>
                   <select data-role="select" id="gender" class="para-1">
@@ -139,38 +129,48 @@
                   />
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- <div class="cp-middle">
-            <div class="middle-left">
-              <h2>Contact Details</h2>
-            </div>
-            <div class="middle-right">
-              <h2>Address</h2>
-              <div class="upf-fields" style="margin-bottom: 15px">
-                <p class="maintext">Street Address</p>
-                <input type="text" placeholder="Street Name" />
+              <div class="upper-right-field">
+                <div class="upf-fields">
+                  <p class="sub-heading-1">Gender</p>
+                  <select data-role="select" id="gender" class="para-1">
+                    <option value="man">Kerala</option>
+                    <option value="female">Odisha</option>
+                    <option value="other">Goa</option>
+                  </select>
+                </div>
+                <div class="upf-fields">
+                  <p class="sub-heading-1">Date Of Birth</p>
+                  <input
+                    type="text"
+                    data-role="calendarpicker"
+                    data-input-format="%d/%m/%y"
+                    value="16/05/2023"
+                  />
+                </div>
               </div>
               <div class="upper-right-field">
                 <div class="upf-fields">
-                  <p class="maintext">State</p>
-                  <select data-role="select" id="State">
-                    <option value="1">India</option>
-                    <option value="2">England</option>
-                    <option value="3">Amreica</option>
+                  <p class="sub-heading-1">Marital Status</p>
+                  <select data-role="select" id="gender" class="para-1">
+                    <option value="man">Kerala</option>
+                    <option value="female">Odisha</option>
+                    <option value="other">Goa</option>
                   </select>
                 </div>
                 <div class="upf-fields">
-                  <p class="maintext">Country</p>
-                  <select data-role="select" id="Country">
-                    <option value="1">India</option>
-                    <option value="2">England</option>
-                    <option value="3">Amreica</option>
-                  </select>
+                  <p class="sub-heading-1">Consultant Type</p>
+                  <div class="toogle">
+                    <p class="para-2">Full Time</p>
+                    <label class="switch">
+                      <input type="checkbox" checked />
+                      <span class="slider round"></span>
+                    </label>
+                    <p class="para-2" style="margin-top: 0">Freelancer</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div> -->
+          </div>
           <h2>Client Information</h2>
           <div class="cp-middle-two">
             <div class="middle-left-two">
@@ -185,10 +185,6 @@
               <div class="upf-fields">
                 <p class="sub-heading-1">Experience</p>
                 <input type="text" placeholder="Experience" />
-              </div>
-              <div class="upf-fields">
-                <p class="sub-heading-1">Client Industry</p>
-                <input type="text" placeholder="Enter Phone Number" />
               </div>
             </div>
             <div class="middle-right-two">
@@ -213,10 +209,6 @@
                   </select>
                 </div>
               </div>
-              <div class="upf-fields">
-                <p class="sub-heading-1">Client Website</p>
-                <input type="text" placeholder="Enter Phone Number" />
-              </div>
             </div>
           </div>
           <div class="single-field">
@@ -235,6 +227,55 @@
             </div>
           </div>
 
+          <div class="single-field">
+            <div class="sf-upper">
+              <p class="sub-heading-1">Resume</p>
+              <label for="Resume-upload">
+                <div class="btn-exrta para-1">
+                  Browser
+                  <input type="file" id="Resume-upload" style="display: none" />
+                </div>
+              </label>
+            </div>
+            <p class="para-2" style="color: rgba(13, 52, 81, 0.5)">
+              Add Your Resume
+            </p>
+          </div>
+          <div class="single-field">
+            <div class="sf-upper">
+              <p class="sub-heading-1">Portfolio</p>
+              <label for="portfolio-upload">
+                <div class="btn-exrta para-1">
+                  Browser
+                  <input
+                    type="file"
+                    id="portfolio-upload"
+                    style="display: none"
+                  />
+                </div>
+              </label>
+            </div>
+            <p class="para-2" style="color: rgba(13, 52, 81, 0.5)">
+              Your work will get you to the next level in the crowd
+            </p>
+          </div>
+          <div class="single-field">
+            <div class="sf-upper">
+              <p class="sub-heading-1">School</p>
+              <img src="/assets/images/addPlus.png" alt="" srcset="" />
+            </div>
+            <p class="para-2" style="color: rgba(13, 52, 81, 0.5)">
+              Add your Higher Secondary
+            </p>
+          </div>
+          <div class="single-field">
+            <div class="sf-upper">
+              <p class="sub-heading-1">College</p>
+            </div>
+            <p class="para-2" style="color: rgba(13, 52, 81, 0.5)">
+              Add Your Highest Qualifications
+            </p>
+          </div>
           <div class="single-field">
             <div class="sf-upper">
               <p class="sub-heading-1">Description</p>
@@ -316,211 +357,3 @@
     </footer>
   </body>
 </html>
-
-<!-- <div class="cp-container">
-  <div class="cp-upper">
-    <div class="upper-left">
-      <h2 style="text-align: center">Profile</h2>
-      <div>
-        <div class="img-con">
-          <span>+</span>
-        </div>
-      </div>
-      <button class="priofilebutton">Profile View</button>
-    </div>
-    <div class="upper-right">
-      <h2>Personal Details</h2>
-      <div class="upper-right-field">
-        <div class="upf-fields">
-          <p class="maintext">Full Name</p>
-          <input type="text" placeholder="Enter Your First Name" />
-        </div>
-        <div class="upf-fields">
-          <p class="maintext">Last Name</p>
-          <input type="text" placeholder="Enter Your Sur Name" />
-        </div>
-      </div>
-      <div class="upper-right-field">
-        <div class="upf-fields">
-          <p class="maintext">Date Of Birth</p>
-          <input
-            type="text"
-            data-role="calendarpicker"
-            data-input-format="%d/%m/%y"
-            value="16/05/2023"
-          />
-        </div>
-        <div class="upf-fields">
-          <p class="maintext">Gender</p>
-          <select data-role="select" id="gender">
-            <option value="man">Man</option>
-            <option value="female">Female</option>
-            <option value="other">other</option>
-          </select>
-        </div>
-      </div>
-      <div class="upper-right-field">
-        <div class="upf-fields">
-          <p class="maintext">Marital Status</p>
-          <select data-role="select" id="MaritalStatus">
-            <option value="Married">Married</option>
-            <option value="Unmarried">Unmarried</option>
-          </select>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="cp-middle">
-    <div class="middle-left">
-      <h2>Contact Details</h2>
-      <div class="upf-fields">
-        <p class="maintext">Phone Number</p>
-        <input type="text" placeholder="Enter Phone Number" />
-      </div>
-      <div class="upf-fields">
-        <p class="maintext">Email Address</p>
-        <input type="text" placeholder="Enter Your Email Address " />
-      </div>
-    </div>
-    <div class="middle-right">
-      <h2>Address</h2>
-      <div class="upf-fields" style="margin-bottom: 15px">
-        <p class="maintext">Street Address</p>
-        <input type="text" placeholder="Street Name" />
-      </div>
-      <div class="upper-right-field">
-        <div class="upf-fields">
-          <p class="maintext">State</p>
-          <select data-role="select" id="State">
-            <option value="1">India</option>
-            <option value="2">England</option>
-            <option value="3">Amreica</option>
-          </select>
-        </div>
-        <div class="upf-fields">
-          <p class="maintext">Country</p>
-          <select data-role="select" id="Country">
-            <option value="1">India</option>
-            <option value="2">England</option>
-            <option value="3">Amreica</option>
-          </select>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="cp-middle-two">
-    <div class="middle-left-two">
-      <div class="upf-fields">
-        <p class="maintext">Language</p>
-        <select data-role="select" id="language">
-          <option value="Married">Hindi</option>
-          <option value="Unmarried">English</option>
-          <option value="Unmarried">Marathi</option>
-        </select>
-      </div>
-      <div class="upf-fields">
-        <p class="maintext">Experience</p>
-        <input type="text" placeholder="Experience" />
-      </div>
-    </div>
-    <div class="middle-right-two">
-      <div class="upf-fields" style="margin-bottom: 15px">
-        <p class="maintext">Availability Per Hour /Week</p>
-        <select data-role="select" id="Availability">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-        </select>
-      </div>
-      <div class="upper-right-field">
-        <div class="upf-fields">
-          <p class="maintext">Project Budget(in USD)</p>
-          <input type="text" placeholder="$" />
-        </div>
-        <div class="upf-fields" style="margin-top: 22px">
-          <select data-role="select" id="Budget">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-          </select>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="cp-heading">
-    <p>Client Information</p>
-  </div>
-  <div class="two-opon">
-    <div class="inside" style="width: 40%">
-      <div class="single-field">
-        <div class="sf-upper">
-          <p>Client Industry</p>
-          <img src="/assets/images/addPlus.png" alt="" srcset="" />
-        </div>
-        <p class="dec">Enter Industry</p>
-      </div>
-    </div>
-    <div class="inside">
-      <div class="single-field">
-        <div class="sf-upper">
-          <p>Client Website</p>
-          <img src="/assets/images/addPlus.png" alt="" srcset="" />
-        </div>
-        <p class="dec">Website link</p>
-      </div>
-    </div>
-  </div>
-  <div class="single-field">
-    <div class="sf-upper">
-      <p>Skills</p>
-      <img src="/assets/images/addPlus.png" alt="" srcset="" />
-    </div>
-    <p class="dec">Enter Your Specialization</p>
-  </div>
-  <div class="single-field">
-    <div class="sf-upper">
-      <p>Resume</p>
-      <img src="/assets/images/addPlus.png" alt="" srcset="" />
-    </div>
-    <p class="dec">Add Your Resume</p>
-  </div>
-  <div class="single-field">
-    <div class="sf-upper">
-      <p>Portfolio</p>
-      <img src="/assets/images/addPlus.png" alt="" srcset="" />
-    </div>
-    <p class="dec">
-      Your work will get you to the next level in the crowd
-    </p>
-  </div>
-  <div class="single-field">
-    <div class="sf-upper">
-      <p>School</p>
-      <img src="/assets/images/addPlus.png" alt="" srcset="" />
-    </div>
-    <p class="dec">Add your Higher Secondary</p>
-  </div>
-  <div class="single-field">
-    <div class="sf-upper">
-      <p>College</p>
-      <img src="/assets/images/addPlus.png" alt="" srcset="" />
-    </div>
-    <p class="dec">Add Your Highest Qualifications</p>
-  </div>
-  <div class="single-field">
-    <div class="sf-upper">
-      <p>Description</p>
-    </div>
-    <textarea
-      name=""
-      id=""
-      placeholder="Write about yourself to your profile summary"
-    ></textarea>
-  </div>
-  <div class="cp-btn">
-    <button style="background: #0d3451; color: white">Save</button>
-    <button style="color: #ff0000; border: 1px solid #ff0000">
-      Cancel
-    </button>
-  </div>
-</div> -->
