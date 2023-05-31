@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="./search.css" />
+    <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css" />
+    <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/publishJob.css" />
+    <link rel="stylesheet" href="../assets/css/Search.css" />
+    <link rel="stylesheet" href="../assets/css/config.css" />
     <title>Vorkinsta</title>
   </head>
   <body>
@@ -32,7 +35,7 @@
             <li>
               <a class="para-2" href="../Meeting/Meeting.html">Meeting Room</a>
             </li>
-            <li onclick="window.location.href='../clientNotification.html'"><img src="../assets/images/notification.png" alt="" /></li>
+            <li onclick="window.location.href='../consultantNotification.html'"><img src="../assets/images/notification.png" alt="" /></li>
             <li><img src="../assets/images/profilecircle.png" alt="" /></li>
           </div>
           <div class="hamburger">
@@ -87,11 +90,12 @@
                   cum magnam adipisci voluptates amet repellat quia rerum maxime
                   voluptas, aut, deleniti dolorum enim.
                 </p>
-                <button class="para-1">send Proposal</button>
+                <button class="para-1 proposal">Send Proposal</button>
               </div>
             </div>
           </div>
         </section>
+        
         <div class="pagination">
           <button class="prev"><img src="/assets/images/prev.png" alt="" /></button>
           <div class="page-num page-num-active">
@@ -106,6 +110,66 @@
           <button class="next"><img src="/assets/images/next.png" alt="" /></button>
         </div>
       </section>
+      <div class="publish-right-container" style="display: none">
+        <h1 class="heading-2">Search Job -> Fullstack Development -> Apply</h1>
+        <form class="publish-form">
+          <div class="field-section">
+            <label class="sub-heading-1">Job Description</label>
+            <input type="text" placeholder="Job Title" class="popup_input para-2" />
+          </div>
+          <div class="field-section">
+            <label class="sub-heading-1">Skills</label>
+            <select data-role="select" multiple id="skill" placeholder=" skill">
+              <option value="Skill">Skill</option>
+              <option value="Python">Python</option>
+              <option value="Java">Java</option>
+              <option value="HML">HTML</option>
+              <option value="CSS">CSS</option>
+            </select>
+          </div>
+          <div class="field-section">
+            <label class="sub-heading-1">Project Budget(in USD)</label>
+            <div class="field-double">
+              <input type="text" data-prepend="$" class="popup_input para-2" />
+              <select data-role="select" id="rate">
+                <option value="daily">Daily</option>
+                <option value="hourly">Hourly</option>
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Yearly</option>
+              </select>
+            </div>
+          </div>
+          <!-- <div class="field-double">
+            <div class="field-section">
+              <label class="sub-heading-1">Job Type</label>
+  
+              <select data-role="select" id="type">
+                <option value="fulltime">Fulltime</option>
+                <option value="freelancer">Freelancer</option>
+                <option value="recruiter">Recruiter</option>
+              </select>
+            </div>
+            <div class="field-section">
+              <label class="sub-heading-1">Number of Consultants</label>
+  
+              <input type="number" class="popup_input para-2" />
+            </div>
+          </div> -->
+  
+          <div class="field-section">
+            <label class="sub-heading-1">Message</label>
+            <textarea name="" id="" cols="40" rows="5"></textarea>
+          </div>
+          <div class="btn-section">
+            <button class="sub-heading-1 blue-btn">
+              Publish
+            </button>
+            <button class="sub-heading-1 cancel-btn" id="cancel">
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
     </main>
     <footer>
       <div class="f-container">
@@ -168,5 +232,18 @@
         </div>
       </div>
     </footer>
+    <script>
+      const propButton=document.querySelector('.proposal')
+      const modal=document.querySelector('.publish-right-container')
+      const cancel=document.querySelector('#cancel')
+      console.log(cancel)
+      propButton.addEventListener('click',()=>{
+        modal.style.display='block'
+      })
+      cancel.addEventListener('click',(e)=>{
+        e.preventDefault()
+        modal.style.display='none'
+      })
+    </script>
   </body>
 </html>

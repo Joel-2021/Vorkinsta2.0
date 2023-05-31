@@ -1,219 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="./search.css" />
-    <title>Vorkinsta</title>
-  </head>
-  <body>
-    <header>
-      <div class="top">
-        <div>
-          <div class="avatar">
-            <img src="../assets/images/Ellipse 23.png" alt="" />
-          </div>
-          <div class="logo">
-            <img
-              src="../assets/images/image 9.png"
-              alt=""
-              srcset=""
-              onclick="window.location.href='../index.html'"
-            />
-          </div>
-          <div class="tabs">
-            <li class="active">
-              <a class="para-2" href="ConsultantJobs.html">Search Jobs</a>
-            </li>
-            <li>
-              <a class="para-2" href="../job/ConsultantsMyjob.html">My Jobs</a>
-            </li>
-            <li><a class="para-2" href="../Apps/Apps.html">Apps</a></li>
-            <li>
-              <a class="para-2" href="../Training/Training.html">Trainings</a>
-            </li>
-            <li>
-              <a class="para-2" href="../Meeting/Meeting.html">Meeting Room</a>
-            </li>
-            <li onclick="window.location.href='../consultantNotification.html'">
-              <img src="../assets/images/notification.png" alt="" />
-            </li>
-            <li><img src="../assets/images/profilecircle.png" alt="" /></li>
-          </div>
-          <div class="hamburger">
-            <img src="../assets/images/Group 63.png" alt="" srcset="" />
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css" />
+  <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/publishJob.css" />
+  <link rel="stylesheet" href="../assets/css/Search.css" />
+
+  <link rel="stylesheet" href="../assets/css/config.css" />
+  <title>Vorkinsta</title>
+</head>
+
+<body>
+  <header>
+    <div class="top">
+      <div>
+        <div class="avatar">
+          <img src="../assets/images/Ellipse 23.png" alt="" />
         </div>
-      </div>
-    </header>
-    <main>
-      <section class="search">
-        <form action="">
-          <input
-            type="text"
-            name=""
-            id="job"
-            placeholder="Search here..."
-            style="width: 537px"
-          />
-          <button class="sub-heading-2">Search</button>
-        </form>
-        <!-- <img src="../assets/images/info.png" alt="" style="display: block;"> -->
-        <div class="job-nav">
-          <ul>
-            <li class="para-1">Job Status</li>
-            <li class="act">
-              <a href="./JobInProgressCon.html" class="para-1"
-                >In Progress</a
-              >
-            </li>
-            <li><a href="./HireReqCon.html" class="para-1">Hire Requested</a></li>
-            <li>
-              <a href="./ProposalSentCon.html" class="para-1"
-                >Proposal Sent</a
-              >
-            </li>
-            <li>
-              <a href="./InvitationRecievedCon.html" class="para-1"
-                >Invitation Recieved</a
-              >
-            </li>
-            <li>
-              <a href="./SavedJobsCon.html" class="para-1"
-                >Saved Jobs</a
-              >
-            </li>
-            <li>
-              <a href="./ArchivedCon.html" class="para-1"
-                >Archived</a
-              >
-            </li>
-        </ul>
+        <div class="logo">
+          <img src="../assets/images/image 9.png" alt="" srcset="" onclick="window.location.href='../index.html'" />
+        </div>
+        <div class="tabs">
+          <li class="active"><a class="para-2" href="../job/jobinprogress.html">Search Jobs</a></li>
           <li>
-            <a href="ConsultantJobs.html" id="publish-job" class="para-1"
-              >Search Jobs</a
-            >
+            <a class="para-2" href="../Consultant/ConsultantInProgress.html">My Job</a>
           </li>
+
+          <li><a class="para-2" href="../Apps/Apps.html">Apps</a></li>
+          <li>
+            <a class="para-2" href="../Training/Training.html">Trainings</a>
+          </li>
+          <li>
+            <a class="para-2" href="../Meeting/Meeting.html">Meeting Room</a>
+          </li>
+          <li onclick="window.location.href='../consultantNotification.html'"><img src="../assets/images/notification.png"
+              alt="" /></li>
+          <li><img src="../assets/images/profilecircle.png" alt="" /></li>
         </div>
-        <section>
-          <div class="job">
-            <div class="job-title">
-              <div>
-                <h3 class="sub-heading-2">Job Title</h3>
-                <div class="status">
-                  <p class="para-1"><span id="invite">Client: </span>All hub</p>
-                </div>
-                <p class="posted-on para-1">2 days ago</p>
-              </div>
-              <div class="icons">
-                <img src="/assets/images/save.png" alt="" class="save" />
-                <img src="/assets/images/edit.png" alt="" class="edit" />
-              </div>
-            </div>
-            <div>
-              <div class="job-skills">
-                <div class="skills">
-                  <p class="sub-heading-2">Skills</p>
-                </div>
-                <p class="para-1">Bootstrap,HTML,CSS,JS,React</p>
-              </div>
-              <div class="budget">
-                <p class="para-1">Project Budget- $1500-$2000</p>
-              </div>
-            </div>
-            <div class="desc">
-              <p class="para-1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                voluptatibus sunt deserunt inventore, alias vitae doloremque cum
-                magnam adipisci voluptates amet repellat quia rerum maxime
-                voluptas, aut, deleniti dolorum enim.
-              </p>
-              <button class="para-1">send Proposal</button>
-            </div>
-            <!-- </div> -->
-          </div>
-        </section>
-        <div class="pagination">
-          <button class="prev">
-            <img src="/assets/images/prev.png" alt="" />
-          </button>
-          <div class="page-num page-num-active">
-            <p class="sub-heading-2">1</p>
-          </div>
-          <div class="page-num">
-            <p class="sub-heading-2">2</p>
-          </div>
-          <div class="page-num">
-            <p class="sub-heading-2">3</p>
-          </div>
-          <button class="next">
-            <img src="/assets/images/next.png" alt="" />
-          </button>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="f-container">
-        <div class="f-left">
-          <h2 class="sub-heading-2">Vorkinsta</h2>
-          <p class="para-2">
-            Vorkinsta lets any client connect with any consultant and
-            collaborate independently on their own terms. We aim at increased
-            collaboration in IT for a high-tech world. Our objective is to give
-            every member of our platform, big or small, the opportunity to
-            realize their dreams of achieving their goals of becoming an
-            entrepreneur.
-            <br />
-            We strictly advise using your own discretion on any confidential
-            information to be shared, such as Name, Phone, Address, ID, Photo,
-            or any other information.
-          </p>
-          <span>
-            <p class="sub-heading-2">Follow us</p>
-            <span>
-              <img src="/assets/images/Facebook Circled.png" alt="" />
-              <img src="/assets/images/LinkedIn Circled.png" alt="" />
-              <img src="/assets/images/Instagram.png" alt="" />
-            </span>
-          </span>
-          <p class="sub-heading-2">&copy 2021 All Rights Reserved</p>
-        </div>
-        <div class="f-right">
-          <h2>Links</h2>
-          <div>
-            <ul>
-              <li>
-                <a href="Footer/tandc.html" class="para-2">
-                  Terms and Conditions</a
-                >
-              </li>
-              <li>
-                <a href="Footer/privacyandpolicy.html" class="para-2">
-                  Privacy Policy</a
-                >
-              </li>
-              <li><a href="Footer/helpcenter.html" class="para-2"> Help</a></li>
-              <li>
-                <a href="Footer/licence.html" class="para-2">
-                  Vorkinsta License</a
-                >
-              </li>
-              <li>
-                <a href="Footer/partners.html" class="para-2"> Partners</a>
-              </li>
-              <label for="">Select language</label>
-              <select name="languages" id="">
-                <option value="english">English</option>
-                <option value="hindi">Hindi</option>
-                <option value="spanish">Spanish</option>
-                <option value="german">German</option>
-              </select>
-            </ul>
-          </div>
+        <div class="hamburger">
+          <img src="../assets/images/Group 63.png" alt="" srcset="" />
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </header>
+  <main>
+    <section class="search">
+      <form action="">
+        <input type="text" name="" id="job" placeholder="Search here..." />
+
+
+        <button class="sub-heading-2">Search</button>
+      </form>
+      <div class="job-nav">
+        <ul>
+          <!-- <li class="para-1 trapezoid">Job Status</li> -->
+          <li class="act trapezoid"><a href="./JobInProgressCon.html" class="para-1">In Progress</a></li>
+          <li class="trapezoid"><a href="./HireReqCon.html" class="para-1">Hire Request</a></li>
+          <li class=" trapezoid"><a href="./ProposalSentCon.html" class="para-1">Proposal Send</a></li>
+          <li class="trapezoid"><a href="./InvitationRecievedCon.html" class="para-1">Invitations Received</a></li>
+          <li class="trapezoid"><a href="./SavedJobsCon.html" class="para-1">Saved Jobs</a></li>
+          <li class="trapezoid"><a href="./ArchivedCon.html" class="para-1">Archived</a></li>
+        </ul>
+      </div>
+      <section>
+        <div class="job">
+          <div class="job-title">
+            <div>
+              <h3 class="sub-heading-2">Job Title</h3>
+              <div class="status">
+                <p class="para-1">Client:All hub</p>
+              </div>
+              <p class="posted-on para-1">2 days ago</p>
+            </div>
+            <div class="icons">
+              <img src="/assets/images/save.png" alt="" class="save" />
+
+            </div>
+          </div>
+          <div>
+            <div class="job-skills">
+              <div class="skills">
+                <p class="sub-heading-2">Skills</p>
+              </div>
+              <p class="para-1">Bootstrap,HTML,CSS,JS,React</p>
+            </div>
+            <div class="budget">
+              <p class="para-1">Project Budget- $1500-$2000</p>
+            </div>
+          </div>
+          <div class="desc">
+            <p class="para-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              voluptatibus sunt deserunt inventore, alias vitae doloremque cum
+              magnam adipisci voluptates amet repellat quia rerum maxime
+              voluptas, aut, deleniti dolorum enim.
+            </p>
+            <button class="para-1 close">Request To Close</button>
+          </div>
+        </div>
+        <div class="job">
+          <div class="job-title">
+            <div>
+              <h3 class="sub-heading-2">Job Title</h3>
+              <div class="status">
+                <p class="para-1">Client:All hub</p>
+              </div>
+              <p class="posted-on para-1">2 days ago</p>
+            </div>
+            <div class="icons">
+              <img src="/assets/images/save.png" alt="" class="save" />
+
+            </div>
+          </div>
+          <div>
+            <div class="job-skills">
+              <div class="skills">
+                <p class="sub-heading-2">Skills</p>
+              </div>
+              <p class="para-1">Bootstrap,HTML,CSS,JS,React</p>
+            </div>
+            <div class="budget">
+              <p class="para-1">Project Budget- $1500-$2000</p>
+            </div>
+          </div>
+          <div class="desc">
+            <p class="para-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              voluptatibus sunt deserunt inventore, alias vitae doloremque cum
+              magnam adipisci voluptates amet repellat quia rerum maxime
+              voluptas, aut, deleniti dolorum enim.
+            </p>
+            <button class="para-1 close">Request To Close</button>
+          </div>
+        </div>
+
+      </section>
+      <div class="pagination">
+        <button class="prev"><img src="/assets/images/prev.png" alt="" /></button>
+        <div class="page-num page-num-active">
+          <p class="sub-heading-2">1</p>
+        </div>
+        <div class="page-num">
+          <p class="sub-heading-2">2</p>
+        </div>
+        <div class="page-num">
+          <p class="sub-heading-2">3</p>
+        </div>
+        <button class="next"><img src="/assets/images/next.png" alt="" /></button>
+      </div>
+    </section>
+    <div class="publish-right-container" style="display: none">
+      <h1 class="heading-2">Close the Job</h1>
+      <form class="publish-form">
+
+        <div class="field-section">
+          <label class="sub-heading-1">Reason</label>
+          <select data-role="select" multiple id="skill" placeholder=" skill">
+            <option value="Skill">Skill</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="HML">HTML</option>
+            <option value="CSS">CSS</option>
+          </select>
+        </div>
+        <div class="field-section">
+          <label class="sub-heading-1">Description</label>
+          <textarea name="" id="" cols="40" rows="5"></textarea>
+        </div>
+        <div class="btn-section">
+          <button class="sub-heading-1 blue-btn">
+            Publish
+          </button>
+          <button class="sub-heading-1 cancel-btn" id="cancel">
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div class="f-container">
+      <div class="f-left">
+        <h2 class="sub-heading-2">Vorkinsta</h2>
+        <p class="para-2">
+          Vorkinsta lets any client connect with any consultant and
+          collaborate independently on their own terms. We aim at increased
+          collaboration in IT for a high-tech world. Our objective is to give
+          every member of our platform, big or small, the opportunity to
+          realize their dreams of achieving their goals of becoming an
+          entrepreneur.
+          <br />
+          We strictly advise using your own discretion on any confidential
+          information to be shared, such as Name, Phone, Address, ID, Photo,
+          or any other information.
+        </p>
+        <span>
+          <p class="sub-heading-2">Follow us</p>
+          <span>
+            <img src="/assets/images/Facebook Circled.png" alt="" />
+            <img src="/assets/images/LinkedIn Circled.png" alt="" />
+            <img src="/assets/images/Instagram.png" alt="" />
+          </span>
+        </span>
+        <p class="sub-heading-2">&copy 2021 All Rights Reserved</p>
+      </div>
+      <div class="f-right">
+        <h2>Links</h2>
+        <div>
+          <ul>
+            <li>
+              <a href="Footer/tandc.html" class="para-2">
+                Terms and Conditions</a>
+            </li>
+            <li>
+              <a href="Footer/privacyandpolicy.html" class="para-2">
+                Privacy Policy</a>
+            </li>
+            <li><a href="Footer/helpcenter.html" class="para-2"> Help</a></li>
+            <li>
+              <a href="Footer/licence.html" class="para-2">
+                Vorkinsta License</a>
+            </li>
+            <li>
+              <a href="Footer/partners.html" class="para-2"> Partners</a>
+            </li>
+            <label for="">Select language</label>
+            <select name="languages" id="">
+              <option value="english">English</option>
+              <option value="hindi">Hindi</option>
+              <option value="spanish">Spanish</option>
+              <option value="german">German</option>
+            </select>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+      const reqClose=document.querySelectorAll('.close')
+      const modal=document.querySelector('.publish-right-container')
+      const cancel=document.querySelector('#cancel')
+      console.log(reqClose)
+      reqClose.forEach(i=>  i.addEventListener('click',()=>{
+        modal.style.display='block'
+      }))
+    
+      cancel.addEventListener('click',(e)=>{
+        e.preventDefault()
+        modal.style.display='none'
+      })
+  </script>
+</body>
+
 </html>
